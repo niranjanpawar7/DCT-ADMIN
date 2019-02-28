@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+  .nopadding.sticky-container{
+    height: 100%;
+    background: #2B62CA;
+  }
+  
+  .sticky-container {
+    position: fixed;
+    height: 100%;
+    background: #2B62CA;
+  }
+  .nopadding {
+    padding: 0px;
+  }
+  .navbar-nav>li{
+      float: left;
+      width: 100%;
+      cursor: pointer; 
+  }
+  .footer-wrapper{
+    margin-top: 500px;
+  }    
+  .footer-wrapper,
+  .header-wrapper{
+    background-color: green;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+    background: #2B62CA;
+    border-bottom: 1px solid #cecece;
+    padding: 10px 0px;
+    text-align: center
+  }
+  .navbar-default .navbar-nav > li >:hover {
+    background: #9ebbfa; 
+    opacity: 1;
+  } 
+  .navbar {
+    border-radius: 0px;
+    border: none;
+  }
+  .navbar.navbar-default{
+    background-color: none !important;
+  }
+  .nav.navbar-nav li img{
+    margin: auto;
+  } 
+  .nav-pad{
+    opacity: 0.5;	color: #FFFFFF;	font-family: Lato;	font-size: 11px;	letter-spacing: 1px;	line-height: 13px;	text-align: center;
+  } 
+  
+  .custom-logo{
+    width: 90px;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0px;
+  }
+  .main-container{
+     background:#eff3f9; padding-left: 60px; padding-right: 60px;
+  }
+  .router-link-active { border-right: 4px solid skyblue;}
+  
+  @media only screen and (max-width: 800px) {
+    .sticky-container {
+      position: relative; 
+    }
+    .main-container{
+      padding-left: 15px; padding-right: 15px;
+     } 
+  }

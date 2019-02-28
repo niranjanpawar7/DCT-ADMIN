@@ -1,0 +1,7 @@
+mat-horizontal-stepper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mat-step-icon .mat-icon{
+    display: none;
+}

@@ -1,0 +1,90 @@
+<div class="col-md-1 nopadding sticky-container">
+  <div class="col-md-12" style="	background: linear-gradient(317.31deg, #A12BCA 0%, #FF9356 100%); padding: 0px">
+    <img src="assets/icons/main-icon.svg" alt="company logo" class="img-responsive custom-logo" />
+  </div><!-- col-md-12-->
+  <div class="clearfix"></div>
+  <div class="col-md-12 nopadding">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" (click)="toggle()" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Menu</span>
+        </div>
+        <div class="navbar-collapse sidebar-navbar-collapse" *ngIf="!show_dialog" style="padding:0px">
+          <ul class="nav navbar-nav" style="padding:0px; width:100%">
+
+            <li>
+              <a [routerLink]="['/dashboard']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/dashboard.svg" class="img-responsive" />
+                  DASHBOARD
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="['/calender']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/calendar.svg" class="img-responsive" />
+                  CALENDER
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/calendar.svg" class="img-responsive" />
+                  CREATE EVENT
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="['/training']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/training.svg" class="img-responsive" />
+                  TRAINING
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="['/mystory']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/slides.svg" class="img-responsive" />
+                  MY STORY
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a [routerLink]="['/myprofile']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <img src="assets/icons/profile.svg" class="img-responsive" />
+                  MY PROFILE
+                </span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div><!-- navbar -->
+    </div><!-- sidebar-nav -->
+  </div><!-- col-md-12 -->
+  <div class="clearfix"></div>
+</div>
+<div class="col-md-1"></div><!-- col-md-2 -->
+
+<div class="col-md-11 nopadding">
+  <app-header></app-header>
+  <div class="col-md-12 main-container">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
