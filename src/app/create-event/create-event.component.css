@@ -34,8 +34,6 @@ mat-card ul{
     float: left;
     width: 100%;
 }
- 
-/*------------ Thrid section------- */
 .lbl-radio{
     font-weight: 200 !important;
 }
@@ -72,14 +70,10 @@ float: left;
     padding-right: 30px;
 }
 .btn-search{
-    background-color: white;
-    height: 50px;
-    width: 15%;
-    color: #0660d4;
-    font-size: 19px;
-    float: right;
+    background-color: white;  
+    color: #0660d4; 
+    padding: 10px 25px;
     border: 1px solid;
-    margin-top: 50px;
 }
 .search-padding{
     padding-top: 20px;
@@ -118,7 +112,8 @@ float: left;
     padding: 3px 30px; 
     margin-left: 15px;
 }
-.second-wrap.mat-card label {
+.second-wrap.mat-card label,
+.form-parent-wrapper.mat-card label{
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
@@ -210,3 +205,52 @@ b, strong {
  .mat-card-sd{
     box-shadow: 7px 6px 24px -8px rgba(0,0,0,.08);
 }
+hr {
+    margin-top: 10px;  
+}
+.custom-ul{
+    padding-left: 0px !important;
+}
+.select-short .form-control{
+    width: 40%;
+}
+.mrb-20{
+    margin-bottom: 20px;
+}
+.custom-search{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 45px;
+}
+table {
+    width: 100%;
+    margin-top:30px;
+    box-shadow: none;
+    border:1px solid #cecece;
+}
+.mrt-60{
+    margin-top: 60px;
+}
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-right: 1px solid #cecece;
+    text-align: center;
+}
+
+td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.mat-table-top{
+    border-right: none !important;
+}
+.mat-table-top .clr-blue{
+    font-size: 14px;
+}
+
