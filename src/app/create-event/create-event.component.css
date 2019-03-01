@@ -33,18 +33,19 @@ mat-card ul{
     margin-bottom: 15px;
     float: left;
     width: 100%;
-} 
+}
 .lbl-radio{
     font-weight: 200 !important;
 }
 .vanue-style{
     font-weight: 700;
+    color: darkslategrey;
 }
 .vanue-style-career{
 float: left;
 }
 .text-vanue{
-    height: 80px;
+    height: 80px !important;
     width: 65%;
 }
 .vanue-delete-btn{
@@ -62,9 +63,10 @@ float: left;
     float:  right;
 }
 .btn-reset{
-    font-size: 20px;
+    font-size: 19px;
     float:  right;
     padding-top: 13px;
+    font-weight: 500;
     padding-right: 30px;
 }
 .btn-search{
@@ -159,6 +161,50 @@ b, strong {
 .height5{
     height: 5px;
 } 
+.search-input-pad{
+    margin-top: 8px;
+}
+.search-state{
+    width: auto !important;
+}
+
+/*------------ fourth section------- */
+
+.delete-btn-fnl{
+    background-color: white;
+    height: 50px;
+    width: 26%;
+    color: #0660d4;
+    font-size: 20px;
+    float: right;
+    border: 1px solid;
+    margin-top: 50px;
+}
+.btn-submit-fnl{
+    background-color: #256bbf;
+    height: 50px;
+    width: 26%;
+    color: white;
+    font-size: 20px;
+    float:  left;
+    margin-top: 50px;
+}
+.margin-ps{
+    margin: 26px;
+}
+.pgm-exp{
+    font-size: 17px;
+    float: right;
+}
+.pgm-status{
+    font-size: 17px;
+}
+.hr-color{
+    border-top: 1px solid #b5b3b3;
+}
+ .mat-card-sd{
+    box-shadow: 7px 6px 24px -8px rgba(0,0,0,.08);
+}
 hr {
     margin-top: 10px;  
 }
@@ -207,3 +253,4 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .mat-table-top .clr-blue{
     font-size: 14px;
 }
+

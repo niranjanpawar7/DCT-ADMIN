@@ -1,5 +1,7 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="1">
+ 
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
+ 
     <mat-card class="first-wrap line-height">
       <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
       <div class="clearfix"></div>
@@ -419,10 +421,10 @@
 
 
   <mat-step class="event-third-section">
-    <mat-card class="first-wrap line-height">
+    <mat-card class="first-wrap line-height mat-card-sd">
       <h3 class="heading">Event Information </h3>
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
       <div class="col-md-4">
         <ul>
           <li><b>ID</b>: 2558</li>
@@ -444,57 +446,81 @@
           <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
-    </mat-card>
-
-    <mat-card class="second-wrap">
+    </mat-card> 
+  
+    <mat-card class="second-wrap mat-card-sd"> 
       <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
       <div class="col-md-4">
         <p><span class="vanue-style">Name:</span> 111 Chop House</p>
         <p><span class="vanue-style">Type:</span> Restaurant</p>
-        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
-        <div>
-          <label class="lbl-radio"><input type="radio" name="optradio" checked> Preferred Venue</label><br>
-          <label class="lbl-radio"><input type="radio" name="optradio"> Alternate Vanue</label>
-        </div>
-      </div>
+        <p><span class="vanue-style">Phone:</span> 201-555-7948</p> 
+        <mat-radio-group>
+            <mat-radio-button value="1" [checked]="true">Preferred Venue </mat-radio-button><br>
+            <mat-radio-button value="2">Alternate Vanue </mat-radio-button> 
+         </mat-radio-group>
+      </div>   
       <div class="col-md-4">
         <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
         <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
-        <p><span class="vanue-style vanue-style-career">Caterer Info: </span> <input type="text" class="form-control text-vanue"></p>
+        <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
+          <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
+        </p>
       </div>
       <div class="col-md-4">
 
         <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
       </div>
+      <div class="clearfix"></div>
       <div class="col-md-12">
         <button class="btn btn-save"> Save & Next</button>
         <button class="btn btn-reset vanue-delete-btn"> Reset</button>
       </div>
     </mat-card>
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <div>
-          Venue Name
-          <input type="text" class="form-control">
+ 
+    <mat-card class="second-wrap mat-card-sd">
+        <span class="heading">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
+        <div class="clearfix"></div>
+        <hr class="hr-color">
+        <div class="col-md-4">
+          <div>
+             Venue Name
+            <input type="text" class="form-control search-input-pad" >
+          </div>
+          <div class="search-padding"> 
+             City
+             <input type="text" class="form-control search-input-pad">
+           </div>
         </div>
-        <div class="search-padding">
-          City
-          <input type="text" class="form-control">
+        <div class="col-md-4">
+         <div>
+           Venue Category
+           <select class="form-control search-input-pad" name="" id="">
+             <option>Select Category</option>
+             <option></option>
+           </select>
+         </div>
+         <div class="search-padding">
+           State
+            <select class="form-control search-input-pad search-state" name="" id="">
+              <option>ST</option>
+              <option></option>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Category
-          <select class="form-control" name="" id="">
-            <option>Select Category</option>
-            <option></option>
-          </select>
+        <div class="col-md-4">
+            <div>
+                Venue Type
+                <select class="form-control search-input-pad" name="" id="">
+                  <option>Select Type</option>
+                  <option></option>
+                </select>
+              </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12">
+            <button class="btn btn-search"> Search</button>  
         </div>
         <div class="search-padding">
           State
@@ -518,58 +544,59 @@
 
       </div>
     </mat-card>
-
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-    </mat-card>
+ 
+      <mat-card class="second-wrap mat-card-sd">
+          <span class="heading"> Venue Type</span>
+          <div class="clearfix"></div>
+          <hr class="hr-color">
+          <div class="col-md-4">
+            <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+            <p><span class="vanue-style">Type:</span> Convention Center</p>
+            <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+          </div>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+            <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+            <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+          </div>
+          <div class="col-md-4">
+              <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+              <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12">
+              <button class="btn btn-add-venue btn-save"> Add Venue</button>
+              <button class="btn btn-search"> View Details</button>
+          </div>
+          <div class="clearfix"></div>
+          <hr class="hr-color">
+          <div class="col-md-4">
+            <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+            <p><span class="vanue-style">Type:</span> Convention Center</p>
+            <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+          </div>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+            <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+            <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+          </div>
+          <div class="col-md-4">
+              <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+              <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+          </div>
+          <div class="clearfix"></div><br>
+          <div class="col-md-12">
+              <button class="btn btn-add-venue btn-save"> Add Venue</button>
+              <button class="btn btn-search"> View Details</button>
+          </div>
+        </mat-card> 
   </mat-step>
 
-  <mat-step class="event-third-section">
-    <mat-card class="first-wrap line-height">
+  <mat-step class="event-fourth-section">
+    <mat-card class="first-wrap line-height mat-card-sd">
       <h3 class="heading">Event Information </h3>
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
       <div class="col-md-4">
         <ul>
           <li><b>ID</b>: 2558</li>
@@ -592,126 +619,129 @@
         </ul>
       </div>
     </mat-card>
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
+ 
+  
+    <mat-card class="second-wrap mat-card-sd">
+      <span class="heading"> Status</span>  
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
+      <div class="col-md-4"> 
+        <p><span class="vanue-style">Date Submitted:</span> N/A</p>
+        <p><span class="vanue-style">Date Approved:</span> N/A</p> 
+      </div>
       <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> 111 Chop House</p>
-        <p><span class="vanue-style">Type:</span> Restaurant</p>
-        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
-        <div>
-          <label class="lbl-radio"><input type="radio" name="optradio" checked> Preferred Venue</label><br>
-          <label class="lbl-radio"><input type="radio" name="optradio"> Alternate Vanue</label>
+        <p><span class="vanue-style">SRF/Expenses Submitted:</span> N/A</p>
+        <p><span class="vanue-style">Venue Confirmed:</span> N/A</p>
+        
+      </div>
+      <div class="col-md-4"> 
+          <p><span class="vanue-style">Speaker Confirmed:</span> N/A</p> 
+      </div>
+    
+    </mat-card> 
+ 
+    <mat-card class="second-wrap mat-card-sd">
+        <span class="heading">  Summary</span>
+        <div class="clearfix"></div>
+        <hr class="hr-color">
+          <div>
+             <p class="margin-ps">Please review your Speaker Program Details. To change any details click 
+               <strong>Edit Program,  </strong>otherwise click <strong>Submit.</strong></p>
+          </div>
+       <div>
+       <span class="heading">  Pasitient Program Logistics</span>
+       <hr class="hr-color">
+       <div class="col-md-4">
+          <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
+          <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
+          <p><span class="vanue-style">Topic:</span> Patient Group</p>
+          <p><span class="vanue-style">Meeting Type:</span> Live</p>
+          <p><span class="vanue-style">Meal Type:</span> Lunch</p>
         </div>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
-        <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
-        <p><span class="vanue-style vanue-style-career">Caterer Info: </span> <input type="text" class="form-control text-vanue"></p>
-      </div>
-      <div class="col-md-4">
-
-        <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-save"> Save & Next</button>
-        <button class="btn btn-reset vanue-delete-btn"> Reset</button>
-      </div>
-    </mat-card>
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <div>
-          Venue Name
-          <input type="text" class="form-control">
+        <div class="col-md-4">
+          <p><span class="vanue-style">Date:</span> 9/26/2019</p>
+          <p><span class="vanue-style">Alternate Date:</span> 10/16/2019</p>
+          <p><span class="vanue-style">Start Time:</span> 1:00 PM</p>
+          <p><span class="vanue-style">End Time:</span> 3:15 PM</p>
+          <p><span class="vanue-style">Time Zone:</span> Atlantic</p>
         </div>
-        <div class="search-padding">
-          City
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Category
-          <select class="form-control" name="" id="">
-            <option>Select Category</option>
-            <option></option>
-          </select>
-        </div>
-        <div class="search-padding">
-          State
-          <select class="form-control" name="" id="">
-            <option>ST</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Type
-          <select class="form-control" name="" id="">
-            <option>Select Type</option>
-            <option></option>
-          </select>
+        <div class="col-md-4">
+            <p><span class="vanue-style">Attendees:</span> 11</p>
+            <p><span class="vanue-style">Speaker:</span> 1</p>
+            <p><span class="vanue-style">Alexion Employees:</span> 3</p>
+            <p><span class="vanue-style">Total:</span> 15</p>
+            <p><span class="vanue-style">Additional Services:</span> PX outsite coordinator at your meeting</p>
         </div>
       </div>
       <div class="col-md-12">
-        <button class="btn btn-search"> Save & Next</button>
-
-      </div>
-    </mat-card>
-
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
+          <button class="btn btn-search"> Edit Program</button>
       </div>
 
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-    </mat-card>
+      <div>
+          <span class="heading">  Speaker</span>
+          <hr class="hr-color">
+          <div class="col-md-1">
 
+          </div>
+          <div class="col-md-3">
+             <p><span class="vanue-style">Speaker:</span> Juan Alejos</p>
+             <p><span class="vanue-style">Gender:</span> Male</p>
+             <p><span class="vanue-style">City & State:</span> Albany, NY</p>
+           </div>
+           <div class="col-md-4">
+             <p><span class="vanue-style">Role:</span> Patient</p>
+             <p><span class="vanue-style">Date of Diagnosis:</span> 10/16/2001</p>
+             <p><span class="vanue-style">Treatment Start Time:</span> 1:00 PM</p>
+           </div>
+           <div class="col-md-4">
 
+            </div>
+         </div>
+         <div class="clearfix"></div>
+         <div class="col-md-12">
+             <button class="btn btn-search"> Edit Speaker</button>
+         </div>
+         <div class="clearfix"></div><br>
+         <div>
+            <span class="heading">Venue </span>
+            <hr class="hr-color">
+            <div class="col-md-4">
+                <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+                <p><span class="vanue-style">Type:</span> Convention Center</p>
+                <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+              </div>
+              <div class="col-md-4">
+                <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+                <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+                <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+              </div>
+              <div class="col-md-4">
+                  <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+                  <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+              </div>
+            
+           </div>
+           <div class="clearfix"></div>
+           <div class="col-md-12">
+               <button class="btn btn-search"> Edit Vanue</button>
+           </div>
+           <div class="clearfix"></div>
+           <br>
+           <div class="col-md-6">
+              <button class="btn delete-btn-fnl"> Delete</button>
+           </div>
+           <div class="col-md-6">
+              <button class="btn btn-submit-fnl"> Submit</button>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="col-md-6 ">
+               <a class="pgm-exp">Program Exception </a>
+            </div>
+            <div class="col-md-6">
+                <a class="pgm-status">Program Status </a>
+             </div>
+      </mat-card>  
   </mat-step>
 
 </mat-horizontal-stepper>
