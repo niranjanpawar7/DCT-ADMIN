@@ -5,15 +5,16 @@ import {
   MatStepperModule, MatTableModule,
   MatInputModule, MatSelectModule,
   MatButtonModule, MatProgressBarModule,
-  MatNativeDateModule, MatDatepickerModule
+  MatNativeDateModule, MatDatepickerModule,
+  MatCheckboxModule, MatRadioModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule, MatBadgeModule, MatStepperModule, MatTableModule , MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
+    CommonModule, MatRadioModule, MatCheckboxModule, MatBadgeModule, MatStepperModule, MatTableModule , MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
   ],
   exports: [
-    MatCardModule, MatBadgeModule, MatStepperModule, MatTableModule, MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
+    MatCardModule, MatRadioModule, MatCheckboxModule,  MatBadgeModule, MatStepperModule, MatTableModule, MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
   ]
 })
 export class AppMaterialModule { };
