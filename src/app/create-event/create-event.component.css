@@ -253,3 +253,10 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .mat-table-top .clr-blue{
     font-size: 14px;
 }
+.form-control.text-vanue{
+    margin-left: 10px;
+}
+.last-row-hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
