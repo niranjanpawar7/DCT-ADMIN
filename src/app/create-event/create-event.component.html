@@ -1,746 +1,750 @@
- 
-<mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="2">
-    <mat-step [stepControl]="firstFormGroup">
-   
-      <mat-card class="first-wrap line-height">
-        <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="col-md-4">
-          <ul>
-            <li><b>ID</b>: 2558</li>
-            <li><b>Product</b>: MSBDHDJD</li>
-            <li><b>Program Date</b>: 9/6/2019</li>
-          </ul>
+<mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="1">
+  <mat-step [stepControl]="firstFormGroup">
+
+    <mat-card class="first-wrap line-height">
+      <ng-template matStepLabel>Program Logistics</ng-template>
+      <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-4">
+        <ul>
+          <li><b>ID</b>: 2558</li>
+          <li><b>Product</b>: MSBDHDJD</li>
+          <li><b>Program Date</b>: 9/6/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Program Type</b>: 2558</li>
+          <li><b>Speaker</b>: MSBDHDJD</li>
+          <li><b>Terotirry</b>: 9/6/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Venue</b>: 111 Club FGS</li>
+        </ul>
+      </div>
+    </mat-card>
+    <mat-card class="second-wrap">
+      <div class="col-md-12"><span class="header-text-style">Patient Program logistic</span> <span class="pull-right clr-blue">Save
+          & Next ></span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-6 p-r-25 p-l-0 border">
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Program Series</label>
+            <select class="form-control" name="" id="">
+              <option>2019 Patient Programs</option>
+              <option></option>
+            </select>
+          </div>
         </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Program Type</b>: 2558</li>
-            <li><b>Speaker</b>: MSBDHDJD</li>
-            <li><b>Terotirry</b>: 9/6/2019</li>
-          </ul>
+        <div class="form-group">
+          <div class="col-md-12 test">
+            <label>Product</label>
+            <select class="form-control" name="" id="">
+              <option>NuerioScience-MG</option>
+            </select>
+          </div>
         </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Venue</b>: 111 Club FGS</li>
-          </ul>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Topic</label>
+            <select class="form-control" name="" id="">
+              <option>Patient Group</option>
+              <option></option>
+            </select>
+          </div>
         </div>
-      </mat-card>
-      <mat-card class="second-wrap">
-        <div class="col-md-12"><span class="header-text-style">Patient Program logistic</span> <span class="pull-right clr-blue">Save
-            & Next ></span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="col-md-6 p-r-25 p-l-0 border">
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Program Series</label>
-              <select class="form-control" name="" id="">
-                <option>2019 Patient Programs</option>
-                <option></option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12 test">
-              <label>Product</label>
-              <select class="form-control" name="" id="">
-                <option>NuerioScience-MG</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Topic</label>
-              <select class="form-control" name="" id="">
-                <option>Patient Group</option>
-                <option></option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group radio-group">
-            <div class="col-md-12">
-              <label>Program Type</label>
-              <div class="clearfix height5"></div>
-              <div class="col-md-6 pl-0">
-                <mat-radio-group>
-                  <mat-radio-button value="1">Live </mat-radio-button>
-                  <mat-radio-button value="1">Virtual </mat-radio-button>
-                  <mat-radio-button value="2"> </mat-radio-button>
-                </mat-radio-group>
-              </div>
-              <div class="col-md-5 pl-0">
-                <input type="text" class="form-control" placeholder="Others">
-              </div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <mat-form-field>
-                <input matInput [matDatepicker]="picker" placeholder="Date Picker">
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <mat-form-field>
-                <input matInput [matDatepicker]="picker1" placeholder="Alternate Program Date">
-                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                <mat-datepicker #picker1></mat-datepicker>
-              </mat-form-field>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Speaker Program Start Time</label>
-              <div class="clearfix"></div>
-              <div class="col-md-3 pl-0"><input class="form-control"></div>
-              <div class="col-md-3"><input class="form-control"></div>
-              <div class="col-md-3"><input class="form-control"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Speaker Program End Time</label>
-              <div class="clearfix"></div>
-              <div class="col-md-3 pl-0"><input class="form-control"></div>
-              <div class="col-md-3"><input class="form-control"></div>
-              <div class="col-md-3"><input class="form-control"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Time Zone</label>
-              <select class="form-control" name="" id="">
-                <option>NuerioScience-MG</option>
-              </select>
-            </div>
-          </div>
-        </div><!-- left-form-wrap -->
-  
-  
-        <div class="col-md-6 p-l-25 right-form-wrap">
-          <div class="form-group">
-            <div class="col-md-5"><label>Attendies</label><input type="text" class="form-control"></div>
-            <div class="col-md-5"><label>Speakers</label><input type="text" class="form-control clr-lightgrey"></div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Total Number of Alexion Employees</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Total</label>
-              <input type="text" class="form-control clr-lightgrey">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Maximun meal per Attendee</label>
-              <div class="clearfix"></div>
-              <div class="col-md-4 pl-0"><b>Breaksfast:</b> $25</div>
-              <div class="col-md-4"><b>Lunch:</b> $25</div>
-              <div class="col-md-4"><b>Dinnetr:</b> $25</div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label>Meal Type</label>
-              <div class="clearfix height5"></div>
+        <div class="form-group radio-group">
+          <div class="col-md-12">
+            <label>Program Type</label>
+            <div class="clearfix height5"></div>
+            <div class="col-md-6 pl-0">
               <mat-radio-group>
-                <mat-radio-button value="1">No Meal </mat-radio-button>
-                <mat-radio-button value="1">Breakfast </mat-radio-button>
-                <mat-radio-button value="2">Lunch </mat-radio-button>
-                <mat-radio-button value="1">Dinner </mat-radio-button>
-                <mat-radio-button value="2">Snacks </mat-radio-button>
+                <mat-radio-button value="1">Live </mat-radio-button>
+                <mat-radio-button value="1">Virtual </mat-radio-button>
+                <mat-radio-button value="2"> </mat-radio-button>
               </mat-radio-group>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <label class="clr-grey">Optional Meeting Services</label>
-              <div class="clearfix"></div>
-              <mat-checkbox>Px onsite coordinator at your Meeting <b>(Admin Only)</b></mat-checkbox>
-              <mat-checkbox>Print Invitation generated and mailed to you for distribution</mat-checkbox>
-              <mat-checkbox>Email Invitation sent to you for distribution</mat-checkbox>
+            <div class="col-md-5 pl-0">
+              <input type="text" class="form-control" placeholder="Others">
             </div>
           </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group">
           <div class="col-md-12">
-            <p class="fs-12">
-              <i>This services are 'add-on' to be selected as needed at additional cost</i>
-            </p>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12 text-right">
-              <button mat-button>Reset</button>
-              <button mat-button class="primary-custom">Save & Next</button>
-            </div>
-          </div>
-        </div><!-- Right-form-wrap -->
-        <div class="clearfix"></div>
-      </mat-card>
-    </mat-step>
-  
-    <!-- event-second-section Start-->
-    <mat-step [stepControl]="secondFormGroup" class="event-second-section">
-      <mat-card class="first-wrap">
-        <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="col-md-4">
-          <ul>
-            <li><b>ID</b>: 2558</li>
-            <li><b>Product</b>: MSBDHDJD</li>
-            <li><b>Program Date</b>: 9/6/2019</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Program Type</b>: 2558</li>
-            <li><b>Speaker</b>: MSBDHDJD</li>
-            <li><b>Terotirry</b>: 9/6/2019</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Venue</b>: 111 Club FGS</li>
-          </ul>
-        </div>
-      </mat-card>
-  
-  
-      <mat-card class="first-wrap">
-        <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue">Save
-            & Next ></span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="col-md-1">
-          <img src="assets/img/user-profile.png" width="50">
-        </div>
-        <div class="col-md-3 pl-0">
-          <ul class="custom-ul">
-            <li><b>Spkeaker:</b> Juan Alejos</li>
-            <li><b>Gender:</b> Male</li>
-            <li><b>City & State</b>: Albany, NY</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-3 pl-0">
-          <ul>
-            <li><b>Role:</b> Patient</li>
-            <li><b>Date of Diagnosis:</b> 9/6/2019</li>
-            <li><b>Treatment Start Date:</b> 9/6/2019</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-5 text-right">
-          <ul class="clr-blue">
-            <li>View Profile</li>
-            <li>Delete</li>
-          </ul>
-        </div>
-        <div class="clearfix"></div>
-        <div class="form-group">
-          <div class="col-md-12 text-right">
-            <button mat-button>Reset</button>
-            <button class="btn btn-search"> ADD HCP/Physician Speaker</button>
-            <button mat-button class="primary-custom">Save & Next</button>
-          </div>
-        </div>
-  
-      </mat-card>
-  
-      <mat-card class="first-wrap form-parent-wrapper">
-        <div class="col-md-12"><span class="header-text-style">Search</span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="col-md-12">
-          <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to serach</p>
-        </div>
-  
-        <div class="form-group">
-          <div class="col-md-3"><label>First Name</label><input type="text" class="form-control"></div>
-          <div class="col-md-3"><label>Last Name</label><input type="text" class="form-control"></div>
-          <div class="col-md-3"><label>City</label><input type="text" class="form-control"></div>
-          <div class="col-md-3 select-short"><label>State</label><select class="form-control">
-              <option>ST</option>
-            </select></div>
-        </div>
-  
-        <div class="form-group">
-          <div class="col-md-3"><label>Gender</label><select class="form-control">
-              <option>Male</option>
-            </select></div>
-          <div class="col-md-3"><label>Role</label><select class="form-control">
-              <option>Test</option>
-            </select></div>
-          <div class="col-md-3"><label>Date Of Dignosis</label>
             <mat-form-field>
-              <input matInput [matDatepicker]="picker11" placeholder="">
-              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
-              <mat-datepicker #picker11></mat-datepicker>
-            </mat-form-field>
-          </div>
-          <div class="col-md-3"><label>Treatment Date Start </label>
-            <mat-form-field>
-              <input matInput [matDatepicker]="picker12" placeholder="">
-              <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
-              <mat-datepicker #picker12></mat-datepicker>
+              <input matInput [matDatepicker]="picker" placeholder="Date Picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
           </div>
         </div>
-  
         <div class="form-group">
-          <div class="col-md-3">
-            <label>Search Biography</label>
+          <div class="col-md-12">
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker1" placeholder="Alternate Program Date">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Speaker Program Start Time</label>
+            <div class="clearfix"></div>
+            <div class="col-md-3 pl-0"><input class="form-control"></div>
+            <div class="col-md-3"><input class="form-control"></div>
+            <div class="col-md-3"><input class="form-control"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Speaker Program End Time</label>
+            <div class="clearfix"></div>
+            <div class="col-md-3 pl-0"><input class="form-control"></div>
+            <div class="col-md-3"><input class="form-control"></div>
+            <div class="col-md-3"><input class="form-control"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Time Zone</label>
+            <select class="form-control" name="" id="">
+              <option>NuerioScience-MG</option>
+            </select>
+          </div>
+        </div>
+      </div><!-- left-form-wrap -->
+
+
+      <div class="col-md-6 p-l-25 right-form-wrap">
+        <div class="form-group">
+          <div class="col-md-5"><label>Attendies</label><input type="text" class="form-control"></div>
+          <div class="col-md-5"><label>Speakers</label><input type="text" class="form-control clr-lightgrey"></div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Total Number of Alexion Employees</label>
             <input type="text" class="form-control">
           </div>
         </div>
-  
         <div class="form-group">
-          <div class="col-md-12 text-right">
-            <button class="btn btn-search custom-search"> Search </button>
+          <div class="col-md-12">
+            <label>Total</label>
+            <input type="text" class="form-control clr-lightgrey">
           </div>
         </div>
-  
-        <div class="col-md-12"><span class="header-text-style">Speaker List</span></div>
-        <div class="clearfix"></div>
-        <hr>
-        <div class="clearfix"></div>
-        <div class="col-md-1">
-          <img src="assets/img/user-profile.png" width="50">
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Maximun meal per Attendee</label>
+            <div class="clearfix"></div>
+            <div class="col-md-4 pl-0"><b>Breaksfast:</b> $25</div>
+            <div class="col-md-4"><b>Lunch:</b> $25</div>
+            <div class="col-md-4"><b>Dinnetr:</b> $25</div>
+          </div>
         </div>
-        <div class="col-md-3 pl-0">
-          <ul class="custom-ul">
-            <li><b>Spkeaker:</b> Juan Alejos</li>
-            <li><b>Gender:</b> Male</li>
-            <li><b>City & State</b>: Albany, NY</li>
-          </ul>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label>Meal Type</label>
+            <div class="clearfix height5"></div>
+            <mat-radio-group>
+              <mat-radio-button value="1">No Meal </mat-radio-button>
+              <mat-radio-button value="1">Breakfast </mat-radio-button>
+              <mat-radio-button value="2">Lunch </mat-radio-button>
+              <mat-radio-button value="1">Dinner </mat-radio-button>
+              <mat-radio-button value="2">Snacks </mat-radio-button>
+            </mat-radio-group>
+          </div>
         </div>
-  
-        <div class="col-md-3 pl-0">
-          <ul>
-            <li><b>Role:</b> Patient</li>
-            <li><b>Date of Diagnosis:</b> 9/6/2019</li>
-            <li><b>Treatment Start Date:</b> 9/6/2019</li>
-          </ul>
+        <div class="form-group">
+          <div class="col-md-12">
+            <label class="clr-grey">Optional Meeting Services</label>
+            <div class="clearfix"></div>
+            <mat-checkbox>Px onsite coordinator at your Meeting <b>(Admin Only)</b></mat-checkbox>
+            <mat-checkbox>Print Invitation generated and mailed to you for distribution</mat-checkbox>
+            <mat-checkbox>Email Invitation sent to you for distribution</mat-checkbox>
+          </div>
         </div>
-        <div class="clearfix"></div>
-  
-        <div class="col-md-1"></div>
-        <div class="col-md-5 pl-0">
-          <p><b>Biography</b></p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries,
+        <div class="col-md-12">
+          <p class="fs-12">
+            <i>This services are 'add-on' to be selected as needed at additional cost</i>
           </p>
         </div>
-        <div class="col-md-6">
-          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width:100%">
-  
-            <!--- Note that these columns can be defined in any order.
-                        The actual rendered columns are set as a property on the row definition" -->
-  
-            <!-- Position Column -->
-            <ng-container matColumnDef="S">
-              <th mat-header-cell *matHeaderCellDef> <b>S</b> </th>
-              <td mat-cell *matCellDef="let element"> {{element.S}} </td>
-            </ng-container>
-  
-            <!-- Name Column -->
-            <ng-container matColumnDef="M">
-              <th mat-header-cell *matHeaderCellDef> <b>M</b> </th>
-              <td mat-cell *matCellDef="let element"> {{element.M}} </td>
-            </ng-container>
-  
-            <!-- Weight Column -->
-            <ng-container matColumnDef="T">
-              <th mat-header-cell *matHeaderCellDef> <b>T</b> </th>
-              <td mat-cell *matCellDef="let element">{{element.T}} </td>
-            </ng-container>
-  
-            <ng-container matColumnDef="W">
-                <th mat-header-cell *matHeaderCellDef> <b>W</b> </th>
-                <td mat-cell *matCellDef="let element">{{element.W}} </td>
-            </ng-container>
-  
-            <ng-container matColumnDef="TH">
-              <th mat-header-cell *matHeaderCellDef> <b>TH</b> </th>
-              <td mat-cell *matCellDef="let element">{{element.TH}} </td>
-            </ng-container>
-  
-            <ng-container matColumnDef="F">
-              <th mat-header-cell *matHeaderCellDef> <b>F</b> </th>
-              <td mat-cell *matCellDef="let element">{{element.F}} </td>
-            </ng-container>
-  
-            <ng-container matColumnDef="SA">
-              <th mat-header-cell *matHeaderCellDef> <b>SA</b> </th>
-              <td mat-cell *matCellDef="let element">{{element.SA}} </td>
-            </ng-container>
-  
-         
-  
-  
-            <!-- Custom Header || Footer Start -->
-            <ng-container matColumnDef="header-row-first-group">
-              <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="8">
-               <span class="clr-blue"> Availability </span>
-              </th>
-            </ng-container>
-  
-            <ng-container matColumnDef="header-row-second-group">
-              <th mat-header-cell *matHeaderCellDef [attr.colspan]="0"> </th>
-            </ng-container>
-  
-            <tr mat-header-row *matHeaderRowDef="['header-row-first-group', 'header-row-second-group']"></tr>
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-          </table>
-        </div>
-  
-        <div class="form-group mrt-60">
+        <div class="form-group">
           <div class="col-md-12 text-right">
-            <button class="btn btn-search"> View Details </button>
-            <button class="btn primary-custom mat-button"> Save & Next</button>
+            <button mat-button>Reset</button>
+            <button mat-button class="primary-custom">Save & Next</button>
           </div>
         </div>
-  
-      </mat-card>
-    </mat-step><!-- event-second-section End-->
-  
-  
-    <mat-step class="event-third-section">
-      <mat-card class="first-wrap line-height mat-card-sd">
-          <div class="col-md-12">
+      </div><!-- Right-form-wrap -->
+      <div class="clearfix"></div>
+    </mat-card>
+  </mat-step>
+
+  <!-- event-second-section Start-->
+  <mat-step [stepControl]="secondFormGroup" class="event-second-section">
+    <ng-template matStepLabel>Select Speaker</ng-template>
+    <mat-card class="first-wrap">
+      <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-4">
+        <ul>
+          <li><b>ID</b>: 2558</li>
+          <li><b>Product</b>: MSBDHDJD</li>
+          <li><b>Program Date</b>: 9/6/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Program Type</b>: 2558</li>
+          <li><b>Speaker</b>: MSBDHDJD</li>
+          <li><b>Terotirry</b>: 9/6/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Venue</b>: 111 Club FGS</li>
+        </ul>
+      </div>
+    </mat-card>
+
+
+    <mat-card class="first-wrap">
+      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue">Save
+          & Next ></span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-1">
+        <img src="assets/img/user-profile.png" width="50">
+      </div>
+      <div class="col-md-3 pl-0">
+        <ul class="custom-ul">
+          <li><b>Spkeaker:</b> Juan Alejos</li>
+          <li><b>Gender:</b> Male</li>
+          <li><b>City & State</b>: Albany, NY</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 pl-0">
+        <ul>
+          <li><b>Role:</b> Patient</li>
+          <li><b>Date of Diagnosis:</b> 9/6/2019</li>
+          <li><b>Treatment Start Date:</b> 9/6/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3"></div>
+      <div class="col-md-2">
+        <ul class="clr-blue icon-pallet">
+          <li><span class="glyphicon glyphicon-user"></span>View Profile</li>
+          <li><span class="glyphicon glyphicon-trash"></span>Delete</li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="form-group">
+        <div class="col-md-12 text-right">
+          <button mat-button class="clr-blue">Reset</button>
+          <button class="btn btn-search"> ADD HCP/Physician Speaker</button>
+          <button mat-button class="primary-custom">Save & Next</button>
+        </div>
+      </div>
+
+    </mat-card>
+
+    <mat-card class="first-wrap form-parent-wrapper">
+      <div class="col-md-12"><span class="header-text-style">Search</span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-12">
+        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to serach</p>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3"><label>First Name</label><input type="text" class="form-control"></div>
+        <div class="col-md-3"><label>Last Name</label><input type="text" class="form-control"></div>
+        <div class="col-md-3"><label>City</label><input type="text" class="form-control"></div>
+        <div class="col-md-3 select-short"><label>State</label><select class="form-control">
+            <option>ST</option>
+          </select></div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3"><label>Gender</label><select class="form-control">
+            <option>Male</option>
+          </select></div>
+        <div class="col-md-3"><label>Role</label><select class="form-control">
+            <option>Test</option>
+          </select></div>
+        <div class="col-md-3"><label>Date Of Dignosis</label>
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker11" placeholder="">
+            <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+            <mat-datepicker #picker11></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-md-3"><label>Treatment Date Start </label>
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker12" placeholder="">
+            <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
+            <mat-datepicker #picker12></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-3">
+          <label>Search Biography</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-12 text-right">
+          <button class="btn btn-search custom-search"> Search </button>
+        </div>
+      </div>
+
+      <div class="col-md-12"><span class="header-text-style">Speaker List</span></div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="clearfix"></div>
+      <div class="col-md-1">
+        <img src="assets/img/user-profile.png" width="50">
+      </div>
+      <div class="col-md-3 pl-0">
+        <ul class="custom-ul">
+          <li><b>Spkeaker:</b> Juan Alejos</li>
+          <li><b>Gender:</b> Male</li>
+          <li><b>City & State</b>: Albany, NY</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 pl-0">
+        <ul>
+          <li><b>Role:</b> Patient</li>
+          <li><b>Date of Diagnosis:</b> 9/6/2019</li>
+          <li><b>Treatment Start Date:</b> 9/6/2019</li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-md-1"></div>
+      <div class="col-md-5 pl-0">
+        <p><b>Biography</b></p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries,
+        </p>
+      </div>
+      <div class="col-md-6">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width:100%">
+
+          <!--- Note that these columns can be defined in any order.
+                        The actual rendered columns are set as a property on the row definition" -->
+
+          <!-- Position Column -->
+          <ng-container matColumnDef="S">
+            <th mat-header-cell *matHeaderCellDef> <b>S</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.S}} </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="M">
+            <th mat-header-cell *matHeaderCellDef> <b>M</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.M}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="T">
+            <th mat-header-cell *matHeaderCellDef> <b>T</b> </th>
+            <td mat-cell *matCellDef="let element">{{element.T}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="W">
+            <th mat-header-cell *matHeaderCellDef> <b>W</b> </th>
+            <td mat-cell *matCellDef="let element">{{element.W}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="TH">
+            <th mat-header-cell *matHeaderCellDef> <b>TH</b> </th>
+            <td mat-cell *matCellDef="let element">{{element.TH}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="F">
+            <th mat-header-cell *matHeaderCellDef> <b>F</b> </th>
+            <td mat-cell *matCellDef="let element">{{element.F}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="SA">
+            <th mat-header-cell *matHeaderCellDef> <b>SA</b> </th>
+            <td mat-cell *matCellDef="let element">{{element.SA}} </td>
+          </ng-container>
+
+
+
+
+          <!-- Custom Header || Footer Start -->
+          <ng-container matColumnDef="header-row-first-group">
+            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="8">
+              <span class="clr-blue"> Availability </span>
+            </th>
+          </ng-container>
+
+          <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="0"> </th>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="['header-row-first-group', 'header-row-second-group']"></tr>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+
+      <div class="form-group mrt-60">
+        <div class="col-md-12 text-right">
+          <button class="btn btn-search"> View Details </button>
+          <button class="btn primary-custom mat-button"> Save & Next</button>
+        </div>
+      </div>
+
+    </mat-card>
+  </mat-step><!-- event-second-section End-->
+
+
+  <mat-step class="event-third-section">
+   <ng-template matStepLabel>Select Venue</ng-template>
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12">
         <span class="header-text-style">Event Information </span>
         <div class="clearfix"></div>
         <hr class="hr-color">
-          </div>
-        <div class="col-md-4">
-          <ul>
-            <li><b>ID</b>: 2558</li>
-            <li><b>Product</b>: Neuroscience-MG</li>
-            <li><b>Program Date</b>: 9/26/2019</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Program Type</b>: Live</li>
-            <li><b>Speaker</b>: Juan Alejos</li>
-            <li><b>Terotirry</b>: TM - Austin, TX</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Venue</b>: 111 Chop House</li>
-          </ul>
-        </div>
-      </mat-card> 
-    
-      <mat-card class="second-wrap mat-card-sd"> 
-          <div class="col-md-12">
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>ID</b>: 2558</li>
+          <li><b>Product</b>: Neuroscience-MG</li>
+          <li><b>Program Date</b>: 9/26/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Program Type</b>: Live</li>
+          <li><b>Speaker</b>: Juan Alejos</li>
+          <li><b>Terotirry</b>: TM - Austin, TX</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Venue</b>: 111 Chop House</li>
+        </ul>
+      </div>
+    </mat-card>
+
+    <mat-card class="second-wrap mat-card-sd">
+      <div class="col-md-12">
         <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
         <div class="clearfix"></div>
         <hr class="hr-color">
-          </div>
-        <div class="col-md-4">
-          <p><span class="vanue-style">Name:</span> 111 Chop House</p>
-          <p><span class="vanue-style">Type:</span> Restaurant</p>
-          <p><span class="vanue-style">Phone:</span> 201-555-7948</p> 
-          <mat-radio-group>
-              <mat-radio-button value="1" [checked]="true">Preferred Venue </mat-radio-button><br>
-              <mat-radio-button value="2">Alternate Vanue </mat-radio-button> 
-           </mat-radio-group>
-        </div>   
-        <div class="col-md-4">
-          <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
-          <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
-          <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
-            <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
-          </p>
-        </div>
-        <div class="col-md-4">
-  
-          <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-        </div>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Name:</span> 111 Chop House</p>
+        <p><span class="vanue-style">Type:</span> Restaurant</p>
+        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
+        <mat-radio-group>
+          <mat-radio-button value="1" [checked]="true">Preferred Venue </mat-radio-button><br>
+          <mat-radio-button value="2">Alternate Vanue </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
+        <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
+        <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
+          <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
+        </p>
+      </div>
+      <div class="col-md-4">
+
+        <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <button mat-button class="primary-custom pull-right"> Save & Next</button>
+        <button class="btn btn-reset vanue-delete-btn"> Reset</button>
+      </div>
+    </mat-card>
+
+    <mat-card class="second-wrap mat-card-sd">
+      <div class="col-md-12">
+        <span class="header-text-style"> Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
         <div class="clearfix"></div>
-        <div class="col-md-12">
-            <button mat-button class="primary-custom pull-right"> Save & Next</button>
-          <button class="btn btn-reset vanue-delete-btn"> Reset</button>
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-4">
+        <div>
+          Venue Name
+          <input type="text" class="form-control search-input-pad">
         </div>
-      </mat-card>
-   
-      <mat-card class="second-wrap mat-card-sd">
-          <div class="col-md-12">
-          <span class="header-text-style">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
-          <div class="clearfix"></div>
-          <hr class="hr-color">
-          </div>
-          <div class="col-md-4">
-            <div>
-               Venue Name
-              <input type="text" class="form-control search-input-pad" >
-            </div>
-            <div class="search-padding"> 
-               City
-               <input type="text" class="form-control search-input-pad">
-             </div>
-          </div>
-          <div class="col-md-4">
-           <div>
-             Venue Category
-             <select class="form-control search-input-pad" name="" id="">
-               <option>Select Category</option>
-               <option></option>
-             </select>
-           </div>
-           <div class="search-padding">
-             State
-              <select class="form-control search-input-pad search-state" name="" id="">
-                <option>ST</option>
-                <option></option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-4">
-              <div>
-                  Venue Type
-                  <select class="form-control search-input-pad" name="" id="">
-                    <option>Select Type</option>
-                    <option></option>
-                  </select>
-                </div>
-          </div>
-          <div class="clearfix"></div>
-          <div class="col-md-12 text-right">
-              <button class="btn btn-search"> Search</button>  
-          </div> 
-      </mat-card>
-   
-        <mat-card class="second-wrap mat-card-sd third-section">
-          <div class="col-md-12">
-            <span class="header-text-style"> Venue Type</span>
-            <div class="clearfix"></div>
-            <hr class="hr-color">
-          </div> 
-            <div class="col-md-4">
-              <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-              <p><span class="vanue-style">Type:</span> Convention Center</p>
-              <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-            </div>
-            <div class="col-md-4">
-              <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-              <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-              <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-            </div>
-            <div class="col-md-4">
-                <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-                <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-md-12 text-right">
-                <button mat-button class="primary-custom pull-right"> Add Venue</button>
-                <button class="btn btn-search"> View Details</button>
-            </div>
-            <div class="clearfix"></div>
-            <hr class="hr-color last-row-hr">
-            <div class="col-md-4">
-              <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-              <p><span class="vanue-style">Type:</span> Convention Center</p>
-              <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-            </div>
-            <div class="col-md-4">
-              <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-              <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-              <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-            </div>
-            <div class="col-md-4">
-                <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-                <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-            </div>
-            <div class="clearfix"></div><br>
-            <div class="col-md-12 text-right">
-                 <button mat-button class="primary-custom pull-right"> Add Venue</button>
-                <button class="btn btn-search"> View Details</button>
-            </div>
-          </mat-card> 
-    </mat-step>
-  
-    <mat-step class="event-fourth-section">
-      <mat-card class="first-wrap line-height mat-card-sd">
-        <div class="col-md-12">
+        <div class="search-padding">
+          City
+          <input type="text" class="form-control search-input-pad">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          Venue Category
+          <select class="form-control search-input-pad" name="" id="">
+            <option>Select Category</option>
+            <option></option>
+          </select>
+        </div>
+        <div class="search-padding">
+          State
+          <select class="form-control search-input-pad search-state" name="" id="">
+            <option>ST</option>
+            <option></option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          Venue Type
+          <select class="form-control search-input-pad" name="" id="">
+            <option>Select Type</option>
+            <option></option>
+          </select>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 text-right">
+        <button class="btn btn-search"> Search</button>
+      </div>
+    </mat-card>
+
+    <mat-card class="second-wrap mat-card-sd third-section">
+      <div class="col-md-12">
+        <span class="header-text-style"> Venue Type</span>
+        <div class="clearfix"></div>
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+        <p><span class="vanue-style">Type:</span> Convention Center</p>
+        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 text-right">
+        <button mat-button class="primary-custom pull-right"> Add Venue</button>
+        <button class="btn btn-search"> View Details</button>
+      </div>
+      <div class="clearfix"></div>
+      <hr class="hr-color last-row-hr">
+      <div class="col-md-4">
+        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+        <p><span class="vanue-style">Type:</span> Convention Center</p>
+        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+      </div>
+      <div class="clearfix"></div><br>
+      <div class="col-md-12 text-right">
+        <button mat-button class="primary-custom pull-right"> Add Venue</button>
+        <button class="btn btn-search"> View Details</button>
+      </div>
+    </mat-card>
+  </mat-step>
+
+  <mat-step class="event-fourth-section">
+    <ng-template matStepLabel>Review & Submit</ng-template>
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12">
         <span class="header-text-style">Event Information </span>
         <div class="clearfix"></div>
         <hr class="hr-color">
-      </div> 
-        <div class="col-md-4">
-          <ul>
-            <li><b>ID</b>: 2558</li>
-            <li><b>Product</b>: Neuroscience-MG</li>
-            <li><b>Program Date</b>: 9/26/2019</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Program Type</b>: Live</li>
-            <li><b>Speaker</b>: Juan Alejos</li>
-            <li><b>Terotirry</b>: TM - Austin, TX</li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4">
-          <ul>
-            <li><b>Venue</b>: 111 Chop House</li>
-          </ul>
-        </div>
-      </mat-card>
-   
-    
-      <mat-card class="second-wrap mat-card-sd">
-          <div class="col-md-12">
-        <span class="header-text-style"> Status</span>  
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>ID</b>: 2558</li>
+          <li><b>Product</b>: Neuroscience-MG</li>
+          <li><b>Program Date</b>: 9/26/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Program Type</b>: Live</li>
+          <li><b>Speaker</b>: Juan Alejos</li>
+          <li><b>Terotirry</b>: TM - Austin, TX</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Venue</b>: 111 Chop House</li>
+        </ul>
+      </div>
+    </mat-card>
+
+
+    <mat-card class="second-wrap mat-card-sd">
+      <div class="col-md-12">
+        <span class="header-text-style"> Status</span>
         <div class="clearfix"></div>
         <hr class="hr-color">
-          </div> 
-        <div class="col-md-4"> 
-          <p><span class="vanue-style">Date Submitted:</span> N/A</p>
-          <p><span class="vanue-style">Date Approved:</span> N/A</p> 
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Date Submitted:</span> N/A</p>
+        <p><span class="vanue-style">Date Approved:</span> N/A</p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">SRF/Expenses Submitted:</span> N/A</p>
+        <p><span class="vanue-style">Venue Confirmed:</span> N/A</p>
+
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Speaker Confirmed:</span> N/A</p>
+      </div>
+
+    </mat-card>
+
+    <mat-card class="second-wrap mat-card-sd">
+      <div class="col-md-12">
+        <span class="header-text-style"> Summary</span>
+        <div class="clearfix"></div>
+        <hr class="hr-color">
+      </div>
+      <div>
+        <div class="col-md-12">
+          <p>Please review your Speaker Program Details. To change any details click
+            <strong>Edit Program, </strong>otherwise click <strong>Submit.</strong></p>
+        </div>
+      </div>
+      <div>
+        <div class="col-md-12">
+          <span class="header-text-style"> Pasitient Program Logistics</span>
+          <hr class="hr-color">
         </div>
         <div class="col-md-4">
-          <p><span class="vanue-style">SRF/Expenses Submitted:</span> N/A</p>
-          <p><span class="vanue-style">Venue Confirmed:</span> N/A</p>
-          
+          <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
+          <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
+          <p><span class="vanue-style">Topic:</span> Patient Group</p>
+          <p><span class="vanue-style">Meeting Type:</span> Live</p>
+          <p><span class="vanue-style">Meal Type:</span> Lunch</p>
         </div>
-        <div class="col-md-4"> 
-            <p><span class="vanue-style">Speaker Confirmed:</span> N/A</p> 
+        <div class="col-md-4">
+          <p><span class="vanue-style">Date:</span> 9/26/2019</p>
+          <p><span class="vanue-style">Alternate Date:</span> 10/16/2019</p>
+          <p><span class="vanue-style">Start Time:</span> 1:00 PM</p>
+          <p><span class="vanue-style">End Time:</span> 3:15 PM</p>
+          <p><span class="vanue-style">Time Zone:</span> Atlantic</p>
         </div>
-      
-      </mat-card> 
-   
-      <mat-card class="second-wrap mat-card-sd">
-          <div class="col-md-12">
-          <span class="header-text-style">  Summary</span>
-          <div class="clearfix"></div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">Attendees:</span> 11</p>
+          <p><span class="vanue-style">Speaker:</span> 1</p>
+          <p><span class="vanue-style">Alexion Employees:</span> 3</p>
+          <p><span class="vanue-style">Total:</span> 15</p>
+          <p><span class="vanue-style">Additional Services:</span> PX outsite coordinator at your meeting</p>
+        </div>
+      </div>
+      <div class="col-md-12 text-right">
+        <button class="btn btn-search"> Edit Program</button>
+      </div>
+
+      <div>
+        <div class="col-md-12">
+          <span class="header-text-style"> Speaker</span>
           <hr class="hr-color">
-          </div> 
-            <div>
-              <div class="col-md-12">
-               <p>Please review your Speaker Program Details. To change any details click 
-                 <strong>Edit Program,  </strong>otherwise click <strong>Submit.</strong></p>
-                </div>   
-            </div>
-         <div>
-          <div class="col-md-12">
-         <span class="header-text-style">  Pasitient Program Logistics</span>
-         <hr class="hr-color">
-        </div> 
-         <div class="col-md-4">
-            <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
-            <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
-            <p><span class="vanue-style">Topic:</span> Patient Group</p>
-            <p><span class="vanue-style">Meeting Type:</span> Live</p>
-            <p><span class="vanue-style">Meal Type:</span> Lunch</p>
-          </div>
-          <div class="col-md-4">
-            <p><span class="vanue-style">Date:</span> 9/26/2019</p>
-            <p><span class="vanue-style">Alternate Date:</span> 10/16/2019</p>
-            <p><span class="vanue-style">Start Time:</span> 1:00 PM</p>
-            <p><span class="vanue-style">End Time:</span> 3:15 PM</p>
-            <p><span class="vanue-style">Time Zone:</span> Atlantic</p>
-          </div>
-          <div class="col-md-4">
-              <p><span class="vanue-style">Attendees:</span> 11</p>
-              <p><span class="vanue-style">Speaker:</span> 1</p>
-              <p><span class="vanue-style">Alexion Employees:</span> 3</p>
-              <p><span class="vanue-style">Total:</span> 15</p>
-              <p><span class="vanue-style">Additional Services:</span> PX outsite coordinator at your meeting</p>
-          </div>
         </div>
-        <div class="col-md-12 text-right">
-            <button class="btn btn-search"> Edit Program</button>
+        <div class="col-md-1">
+          <img src="assets/img/user-profile.png" width="50">
         </div>
-  
-        <div>
-          <div class="col-md-12">
-            <span class="header-text-style">  Speaker</span>
-            <hr class="hr-color">
-          </div>  
-            <div class="col-md-1">
-                <img src="assets/img/user-profile.png" width="50">
-            </div>
-            <div class="col-md-3">
-               <p><span class="vanue-style">Speaker:</span> Juan Alejos</p>
-               <p><span class="vanue-style">Gender:</span> Male</p>
-               <p><span class="vanue-style">City & State:</span> Albany, NY</p>
-             </div>
-             <div class="col-md-4">
-               <p><span class="vanue-style">Role:</span> Patient</p>
-               <p><span class="vanue-style">Date of Diagnosis:</span> 10/16/2001</p>
-               <p><span class="vanue-style">Treatment Start Time:</span> 1:00 PM</p>
-             </div>
-             <div class="col-md-4">
-  
-              </div>
-           </div>
-           <div class="clearfix"></div>
-           <div class="col-md-12 text-right">
-               <button class="btn btn-search"> Edit Speaker</button>
-           </div>
-           <div class="clearfix"></div><br>
-           <div>
-             <div class="col-md-12">
-              <span class="header-text-style">Venue </span>
-              <hr class="hr-color">
-            </div> 
-              <div class="col-md-4">
-                  <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-                  <p><span class="vanue-style">Type:</span> Convention Center</p>
-                  <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-                </div>
-                <div class="col-md-4">
-                  <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-                  <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-                  <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-                </div>
-                <div class="col-md-4">
-                    <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-                    <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-                </div>
-              
-             </div>
-             <div class="clearfix"></div>
-             <div class="col-md-12 text-right">
-                 <button class="btn btn-search"> Edit Vanue</button>
-             </div>
-             <div class="clearfix"></div>
-             <br>
-             <div class="col-md-12 text-center">
-                <button class="btn btn-search"> Delete</button>
-                <button class="btn primary-custom mat-button"> Submit</button>
-             </div>
-               <div class="clearfix"></div>
-              <br>
-              <div class="col-md-6 ">
-                 <a class="pgm-exp">Program Exception </a>
-              </div>
-              <div class="col-md-6">
-                  <a class="pgm-status">Program Status </a>
-               </div>
-        </mat-card>  
-    </mat-step>
-  
-  </mat-horizontal-stepper>
+        <div class="col-md-3">
+          <p><span class="vanue-style">Speaker:</span> Juan Alejos</p>
+          <p><span class="vanue-style">Gender:</span> Male</p>
+          <p><span class="vanue-style">City & State:</span> Albany, NY</p>
+        </div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">Role:</span> Patient</p>
+          <p><span class="vanue-style">Date of Diagnosis:</span> 10/16/2001</p>
+          <p><span class="vanue-style">Treatment Start Time:</span> 1:00 PM</p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 text-right">
+        <button class="btn btn-search"> Edit Speaker</button>
+      </div>
+      <div class="clearfix"></div><br>
+      <div>
+        <div class="col-md-12">
+          <span class="header-text-style">Venue </span>
+          <hr class="hr-color">
+        </div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+          <p><span class="vanue-style">Type:</span> Convention Center</p>
+          <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+        </div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+          <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+          <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+        </div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+          <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+        </div>
+
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12 text-right">
+        <button class="btn btn-search"> Edit Vanue</button>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+      <div class="col-md-12 text-center">
+        <button class="btn btn-search"> Delete</button>
+        <button class="btn primary-custom mat-button"> Submit</button>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+      <div class="col-md-6 ">
+        <a class="pgm-exp">Program Exception </a>
+      </div>
+      <div class="col-md-6">
+        <a class="pgm-status">Program Status </a>
+      </div>
+    </mat-card>
+  </mat-step>
+
+</mat-horizontal-stepper>
