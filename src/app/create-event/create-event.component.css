@@ -34,6 +34,74 @@ mat-card ul{
     float: left;
     width: 100%;
 }
+ 
+
+.lbl-radio{
+    font-weight: 200 !important;
+}
+.vanue-style{
+    font-weight: 700;
+}
+.vanue-style-career{
+float: left;
+}
+.text-vanue{
+    height: 80px;
+    width: 65%;
+}
+.vanue-delete-btn{
+    float: right;
+    background-color: white;
+    color: #2b72f9;
+    font-weight: 600;
+}
+.btn-save{
+    background-color: #256bbf;
+    height: 50px;
+    width: 15%;
+    color: white;
+    font-size: 20px;
+    float:  right;
+}
+.btn-reset{
+    font-size: 20px;
+    float:  right;
+    padding-top: 13px;
+    padding-right: 30px;
+}
+.btn-search{
+    background-color: white;
+    height: 50px;
+    width: 15%;
+    color: #0660d4;
+    font-size: 20px;
+    float: right;
+    border: 1px solid;
+    margin-top: 50px;
+}
+.search-padding{
+    padding-top: 20px;
+}
+.btn-add-venue{
+    margin-top: 50px;
+    margin-left: 12px;
+}
+.heading{
+    font-weight: 600;
+    color: #116bde;
+    font-size: 22px;
+}
+.lbl-save-next{
+    font-weight: 600;
+    color: #1662d8;
+}
+.lbl-add-venue{
+    font-weight: 600;
+    color: #1662d8;
+}
+.line-height{
+    line-height: 25px;
+} 
 .pl-0{
     padding-left: 0px;
 }  
@@ -95,4 +163,4 @@ b, strong {
 } 
 .height5{
     height: 5px;
-}
+} 
