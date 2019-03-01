@@ -1,6 +1,6 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
-    <mat-card class="first-wrap">
+    <mat-card class="first-wrap line-height">
       Event Inforrmation
       <div class="clearfix"></div>
       <hr>
@@ -102,7 +102,154 @@
   <mat-step [stepControl]="secondFormGroup">
     <mat-card>Second</mat-card>
   </mat-step>
-  <mat-step>
-    <mat-card>Third</mat-card>
+
+
+  <mat-step class="event-third-section">
+    <mat-card class="first-wrap line-height">
+      <h3 class="heading">Event Information </h3>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-4">
+        <ul>
+          <li><b>ID</b>: 2558</li>
+          <li><b>Product</b>: Neuroscience-MG</li>
+          <li><b>Program Date</b>: 9/26/2019</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Program Type</b>: Live</li>
+          <li><b>Speaker</b>: Juan Alejos</li>
+          <li><b>Terotirry</b>: TM - Austin, TX</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul>
+          <li><b>Venue</b>: 111 Chop House</li>
+        </ul>
+      </div>
+    </mat-card>
+  
+    <mat-card class="second-wrap">
+      <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Name:</span> 111 Chop House</p>
+        <p><span class="vanue-style">Type:</span> Restaurant</p>
+        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
+        <div >
+        <label class="lbl-radio"><input type="radio" name="optradio" checked> Preferred Venue</label><br>
+        <label class="lbl-radio"><input type="radio" name="optradio"> Alternate Vanue</label>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
+        <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
+        <p><span class="vanue-style vanue-style-career">Caterer Info: </span> <input type="text" class="form-control text-vanue"></p>
+      </div>
+      <div class="col-md-4">
+          
+          <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+      </div>
+      <div class="col-md-12">
+          <button class="btn btn-save"> Save & Next</button>
+          <button class="btn btn-reset vanue-delete-btn"> Reset</button>
+      </div>
+    </mat-card>
+
+    <mat-card class="second-wrap">
+        <span class="heading">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="col-md-4">
+          <div>
+             Venue Name
+            <input type="text" class="form-control" >
+          </div>
+          <div class="search-padding"> 
+             City
+             <input type="text" class="form-control">
+           </div>
+        </div>
+        <div class="col-md-4">
+         <div>
+           Venue Category
+           <select class="form-control" name="" id="">
+             <option>Select Category</option>
+             <option></option>
+           </select>
+         </div>
+         <div class="search-padding">
+           State
+            <select class="form-control" name="" id="">
+              <option>ST</option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                Venue Type
+                <select class="form-control" name="" id="">
+                  <option>Select Type</option>
+                  <option></option>
+                </select>
+              </div>
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-search"> Save & Next</button>
+            
+        </div>
+      </mat-card>
+
+
+      <mat-card class="second-wrap">
+          <span class="heading"> Venue Selected</span>
+          <div class="clearfix"></div>
+          <hr>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+            <p><span class="vanue-style">Type:</span> Convention Center</p>
+            <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+          </div>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+            <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+            <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+          </div>
+          <div class="col-md-4">
+              <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+              <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+          </div>
+          <div class="col-md-12">
+              <button class="btn btn-add-venue btn-save"> Add Venue</button>
+              <button class="btn btn-search"> View Details</button>
+          </div>
+
+          <hr>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
+            <p><span class="vanue-style">Type:</span> Convention Center</p>
+            <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
+          </div>
+          <div class="col-md-4">
+            <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+            <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
+            <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
+          </div>
+          <div class="col-md-4">
+              <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
+              <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
+          </div>
+          <div class="col-md-12">
+              <button class="btn btn-add-venue btn-save"> Add Venue</button>
+              <button class="btn btn-search"> View Details</button>
+          </div>
+        </mat-card>
+        
+        
   </mat-step>
 </mat-horizontal-stepper>
