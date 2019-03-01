@@ -218,8 +218,8 @@ hr {
     margin-bottom: 20px;
 }
 .custom-search{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     padding: 10px 45px;
 }
 table {
@@ -259,4 +259,10 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .last-row-hr{
     margin-bottom: 30px;
     margin-top: 30px;
+}
+.mat-step-header{
+    margin: auto;
+}
+.icon-pallet .glyphicon{
+    margin-right: 10px;
 }
