@@ -170,3 +170,52 @@ color: white;
 .mat-step-icon .mat-icon{
   display: none;
 }
+
+.mat-checkbox-layout .mat-checkbox-label {
+  line-height: 24px;
+  font-weight: normal;
+}
+.mat-radio-button {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  margin-right: 15px; 
+}
+.text-right mat-button:first-child{
+  margin-right: 10px
+}
+.second-wrap.mat-card .mat-radio-label-content{
+  font-weight: normal;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: blue;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{
+  background-color: blue;
+} 
+.mat-input-flex.mat-form-field-flex{
+  border: 1px solid #cecece;
+}
+.mat-input-underline.mat-form-field-underline {
+  background: green;
+}
+.mat-radio-outer-circle{
+  border-width:1px !important;
+  height: 18px !important;
+  width:18px !important;
+}
+.mat-radio-inner-circle { 
+  height: 18px !important; 
+  top: 0px !important; 
+  width: 18px !important; 
+}
+ .mat-checkbox-frame { 
+  border-color: lightgrey;
+  border-width: 1px !important;
+}
+.mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  background-color: blue;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: blue;
+}
