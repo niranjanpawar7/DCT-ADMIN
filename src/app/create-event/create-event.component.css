@@ -2,6 +2,36 @@ mat-horizontal-stepper{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+mat-card ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
 .mat-step-icon .mat-icon{
     display: none;
 }
+.first-wrap{
+    margin-top: 25px;
+}
+.second-wrap{
+    margin-top: 30px;
+}
+.border-wrap{
+    border-right:1px solid #cecece;
+}
+.radio-group input{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.radio-group .col-md-5{
+    padding-left: 0px;
+}
+.radio-group .col-md-7{
+    padding-right: 10px;
+    padding-left: 0px;
+}
+.form-group {
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+  
