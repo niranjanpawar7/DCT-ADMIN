@@ -1,7 +1,7 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper>
-  <mat-step [stepControl]="firstFormGroup">
+<mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="3">
+  <mat-step [stepControl]="firstFormGroup"> 
     <mat-card class="first-wrap line-height">
-      <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
+      <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div> 
       <div class="clearfix"></div>
       <hr>
       <div class="col-md-4">
@@ -185,244 +185,16 @@
       <div class="clearfix"></div>
     </mat-card>
   </mat-step>
-
-  <!-- event-second-section Start-->
-  <mat-step [stepControl]="secondFormGroup" class="event-second-section">
-    <mat-card class="first-wrap">
-      <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <ul>
-          <li><b>ID</b>: 2558</li>
-          <li><b>Product</b>: MSBDHDJD</li>
-          <li><b>Program Date</b>: 9/6/2019</li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <ul>
-          <li><b>Program Type</b>: 2558</li>
-          <li><b>Speaker</b>: MSBDHDJD</li>
-          <li><b>Terotirry</b>: 9/6/2019</li>
-        </ul>
-      </div>
-
-      <div class="col-md-4">
-        <ul>
-          <li><b>Venue</b>: 111 Club FGS</li>
-        </ul>
-      </div>
-    </mat-card>
-
-
-    <mat-card class="first-wrap">
-      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue">Save
-          & Next ></span></div>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-1">
-        <img src="assets/img/user-profile.png" width="50">
-      </div>
-      <div class="col-md-3 pl-0">
-        <ul class="custom-ul">
-          <li><b>Spkeaker:</b> Juan Alejos</li>
-          <li><b>Gender:</b> Male</li>
-          <li><b>City & State</b>: Albany, NY</li>
-        </ul>
-      </div>
-
-      <div class="col-md-3 pl-0">
-        <ul>
-          <li><b>Role:</b> Patient</li>
-          <li><b>Date of Diagnosis:</b> 9/6/2019</li>
-          <li><b>Treatment Start Date:</b> 9/6/2019</li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 text-right">
-        <ul class="clr-blue">
-          <li>View Profile</li>
-          <li>Delete</li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
-      <div class="form-group">
-        <div class="col-md-12 text-right">
-          <button mat-button>Reset</button>
-          <button class="btn btn-search"> ADD HCP/Physician Speaker</button>
-          <button mat-button class="primary-custom">Save & Next</button>
-        </div>
-      </div>
-
-    </mat-card>
-
-    <mat-card class="first-wrap form-parent-wrapper">
-      <div class="col-md-12"><span class="header-text-style">Search</span></div>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-12">
-        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to serach</p>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-3"><label>First Name</label><input type="text" class="form-control"></div>
-        <div class="col-md-3"><label>Last Name</label><input type="text" class="form-control"></div>
-        <div class="col-md-3"><label>City</label><input type="text" class="form-control"></div>
-        <div class="col-md-3 select-short"><label>State</label><select class="form-control">
-            <option>ST</option>
-          </select></div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-3"><label>Gender</label><select class="form-control">
-            <option>Male</option>
-          </select></div>
-        <div class="col-md-3"><label>Role</label><select class="form-control">
-            <option>Test</option>
-          </select></div>
-        <div class="col-md-3"><label>Date Of Dignosis</label>
-          <mat-form-field>
-            <input matInput [matDatepicker]="picker11" placeholder="">
-            <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
-            <mat-datepicker #picker11></mat-datepicker>
-          </mat-form-field>
-        </div>
-        <div class="col-md-3"><label>Treatment Date Start </label>
-          <mat-form-field>
-            <input matInput [matDatepicker]="picker12" placeholder="">
-            <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
-            <mat-datepicker #picker12></mat-datepicker>
-          </mat-form-field>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-3">
-          <label>Search Biography</label>
-          <input type="text" class="form-control">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-12 text-right">
-          <button class="btn btn-search custom-search"> Search </button>
-        </div>
-      </div>
-
-      <div class="col-md-12"><span class="header-text-style">Speaker List</span></div>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="clearfix"></div>
-      <div class="col-md-1">
-        <img src="assets/img/user-profile.png" width="50">
-      </div>
-      <div class="col-md-3 pl-0">
-        <ul class="custom-ul">
-          <li><b>Spkeaker:</b> Juan Alejos</li>
-          <li><b>Gender:</b> Male</li>
-          <li><b>City & State</b>: Albany, NY</li>
-        </ul>
-      </div>
-
-      <div class="col-md-3 pl-0">
-        <ul>
-          <li><b>Role:</b> Patient</li>
-          <li><b>Date of Diagnosis:</b> 9/6/2019</li>
-          <li><b>Treatment Start Date:</b> 9/6/2019</li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
-
-      <div class="col-md-1"></div>
-      <div class="col-md-5 pl-0">
-        <p><b>Biography</b></p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries,
-        </p>
-      </div>
-      <div class="col-md-6">
-        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width:100%">
-
-          <!--- Note that these columns can be defined in any order.
-                      The actual rendered columns are set as a property on the row definition" -->
-
-          <!-- Position Column -->
-          <ng-container matColumnDef="S">
-            <th mat-header-cell *matHeaderCellDef> <b>S</b> </th>
-            <td mat-cell *matCellDef="let element"> {{element.S}} </td>
-          </ng-container>
-
-          <!-- Name Column -->
-          <ng-container matColumnDef="M">
-            <th mat-header-cell *matHeaderCellDef> <b>M</b> </th>
-            <td mat-cell *matCellDef="let element"> {{element.M}} </td>
-          </ng-container>
-
-          <!-- Weight Column -->
-          <ng-container matColumnDef="T">
-            <th mat-header-cell *matHeaderCellDef> <b>T</b> </th>
-            <td mat-cell *matCellDef="let element">{{element.T}} </td>
-          </ng-container>
-
-          <ng-container matColumnDef="W">
-              <th mat-header-cell *matHeaderCellDef> <b>W</b> </th>
-              <td mat-cell *matCellDef="let element">{{element.W}} </td>
-          </ng-container>
-
-          <ng-container matColumnDef="TH">
-            <th mat-header-cell *matHeaderCellDef> <b>TH</b> </th>
-            <td mat-cell *matCellDef="let element">{{element.TH}} </td>
-          </ng-container>
-
-          <ng-container matColumnDef="F">
-            <th mat-header-cell *matHeaderCellDef> <b>F</b> </th>
-            <td mat-cell *matCellDef="let element">{{element.F}} </td>
-          </ng-container>
-
-          <ng-container matColumnDef="SA">
-            <th mat-header-cell *matHeaderCellDef> <b>SA</b> </th>
-            <td mat-cell *matCellDef="let element">{{element.SA}} </td>
-          </ng-container>
-
-       
-
-
-          <!-- Custom Header || Footer Start -->
-          <ng-container matColumnDef="header-row-first-group">
-            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="8">
-             <span class="clr-blue"> Availability </span>
-            </th>
-          </ng-container>
-
-          <ng-container matColumnDef="header-row-second-group">
-            <th mat-header-cell *matHeaderCellDef [attr.colspan]="0"> </th>
-          </ng-container>
-
-          <tr mat-header-row *matHeaderRowDef="['header-row-first-group', 'header-row-second-group']"></tr>
-          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
-      </div>
-
-      <div class="form-group mrt-60">
-        <div class="col-md-12 text-right">
-          <button class="btn btn-search"> View Details </button>
-          <button class="btn primary-custom mat-button"> Save & Next</button>
-        </div>
-      </div>
-
-    </mat-card>
-  </mat-step><!-- event-second-section End-->
+  <mat-step [stepControl]="secondFormGroup">
+    <mat-card>Second</mat-card>
+  </mat-step>
 
 
   <mat-step class="event-third-section">
-    <mat-card class="first-wrap line-height mat-card-sd">
+    <mat-card class="first-wrap line-height">
       <h3 class="heading">Event Information </h3>
       <div class="clearfix"></div>
-      <hr class="hr-color">
+      <hr>
       <div class="col-md-4">
         <ul>
           <li><b>ID</b>: 2558</li>
@@ -446,46 +218,38 @@
       </div>
     </mat-card>
   
-    <mat-card class="second-wrap mat-card-sd">
-
     <mat-card class="second-wrap">
       <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
       <div class="clearfix"></div>
-      <hr class="hr-color">
+      <hr>
       <div class="col-md-4">
         <p><span class="vanue-style">Name:</span> 111 Chop House</p>
         <p><span class="vanue-style">Type:</span> Restaurant</p>
         <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
-        <div > 
-        <mat-radio-group>
-            <mat-radio-button value="1" [checked]="true">Preferred Venue </mat-radio-button><br>
-            <mat-radio-button value="2">Alternate Vanue </mat-radio-button>
-            
-          </mat-radio-group>
+        <div >
+        <label class="lbl-radio"><input type="radio" name="optradio" checked> Preferred Venue</label><br>
+        <label class="lbl-radio"><input type="radio" name="optradio"> Alternate Vanue</label>
       </div>
       </div>
       <div class="col-md-4">
         <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
         <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
-        <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
-          <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
-        </p>
+        <p><span class="vanue-style vanue-style-career">Caterer Info: </span> <input type="text" class="form-control text-vanue"></p>
       </div>
       <div class="col-md-4">
-
-        <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+          
+          <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
       </div>
-      <div class="clearfix"></div>
       <div class="col-md-12">
-        <button class="btn btn-save"> Save & Next</button>
-        <button class="btn btn-reset vanue-delete-btn"> Reset</button>
+          <button class="btn btn-save"> Save & Next</button>
+          <button class="btn btn-reset vanue-delete-btn"> Reset</button>
       </div>
     </mat-card>
 
-    <mat-card class="second-wrap mat-card-sd">
+    <mat-card class="second-wrap">
         <span class="heading">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
         <div class="clearfix"></div>
-        <hr class="hr-color">
+        <hr>
         <div class="col-md-4">
           <div>
              Venue Name
@@ -521,39 +285,17 @@
                 </select>
               </div>
         </div>
-        <div class="clearfix"></div>
         <div class="col-md-12">
-            <button class="btn btn-search"> Search</button>
+            <button class="btn btn-search"> Save & Next</button>
             
         </div>
-        <div class="search-padding">
-          State
-          <select class="form-control" name="" id="">
-            <option>ST</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Type
-          <select class="form-control" name="" id="">
-            <option>Select Type</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-search"> Save & Next</button>
+      </mat-card>
 
-      </div>
-    </mat-card>
 
-<<<<<<< HEAD
-      <mat-card class="second-wrap mat-card-sd">
-          <span class="heading"> Venue Type</span>
+      <mat-card class="second-wrap">
+          <span class="heading"> Venue Selected</span>
           <div class="clearfix"></div>
-          <hr class="hr-color">
+          <hr>
           <div class="col-md-4">
             <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
             <p><span class="vanue-style">Type:</span> Convention Center</p>
@@ -568,20 +310,19 @@
               <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
               <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
           </div>
-          <div class="clearfix"></div>
           <div class="col-md-12">
               <button class="btn btn-add-venue btn-save"> Add Venue</button>
               <button class="btn btn-search"> View Details</button>
           </div>
-          <div class="clearfix"></div>
-          <hr class="hr-color">
+
+          <hr>
           <div class="col-md-4">
             <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
             <p><span class="vanue-style">Type:</span> Convention Center</p>
             <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
           </div>
           <div class="col-md-4">
-            <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
+            <p><span class="vanue-style">Address:</span> 7345 Northpo int Dr</p>
             <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
             <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
           </div>
@@ -589,65 +330,18 @@
               <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
               <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
           </div>
-          <div class="clearfix"></div><br>
           <div class="col-md-12">
               <button class="btn btn-add-venue btn-save"> Add Venue</button>
               <button class="btn btn-search"> View Details</button>
           </div>
         </mat-card>
-=======
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-    </mat-card>
->>>>>>> 101861cb302332abc1e2d3152a74e4adf7c30c66
   </mat-step>
 
   <mat-step class="event-fourth-section">
-    <mat-card class="first-wrap line-height mat-card-sd">
+    <mat-card class="first-wrap line-height">
       <h3 class="heading">Event Information </h3>
       <div class="clearfix"></div>
-      <hr class="hr-color">
+      <hr>
       <div class="col-md-4">
         <ul>
           <li><b>ID</b>: 2558</li>
@@ -670,31 +364,15 @@
         </ul>
       </div>
     </mat-card>
-<<<<<<< HEAD
   
-    <mat-card class="second-wrap mat-card-sd">
-      <span class="heading"> Status</span> 
-=======
-
     <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
->>>>>>> 101861cb302332abc1e2d3152a74e4adf7c30c66
+      <span class="heading"> Status</span> 
       <div class="clearfix"></div>
-      <hr class="hr-color">
+      <hr>
       <div class="col-md-4">
-<<<<<<< HEAD
         <p><span class="vanue-style">Date Submitted:</span> N/A</p>
         <p><span class="vanue-style">Date Approved:</span> N/A</p>
 
-=======
-        <p><span class="vanue-style">Name:</span> 111 Chop House</p>
-        <p><span class="vanue-style">Type:</span> Restaurant</p>
-        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
-        <div>
-          <label class="lbl-radio"><input type="radio" name="optradio" checked> Preferred Venue</label><br>
-          <label class="lbl-radio"><input type="radio" name="optradio"> Alternate Vanue</label>
-        </div>
->>>>>>> 101861cb302332abc1e2d3152a74e4adf7c30c66
       </div>
       <div class="col-md-4">
         <p><span class="vanue-style">SRF/Expenses Submitted:</span> N/A</p>
@@ -702,33 +380,23 @@
         
       </div>
       <div class="col-md-4">
-<<<<<<< HEAD
           
           <p><span class="vanue-style">Speaker Confirmed:</span> N/A</p>
-=======
-
-        <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-save"> Save & Next</button>
-        <button class="btn btn-reset vanue-delete-btn"> Reset</button>
->>>>>>> 101861cb302332abc1e2d3152a74e4adf7c30c66
       </div>
     
     </mat-card>
 
-<<<<<<< HEAD
-    <mat-card class="second-wrap mat-card-sd">
+    <mat-card class="second-wrap">
         <span class="heading">  Summary</span>
         <div class="clearfix"></div>
-        <hr class="hr-color">
+        <hr>
           <div>
              <p class="margin-ps">Please review your Speaker Program Details. To change any details click 
                <strong>Edit Program,  </strong>otherwise click <strong>Submit.</strong></p>
           </div>
        <div>
        <span class="heading">  Pasitient Program Logistics</span>
-       <hr class="hr-color">
+       <hr>
        <div class="col-md-4">
           <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
           <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
@@ -757,32 +425,29 @@
 
       <div>
           <span class="heading">  Speaker</span>
-          <hr class="hr-color">
-          <div class="col-md-1">
+          <hr>
+          <div class="col-md-2">
 
           </div>
-          <div class="col-md-3">
+          <div class="col-md-5">
              <p><span class="vanue-style">Speaker:</span> Juan Alejos</p>
              <p><span class="vanue-style">Gender:</span> Male</p>
              <p><span class="vanue-style">City & State:</span> Albany, NY</p>
            </div>
-           <div class="col-md-4">
+           <div class="col-md-5">
              <p><span class="vanue-style">Role:</span> Patient</p>
              <p><span class="vanue-style">Date of Diagnosis:</span> 10/16/2001</p>
              <p><span class="vanue-style">Treatment Start Time:</span> 1:00 PM</p>
            </div>
-           <div class="col-md-4">
-
-            </div>
+          
          </div>
-         <div class="clearfix"></div>
          <div class="col-md-12">
              <button class="btn btn-search"> Edit Speaker</button>
          </div>
-         <div class="clearfix"></div><br>
+
          <div>
             <span class="heading">Venue </span>
-            <hr class="hr-color">
+            <hr cl>
             <div class="col-md-4">
                 <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
                 <p><span class="vanue-style">Type:</span> Convention Center</p>
@@ -799,7 +464,6 @@
               </div>
             
            </div>
-           <div class="clearfix"></div>
            <div class="col-md-12">
                <button class="btn btn-search"> Edit Vanue</button>
            </div>
@@ -821,99 +485,6 @@
              </div>
       </mat-card>
     
-=======
-    <mat-card class="second-wrap">
-      <span class="heading"> Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <div>
-          Venue Name
-          <input type="text" class="form-control">
-        </div>
-        <div class="search-padding">
-          City
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Category
-          <select class="form-control" name="" id="">
-            <option>Select Category</option>
-            <option></option>
-          </select>
-        </div>
-        <div class="search-padding">
-          State
-          <select class="form-control" name="" id="">
-            <option>ST</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          Venue Type
-          <select class="form-control" name="" id="">
-            <option>Select Type</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-search"> Save & Next</button>
-
-      </div>
-    </mat-card>
-
-
-    <mat-card class="second-wrap">
-      <span class="heading"> Venue Selected</span>
-      <div class="clearfix"></div>
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-
-      <hr>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
-        <p><span class="vanue-style">Type:</span> Convention Center</p>
-        <p><span class="vanue-style">Email:</span> shcenter@emial.com</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 7345 Northpoint Dr</p>
-        <p><span class="vanue-style">City & State:</span> Newark, NJ</p>
-        <p><span class="vanue-style">Phone:</span> 908-555-3986</p>
-      </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
-        <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
-      </div>
-      <div class="col-md-12">
-        <button class="btn btn-add-venue btn-save"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
-      </div>
-    </mat-card>
-
-
->>>>>>> 101861cb302332abc1e2d3152a74e4adf7c30c66
   </mat-step>
 
 </mat-horizontal-stepper>
