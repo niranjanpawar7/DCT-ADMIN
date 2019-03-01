@@ -1,5 +1,5 @@
  
-<mat-horizontal-stepper [linear]="isLinear" #stepper>
+<mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="2">
     <mat-step [stepControl]="firstFormGroup">
    
       <mat-card class="first-wrap line-height">
@@ -422,9 +422,11 @@
   
     <mat-step class="event-third-section">
       <mat-card class="first-wrap line-height mat-card-sd">
-        <h3 class="heading">Event Information </h3>
+          <div class="col-md-12">
+        <span class="header-text-style">Event Information </span>
         <div class="clearfix"></div>
         <hr class="hr-color">
+          </div>
         <div class="col-md-4">
           <ul>
             <li><b>ID</b>: 2558</li>
@@ -449,9 +451,11 @@
       </mat-card> 
     
       <mat-card class="second-wrap mat-card-sd"> 
-        <span class="heading"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
+          <div class="col-md-12">
+        <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
         <div class="clearfix"></div>
         <hr class="hr-color">
+          </div>
         <div class="col-md-4">
           <p><span class="vanue-style">Name:</span> 111 Chop House</p>
           <p><span class="vanue-style">Type:</span> Restaurant</p>
@@ -480,9 +484,11 @@
       </mat-card>
    
       <mat-card class="second-wrap mat-card-sd">
-          <span class="heading">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
+          <div class="col-md-12">
+          <span class="header-text-style">  Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
           <div class="clearfix"></div>
           <hr class="hr-color">
+          </div>
           <div class="col-md-4">
             <div>
                Venue Name
@@ -524,10 +530,12 @@
           </div> 
       </mat-card>
    
-        <mat-card class="second-wrap mat-card-sd">
-            <span class="heading"> Venue Type</span>
+        <mat-card class="second-wrap mat-card-sd third-section">
+          <div class="col-md-12">
+            <span class="header-text-style"> Venue Type</span>
             <div class="clearfix"></div>
             <hr class="hr-color">
+          </div> 
             <div class="col-md-4">
               <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
               <p><span class="vanue-style">Type:</span> Convention Center</p>
@@ -548,7 +556,7 @@
                 <button class="btn btn-search"> View Details</button>
             </div>
             <div class="clearfix"></div>
-            <hr class="hr-color">
+            <hr class="hr-color last-row-hr">
             <div class="col-md-4">
               <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
               <p><span class="vanue-style">Type:</span> Convention Center</p>
@@ -573,9 +581,11 @@
   
     <mat-step class="event-fourth-section">
       <mat-card class="first-wrap line-height mat-card-sd">
-        <h3 class="heading">Event Information </h3>
+        <div class="col-md-12">
+        <span class="header-text-style">Event Information </span>
         <div class="clearfix"></div>
         <hr class="hr-color">
+      </div> 
         <div class="col-md-4">
           <ul>
             <li><b>ID</b>: 2558</li>
@@ -601,9 +611,11 @@
    
     
       <mat-card class="second-wrap mat-card-sd">
-        <span class="heading"> Status</span>  
+          <div class="col-md-12">
+        <span class="header-text-style"> Status</span>  
         <div class="clearfix"></div>
         <hr class="hr-color">
+          </div> 
         <div class="col-md-4"> 
           <p><span class="vanue-style">Date Submitted:</span> N/A</p>
           <p><span class="vanue-style">Date Approved:</span> N/A</p> 
@@ -620,16 +632,22 @@
       </mat-card> 
    
       <mat-card class="second-wrap mat-card-sd">
-          <span class="heading">  Summary</span>
+          <div class="col-md-12">
+          <span class="header-text-style">  Summary</span>
           <div class="clearfix"></div>
           <hr class="hr-color">
+          </div> 
             <div>
-               <p class="margin-ps">Please review your Speaker Program Details. To change any details click 
+              <div class="col-md-12">
+               <p>Please review your Speaker Program Details. To change any details click 
                  <strong>Edit Program,  </strong>otherwise click <strong>Submit.</strong></p>
+                </div>   
             </div>
          <div>
-         <span class="heading">  Pasitient Program Logistics</span>
+          <div class="col-md-12">
+         <span class="header-text-style">  Pasitient Program Logistics</span>
          <hr class="hr-color">
+        </div> 
          <div class="col-md-4">
             <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
             <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
@@ -657,10 +675,12 @@
         </div>
   
         <div>
-            <span class="heading">  Speaker</span>
+          <div class="col-md-12">
+            <span class="header-text-style">  Speaker</span>
             <hr class="hr-color">
+          </div>  
             <div class="col-md-1">
-  
+                <img src="assets/img/user-profile.png" width="50">
             </div>
             <div class="col-md-3">
                <p><span class="vanue-style">Speaker:</span> Juan Alejos</p>
@@ -682,8 +702,10 @@
            </div>
            <div class="clearfix"></div><br>
            <div>
-              <span class="heading">Venue </span>
+             <div class="col-md-12">
+              <span class="header-text-style">Venue </span>
               <hr class="hr-color">
+            </div> 
               <div class="col-md-4">
                   <p><span class="vanue-style">Name:</span> Stonehouse Center</p>
                   <p><span class="vanue-style">Type:</span> Convention Center</p>
