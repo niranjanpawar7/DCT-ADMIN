@@ -1,35 +1,35 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper [selectedIndex]="1">
   <mat-step [stepControl]="firstFormGroup">
 
-    <mat-card class="first-wrap line-height">
+    <mat-card class="first-wrap line-height mat-card-sd">
       <ng-template matStepLabel>Program Logistics</ng-template>
       <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
       <div class="col-md-4">
         <ul>
-          <li><b>ID</b>: 2558</li>
-          <li><b>Product</b>: MSBDHDJD</li>
-          <li><b>Program Date</b>: 9/6/2019</li>
+          <li><b>ID</b>: 2858</li>
+          <li><b>Product</b>: Neuroscience-MG</li>
+          <li><b>Program Date</b>: 9/26/2019</li>
         </ul>
       </div>
 
       <div class="col-md-4">
         <ul>
-          <li><b>Program Type</b>: 2558</li>
-          <li><b>Speaker</b>: MSBDHDJD</li>
-          <li><b>Terotirry</b>: 9/6/2019</li>
+          <li><b>Program Type</b>: Live</li>
+          <li><b>Speaker</b>: Juan Alejos</li>
+          <li><b>Terotirry</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
       <div class="col-md-4">
         <ul>
-          <li><b>Venue</b>: 111 Club FGS</li>
+          <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
     </mat-card>
     <mat-card class="second-wrap">
-      <div class="col-md-12"><span class="header-text-style">Patient Program logistic</span> <span class="pull-right clr-blue">Save
+      <div class="col-md-12"><span class="header-text-style">Patient Program Logistics</span> <span class="pull-right clr-blue fnt-weigth">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <hr>
@@ -66,9 +66,9 @@
             <div class="clearfix height5"></div>
             <div class="col-md-6 pl-0">
               <mat-radio-group>
-                <mat-radio-button value="1">Live </mat-radio-button>
-                <mat-radio-button value="1">Virtual </mat-radio-button>
-                <mat-radio-button value="2"> </mat-radio-button>
+                <mat-radio-button value="1" [checked]="true">Live </mat-radio-button>
+                <mat-radio-button value="2">Virtual </mat-radio-button>
+                <mat-radio-button value="3"> </mat-radio-button>
               </mat-radio-group>
             </div>
             <div class="col-md-5 pl-0">
@@ -117,7 +117,7 @@
           <div class="col-md-12">
             <label>Time Zone</label>
             <select class="form-control" name="" id="">
-              <option>NuerioScience-MG</option>
+              <option>Atlantic</option>
             </select>
           </div>
         </div>
@@ -126,7 +126,7 @@
 
       <div class="col-md-6 p-l-25 right-form-wrap">
         <div class="form-group">
-          <div class="col-md-5"><label>Attendies</label><input type="text" class="form-control"></div>
+          <div class="col-md-5"><label>Attendees</label><input type="text" class="form-control"></div>
           <div class="col-md-5"><label>Speakers</label><input type="text" class="form-control clr-lightgrey"></div>
         </div>
         <div class="form-group">
@@ -143,11 +143,11 @@
         </div>
         <div class="form-group">
           <div class="col-md-12">
-            <label>Maximun meal per Attendee</label>
+            <label>Maximun Meal Spend Per Attendee</label>
             <div class="clearfix"></div>
             <div class="col-md-4 pl-0"><b>Breaksfast:</b> $25</div>
             <div class="col-md-4"><b>Lunch:</b> $25</div>
-            <div class="col-md-4"><b>Dinnetr:</b> $25</div>
+            <div class="col-md-4"><b>Dinner:</b> $25</div>
           </div>
         </div>
         <div class="form-group">
@@ -155,11 +155,11 @@
             <label>Meal Type</label>
             <div class="clearfix height5"></div>
             <mat-radio-group>
-              <mat-radio-button value="1">No Meal </mat-radio-button>
-              <mat-radio-button value="1">Breakfast </mat-radio-button>
-              <mat-radio-button value="2">Lunch </mat-radio-button>
-              <mat-radio-button value="1">Dinner </mat-radio-button>
-              <mat-radio-button value="2">Snacks </mat-radio-button>
+              <mat-radio-button value="1" [checked]="true">No Meal </mat-radio-button>
+              <mat-radio-button value="2">Breakfast </mat-radio-button>
+              <mat-radio-button value="3">Lunch </mat-radio-button>
+              <mat-radio-button value="4">Dinner </mat-radio-button>
+              <mat-radio-button value="5">Snacks </mat-radio-button>
             </mat-radio-group>
           </div>
         </div>
@@ -167,19 +167,19 @@
           <div class="col-md-12">
             <label class="clr-grey">Optional Meeting Services</label>
             <div class="clearfix"></div>
-            <mat-checkbox>Px onsite coordinator at your Meeting <b>(Admin Only)</b></mat-checkbox>
-            <mat-checkbox>Print Invitation generated and mailed to you for distribution</mat-checkbox>
-            <mat-checkbox>Email Invitation sent to you for distribution</mat-checkbox>
+            <mat-checkbox>Px onsite coordinator at your Meeting <b>(ADMIN ONLY)</b></mat-checkbox>
+            <mat-checkbox>Print Invitations generated and mailed to you for distribution</mat-checkbox>
+            <mat-checkbox>Email Invitations sent to you for distribution</mat-checkbox>
           </div>
         </div>
         <div class="col-md-12">
           <p class="fs-12">
-            <i>This services are 'add-on' to be selected as needed at additional cost</i>
+            <i>*These services are 'add-ons' to be selected as need, at additional cost.</i>
           </p>
         </div>
         <div class="form-group">
           <div class="col-md-12 text-right">
-            <button mat-button>Reset</button>
+            <button mat-button class="fnt-weigth">Reset</button>
             <button mat-button class="primary-custom">Save & Next</button>
           </div>
         </div>
@@ -191,36 +191,36 @@
   <!-- event-second-section Start-->
   <mat-step [stepControl]="secondFormGroup" class="event-second-section">
     <ng-template matStepLabel>Select Speaker</ng-template>
-    <mat-card class="first-wrap">
+    <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12"><span class="header-text-style">Event Inforrmation</span></div>
       <div class="clearfix"></div>
-      <hr>
+      <hr class="hr-color">
       <div class="col-md-4">
-        <ul>
-          <li><b>ID</b>: 2558</li>
-          <li><b>Product</b>: MSBDHDJD</li>
-          <li><b>Program Date</b>: 9/6/2019</li>
+        <ul class="pad-lft-zero">
+          <li><b>ID</b>: 2858</li>
+          <li><b>Product</b>: Neuroscience-MG</li>
+          <li><b>Program Date</b>: 9/26/2019</li>
         </ul>
       </div>
 
       <div class="col-md-4">
-        <ul>
-          <li><b>Program Type</b>: 2558</li>
-          <li><b>Speaker</b>: MSBDHDJD</li>
-          <li><b>Terotirry</b>: 9/6/2019</li>
+        <ul class="pad-lft-evt">
+          <li><b>Program Type</b>: Live</li>
+          <li><b>Speaker</b>: Juan Alejos</li>
+          <li><b>Terotirry</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
       <div class="col-md-4">
-        <ul>
-          <li><b>Venue</b>: 111 Club FGS</li>
+        <ul class="pad-lft-zero">
+          <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
     </mat-card>
 
 
-    <mat-card class="first-wrap">
-      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue">Save
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <hr>
@@ -245,7 +245,7 @@
 
       <div class="col-md-3"></div>
       <div class="col-md-2">
-        <ul class="clr-blue icon-pallet">
+        <ul class="clr-blue icon-pallet fnt-weigth">
           <li><span class="glyphicon glyphicon-user"></span>View Profile</li>
           <li><span class="glyphicon glyphicon-trash"></span>Delete</li>
         </ul>
@@ -253,8 +253,8 @@
       <div class="clearfix"></div>
       <div class="form-group">
         <div class="col-md-12 text-right">
-          <button mat-button class="clr-blue">Reset</button>
-          <button class="btn btn-search"> ADD HCP/Physician Speaker</button>
+          <button mat-button class="clr-blue fnt-weigth">Reset</button>
+          <button class="btn btn-search fnt-weigth"> ADD HCP/Physician Speaker</button>
           <button mat-button class="primary-custom">Save & Next</button>
         </div>
       </div>
@@ -283,18 +283,18 @@
             <option>Male</option>
           </select></div>
         <div class="col-md-3"><label>Role</label><select class="form-control">
-            <option>Test</option>
+            <option>Select Role</option>
           </select></div>
         <div class="col-md-3"><label>Date Of Dignosis</label>
           <mat-form-field>
-            <input matInput [matDatepicker]="picker11" placeholder="">
+            <input matInput [matDatepicker]="picker11" placeholder="Select Date">
             <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
             <mat-datepicker #picker11></mat-datepicker>
           </mat-form-field>
         </div>
         <div class="col-md-3"><label>Treatment Date Start </label>
           <mat-form-field>
-            <input matInput [matDatepicker]="picker12" placeholder="">
+            <input matInput [matDatepicker]="picker12" placeholder="Select Date">
             <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
             <mat-datepicker #picker12></mat-datepicker>
           </mat-form-field>
@@ -310,18 +310,18 @@
 
       <div class="form-group">
         <div class="col-md-12 text-right">
-          <button class="btn btn-search custom-search"> Search </button>
+          <button class="btn btn-search custom-search fnt-weigth"> Search </button>
         </div>
       </div>
 
-      <div class="col-md-12"><span class="header-text-style">Speaker List</span></div>
+      <div class="col-md-12 "><span class="header-text-style">Speaker List</span></div>
       <div class="clearfix"></div>
       <hr>
       <div class="clearfix"></div>
       <div class="col-md-1">
         <img src="assets/img/user-profile.png" width="50">
       </div>
-      <div class="col-md-3 pl-0">
+      <div class="col-md-3 pl-0 line-height">
         <ul class="custom-ul">
           <li><b>Spkeaker:</b> Juan Alejos</li>
           <li><b>Gender:</b> Male</li>
@@ -329,7 +329,7 @@
         </ul>
       </div>
 
-      <div class="col-md-3 pl-0">
+      <div class="col-md-3 pl-0 line-height">
         <ul>
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 9/6/2019</li>
@@ -340,7 +340,7 @@
 
       <div class="col-md-1"></div>
       <div class="col-md-5 pl-0">
-        <p><b>Biography</b></p>
+        <p><b>Biography:</b></p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -413,8 +413,8 @@
 
       <div class="form-group mrt-60">
         <div class="col-md-12 text-right">
-          <button class="btn btn-search"> View Details </button>
-          <button class="btn primary-custom mat-button"> Save & Next</button>
+          <button class="btn btn-search fnt-weigth"> View Details </button>
+          <button class="btn primary-custom mat-button">Add Speaker</button>
         </div>
       </div>
 
@@ -431,7 +431,7 @@
         <hr class="hr-color">
       </div>
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>ID</b>: 2558</li>
           <li><b>Product</b>: Neuroscience-MG</li>
           <li><b>Program Date</b>: 9/26/2019</li>
@@ -439,7 +439,7 @@
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
           <li><b>Terotirry</b>: TM - Austin, TX</li>
@@ -447,7 +447,7 @@
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
@@ -529,11 +529,9 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search"> Search</button>
+        <button class="btn btn-search fnt-weigth"> Search</button>
       </div>
-    </mat-card>
-
-    <mat-card class="second-wrap mat-card-sd third-section">
+    
       <div class="col-md-12">
         <span class="header-text-style"> Venue Type</span>
         <div class="clearfix"></div>
@@ -556,7 +554,7 @@
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
         <button mat-button class="primary-custom pull-right"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
+        <button class="btn btn-search fnt-weigth"> View Details</button>
       </div>
       <div class="clearfix"></div>
       <hr class="hr-color last-row-hr">
@@ -577,7 +575,7 @@
       <div class="clearfix"></div><br>
       <div class="col-md-12 text-right">
         <button mat-button class="primary-custom pull-right"> Add Venue</button>
-        <button class="btn btn-search"> View Details</button>
+        <button class="btn btn-search fnt-weigth"> View Details</button>
       </div>
     </mat-card>
   </mat-step>
@@ -591,7 +589,7 @@
         <hr class="hr-color">
       </div>
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>ID</b>: 2558</li>
           <li><b>Product</b>: Neuroscience-MG</li>
           <li><b>Program Date</b>: 9/26/2019</li>
@@ -599,7 +597,7 @@
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
           <li><b>Terotirry</b>: TM - Austin, TX</li>
@@ -607,7 +605,7 @@
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
@@ -618,7 +616,7 @@
       <div class="col-md-12">
         <span class="header-text-style"> Status</span>
         <div class="clearfix"></div>
-        <hr class="hr-color">
+        <hr>
       </div>
       <div class="col-md-4">
         <p><span class="vanue-style">Date Submitted:</span> N/A</p>
@@ -639,18 +637,18 @@
       <div class="col-md-12">
         <span class="header-text-style"> Summary</span>
         <div class="clearfix"></div>
-        <hr class="hr-color">
+        <hr>
       </div>
       <div>
         <div class="col-md-12">
-          <p>Please review your Speaker Program Details. To change any details click
+          <p class="rw-pt-pad">Please review your Speaker Program Details. To change any details click
             <strong>Edit Program, </strong>otherwise click <strong>Submit.</strong></p>
         </div>
       </div>
       <div>
         <div class="col-md-12">
-          <span class="header-text-style"> Pasitient Program Logistics</span>
-          <hr class="hr-color">
+          <span class="header-text-style"> Patient Program Logistics</span>
+          <hr>
         </div>
         <div class="col-md-4">
           <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
@@ -675,13 +673,13 @@
         </div>
       </div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search"> Edit Program</button>
+        <button class="btn btn-search fnt-weigth"> Edit Program</button>
       </div>
 
       <div>
-        <div class="col-md-12">
+        <div class="col-md-12 rw-pt-mar">
           <span class="header-text-style"> Speaker</span>
-          <hr class="hr-color">
+          <hr>
         </div>
         <div class="col-md-1">
           <img src="assets/img/user-profile.png" width="50">
@@ -702,7 +700,7 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search"> Edit Speaker</button>
+        <button class="btn btn-search fnt-weigth"> Edit Speaker</button>
       </div>
       <div class="clearfix"></div><br>
       <div>
@@ -728,12 +726,12 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search"> Edit Vanue</button>
+        <button class="btn btn-search fnt-weigth"> Edit Vanue</button>
       </div>
       <div class="clearfix"></div>
       <br>
       <div class="col-md-12 text-center">
-        <button class="btn btn-search"> Delete</button>
+        <button class="btn btn-search fnt-weigth"> Delete</button>
         <button class="btn primary-custom mat-button"> Submit</button>
       </div>
       <div class="clearfix"></div>
