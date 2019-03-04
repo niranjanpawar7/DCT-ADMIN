@@ -257,3 +257,27 @@ color: white;
   height: 30px !important;
   width:30px !important;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .mat-horizontal-stepper-header-container{
+      white-space: nowrap; 
+      align-items: center; 
+      display: inline-flex !important;
+      width: 100%;
+  }
+  .mat-horizontal-stepper-header{
+    padding: 0px !important;
+  }
+  .mat-step-icon {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .mat-step-label { 
+    font-size: 12px;
+  }
+  mat-horizontal-stepper{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
