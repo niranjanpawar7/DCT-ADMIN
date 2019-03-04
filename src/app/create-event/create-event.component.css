@@ -1,6 +1,6 @@
 mat-horizontal-stepper{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 mat-card ul{
     list-style-type: none;
@@ -297,3 +297,6 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 ul.clr-blue.icon-pallet{
     padding-left: 0px;
 }
+
+
+

@@ -20,28 +20,33 @@
 .header-text-right span{
     margin-top: 7px; 
 }
-
-/* .header-right-text {
-    background-color: white;
-    border: 1px solid #2B62CA;
-    padding: 5px 7px;
-     
-    color: #2B62CA;
-    font-family: Lato;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 19px;
-    width: 300px;
-    float: right;
-    margin-right: 25px;
-    margin-top: 20px;
+.sub-header{
+    background: #dee1e8;
+    color: #333; 
+    padding: 0px 30px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
 }
-.header-section{
-  padding: 13px 60px;
-  background: #fff;
-  border-bottom: 1px solid #DBE6F8;
-} */
- 
+
+.sub-header ul{
+    padding-left: 0px; 
+    list-style-type: none; 
+    margin-bottom: 0px;
+}
+.sub-header ul li{
+    width:20%;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 800px) {
