@@ -4,7 +4,7 @@ mat-horizontal-stepper{
 }
 mat-card ul{
     list-style-type: none;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 .mat-step-icon .mat-icon{
     display: none;
@@ -200,7 +200,7 @@ b, strong {
     font-size: 17px;
 }
 .hr-color{
-    border-top: 1px solid #b5b3b3;
+    border-top: 1px solid #d4c9c9a1;
 }
  .mat-card-sd{
     box-shadow: 7px 6px 24px -8px rgba(0,0,0,.08);
@@ -265,4 +265,19 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 .icon-pallet .glyphicon{
     margin-right: 10px;
+}
+.fnt-weigth{
+    font-weight: 600;
+}
+.rw-pt-pad{
+    padding-bottom: 12px;
+}
+.rw-pt-mar{
+    margin-top:18px;
+}
+.pad-lft-zero{
+    padding-left: 0px;
+}
+.pad-lft-evt{
+    padding-left: 18px;
 }
