@@ -267,6 +267,17 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .icon-pallet .glyphicon{
     margin-right: 10px;
 }
+.glyphicon.glyphicon-user{ 
+    border: 1px solid blue;
+    border-radius: 50%;
+    padding: 4px;
+    background: aliceblue;
+    margin-left: -2px;
+    font-size: 9px;
+}
+.icon-pallet li{
+    margin-bottom: 5px;
+}    
 .fnt-weigth{
     font-weight: 600;
     color: #1873d4; 
@@ -282,4 +293,7 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 .pad-lft-evt{
     padding-left: 18px;
+}
+ul.clr-blue.icon-pallet{
+    padding-left: 0px;
 }
