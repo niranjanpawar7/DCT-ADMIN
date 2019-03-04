@@ -173,9 +173,9 @@ color: white;
 .mat-form-field{
   width: 100%;
 }
-.mat-step-icon .mat-icon{
+/* .mat-step-icon .mat-icon{
   display: none;
-}
+} */
 
 .mat-checkbox-layout .mat-checkbox-label {
   line-height: 24px;
@@ -227,8 +227,33 @@ color: white;
 }
 .mat-step-label{
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   margin: auto;
   left: 0px;
   right: 0px;
-} 
+}
+.mat-icon.material-icons.ng-star-inserted::before {
+  content: 'check';
+  color: #fff;
+  position: relative;
+  left: 15px;
+  font-weight: bold;
+}
+.mat-icon.material-icons.ng-star-inserted {
+  color: green;
+  position: relative;  
+    left: -7px;
+    top: 10px;
+}
+.mat-step-icon .mat-icon {
+  font-size: 17px;
+  height: 17px;
+  width: 17px;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit{
+  border-color: green;
+}
+.mat-step-icon{
+  height: 30px !important;
+  width:30px !important;
+}
