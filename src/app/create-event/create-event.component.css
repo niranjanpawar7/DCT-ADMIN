@@ -294,3 +294,6 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .pad-lft-evt{
     padding-left: 18px;
 }
+ul.clr-blue.icon-pallet{
+    padding-left: 0px;
+}
