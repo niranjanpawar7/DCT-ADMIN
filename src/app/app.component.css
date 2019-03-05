@@ -4,7 +4,10 @@
     height: 100%;
     background: #2B62CA;
   }
-  
+  .logo-bg-color{
+    background: linear-gradient(317.31deg, #A12BCA 0%, #FF9356 100%); 
+    padding: 0px;
+  }
   .sticky-container {
     position: fixed;
     height: 100%;
@@ -60,7 +63,13 @@
      background:#eff3f9; padding-left: 60px; padding-right: 60px;
   }
   .router-link-active { border-right: 4px solid skyblue;}
-  
+
+  .pd-nv-0{
+    padding: 0px;
+  }
+  .nav-pd-wd{
+    padding:0px; width:100%;
+  }
   @media only screen and (max-width: 800px) {
     .sticky-container {
       position: relative; 
