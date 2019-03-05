@@ -1,5 +1,5 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper>
-  <mat-step [stepControl]="firstFormGroup" [completed]="false">
+<mat-horizontal-stepper #stepper>
+  <mat-step [completed]="false">
 
     <mat-card class="first-wrap line-height mat-card-sd">
       <ng-template matStepLabel>Program Logistics</ng-template>
@@ -189,7 +189,7 @@
   </mat-step>
 
   <!-- event-second-section Start-->
-  <mat-step [stepControl]="secondFormGroup" class="event-second-section">
+  <mat-step class="event-second-section">
     <ng-template matStepLabel>Select Speaker</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12"><span class="header-text-style">Event Information</span></div>
