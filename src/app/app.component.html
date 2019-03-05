@@ -1,5 +1,5 @@
 <div class="col-md-1 nopadding sticky-container">
-  <div class="col-md-12 logo-section">
+  <div class="col-md-12 logo-bg-color">
     <img src="assets/icons/main-icon.svg" alt="company logo" class="img-responsive custom-logo" />
   </div><!-- col-md-12-->
   <div class="clearfix"></div>
@@ -15,8 +15,8 @@
           </button>
           <span class="visible-xs navbar-brand">Menu</span>
         </div>
-        <div class="navbar-collapse sidebar-navbar-collapse" *ngIf="!show_dialog" style="padding:0px">
-          <ul class="nav navbar-nav" style="padding:0px; width:100%">
+        <div class="navbar-collapse sidebar-navbar-collapse pd-nv-0" *ngIf="!show_dialog">
+          <ul class="nav navbar-nav nav-pd-wd">
 
             <li>
               <a [routerLink]="['/dashboard']" [routerLinkActive]="['router-link-active']">
