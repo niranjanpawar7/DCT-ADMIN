@@ -1,16 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
   .logo-section{
      padding: 0px;
-     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,227,227,1)), color-stop(50%, rgba(5,193,255,1)), color-stop(100%, rgba(0,51,51,1))); /* safari4+,chrome */
+     background: linear-gradient(to bottom right, #33ccff 0%, #006666 100%);
+  }
+  .glyphicon.glyphicon-plus{
+    font-size: 35px;
   }
   .nopadding.sticky-container{
     height: 100%;
     background: #2B62CA;
-  }
-  .logo-bg-color{
-    background: linear-gradient(317.31deg, #A12BCA 0%, #FF9356 100%); 
-    padding: 0px;
-  }
+  } 
   .sticky-container {
     position: fixed;
     height: 100%;

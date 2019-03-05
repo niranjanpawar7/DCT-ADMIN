@@ -1,5 +1,5 @@
 <div class="col-md-1 nopadding sticky-container">
-  <div class="col-md-12 logo-bg-color">
+  <div class="col-md-12 logo-section">
     <img src="assets/icons/main-icon.svg" alt="company logo" class="img-responsive custom-logo" />
   </div><!-- col-md-12-->
   <div class="clearfix"></div>
@@ -39,7 +39,8 @@
             <li>
               <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/calendar.svg" class="img-responsive" />
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
                   CREATE EVENT
                 </span>
               </a>
