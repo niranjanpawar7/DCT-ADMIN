@@ -159,8 +159,8 @@ color: white;
 }
 .mat-step-icon-state-number.mat-step-icon.mat-step-icon-selected{
   background-color: white;
-  color: blue;
-  border: 1px solid blue; 
+  color: #1873d4;
+  border: 1px solid #1873d4; 
 }
 .mat-step-header .mat-step-icon {
   background-color: #fff;
@@ -192,6 +192,10 @@ color: white;
 }
 .second-wrap.mat-card .mat-radio-label-content{
   font-weight: normal;
+}
+.mat-radio-label-content{
+  padding-left: 5px !important;
+  padding-right: 8px !important;
 }
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
   border-color: #1873d4;
@@ -257,8 +261,82 @@ color: white;
   height: 30px !important;
   width:30px !important;
 }
-
-
+.mat-stepper-horizontal-line{
+  height: 20px !important;
+margin: 0 -70px !important;
+}
+.mat-step-label-selected{
+  color: #1873d4 !important;
+  font-weight: 600;
+}
+.mat-form-field-label-wrapper{
+  font-size: 15px;
+}
+.mat-form-field-label{
+  padding-left: 9px;
+}
+.mat-form-field.mat-focused .mat-form-field-label{
+  color: rgba(0,0,0,.87);
+}
+.mat-form-field-appearance-legacy .mat-form-field-label{
+  color: rgba(0,0,0,.87);
+}
+.mat-input-element{
+  padding-left: 10px !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+  height: 0px !important;
+}
+.mat-form-field-infix{
+width: 100%;
+height: 34px;
+padding: 5px 11px;
+font-size: 14px;
+color: #555;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.mat-icon.material-icons.ng-star-inserted::before { 
+  color: green !important; 
+}
+.mat-column-TH {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-S {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-M {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-T {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-W {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-TH {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-F {
+  max-width: 10px;
+  min-width: 10px;
+}
+.mat-column-SA {
+  max-width: 10px;
+  min-width: 10px;
+}
+tr.mat-header-row {
+  height: 47px !important;
+}
 @media only screen and (max-width: 800px) {
   .mat-horizontal-stepper-header-container{
       white-space: nowrap; 

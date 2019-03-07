@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatStepper } from '@angular/material';
  
 
 const ELEMENT_DATA = [
@@ -23,4 +23,7 @@ export class CreateEventComponent implements OnInit {
   displayedColumns: string[] = ['S', 'M', 'T', 'W', 'TH', 'F', 'SA'];
   dataSource = ELEMENT_DATA;
 
+  stepperNext(stepper: MatStepper){
+    stepper.next();
+ }
 }
