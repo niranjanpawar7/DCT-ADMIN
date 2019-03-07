@@ -1,4 +1,7 @@
 <mat-horizontal-stepper #stepper>
+    <ng-template matStepperIcon="edit">
+        <mat-icon>done</mat-icon>
+    </ng-template>
   <mat-step [completed]="false">
 
     <mat-card class="first-wrap line-height mat-card-sd">
@@ -7,7 +10,7 @@
       <div class="clearfix"></div>
       <hr class="hr-color">
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>ID</b>: 2858</li>
           <li><b>Product</b>: Neuroscience-MG</li>
           <li><b>Program Date</b>: 9/26/2019</li>
@@ -15,21 +18,21 @@
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
-          <li><b>Terotirry</b>: TM - Austin, TX</li>
+          <li><b>Territory</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
       <div class="col-md-4">
-        <ul>
+        <ul class="pad-lft-zero">
           <li><b>Venue</b>: 111 Chop House</li>
         </ul>
       </div>
     </mat-card>
     <mat-card class="second-wrap">
-      <div class="col-md-12"><span class="header-text-style">Patient Program Logistics</span> <span class="pull-right clr-blue fnt-weigth">Save
+      <div class="col-md-12"><span class="header-text-style">Patient Program Logistics</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr" (click)="stepperNext(stepper)">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <hr>
@@ -64,16 +67,14 @@
           <div class="col-md-12">
             <label>Program Type</label>
             <div class="clearfix height5"></div>
-            <div class="col-md-6 pl-0">
+            <div class="col-md-12 pl-0">
               <mat-radio-group>
                 <mat-radio-button value="1" [checked]="true">Live </mat-radio-button>
                 <mat-radio-button value="2">Virtual </mat-radio-button>
-                <mat-radio-button value="3"> </mat-radio-button>
+                <mat-radio-button value="3"> <input type="text" class="form-control" placeholder="Others"></mat-radio-button>
               </mat-radio-group>
             </div>
-            <div class="col-md-5 pl-0">
-              <input type="text" class="form-control" placeholder="Others">
-            </div>
+           
           </div>
         </div>
         <div class="clearfix"></div>
@@ -168,7 +169,7 @@
             <label class="clr-grey">Optional Meeting Services</label>
             <div class="clearfix"></div>
             <mat-checkbox>Px onsite coordinator at your Meeting <b>(ADMIN ONLY)</b></mat-checkbox>
-            <mat-checkbox>Print Invitations generated and mailed to you for distribution</mat-checkbox>
+            <mat-checkbox>Print Invitations generated and mailed to you for distribution </mat-checkbox>  
             <mat-checkbox>Email Invitations sent to you for distribution</mat-checkbox>
           </div>
         </div>
@@ -180,7 +181,7 @@
         <div class="form-group">
           <div class="col-md-12 text-right">
             <button mat-button class="fnt-weigth">Reset</button>
-            <button mat-button class="primary-custom">Save & Next</button>
+            <button mat-button class="primary-custom" (click)="stepperNext(stepper)" >Save & Next</button>
           </div>
         </div>
       </div><!-- Right-form-wrap -->
@@ -189,7 +190,7 @@
   </mat-step>
 
   <!-- event-second-section Start-->
-  <mat-step class="event-second-section">
+  <mat-step class="event-second-section" [completed]="false">
     <ng-template matStepLabel>Select Speaker</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12"><span class="header-text-style">Event Information</span></div>
@@ -204,10 +205,10 @@
       </div>
 
       <div class="col-md-4">
-        <ul class="pad-lft-evt">
+        <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
-          <li><b>Terotirry</b>: TM - Austin, TX</li>
+          <li><b>Territory</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
@@ -220,30 +221,30 @@
 
 
     <mat-card class="first-wrap line-height mat-card-sd">
-      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth">Save
+      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr" (click)="stepperNext(stepper)">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <hr>
       <div class="col-md-1">
         <img src="assets/img/user-profile.png" width="50">
       </div>
-      <div class="col-md-3 pl-0">
+      <div class="col-md-3 ">
         <ul class="custom-ul">
-          <li><b>Spkeaker:</b> Juan Alejos</li>
+          <li><b>Speaker:</b> Juan Alejos</li>
           <li><b>Gender:</b> Male</li>
-          <li><b>City & State</b>: Albany, NY</li>
+          <li><b>City & State:</b> Albany, NY</li>
         </ul>
       </div>
 
-      <div class="col-md-3 pl-0">
-        <ul>
+      <div class="col-md-4">
+        <ul class="pad-lft-zero">
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 9/6/2019</li>
           <li><b>Treatment Start Date:</b> 9/6/2019</li>
         </ul>
       </div>
 
-      <div class="col-md-3"></div>
+      <div class="col-md-2"></div>
       <div class="col-md-2">
         <ul class="clr-blue icon-pallet fnt-weigth">
           <li><span class="glyphicon glyphicon-user"></span>View Profile</li>
@@ -255,7 +256,7 @@
         <div class="col-md-12 text-right">
           <button mat-button class="clr-blue fnt-weigth">Reset</button>
           <button class="btn btn-search fnt-weigth"> ADD HCP/Physician Speaker</button>
-          <button mat-button class="primary-custom">Save & Next</button>
+          <button mat-button class="primary-custom" (click)="stepperNext(stepper)">Save & Next</button>
         </div>
       </div>
 
@@ -266,7 +267,7 @@
       <div class="clearfix"></div>
       <hr>
       <div class="col-md-12">
-        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to search for one</p>
+        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to search for one.</p>
       </div>
 
       <div class="form-group">
@@ -285,7 +286,7 @@
         <div class="col-md-3"><label>Role</label><select class="form-control">
             <option>Select Role</option>
           </select></div>
-        <div class="col-md-3"><label>Date Of Dignosis</label>
+        <div class="col-md-3"><label>Date of Diagnosis</label>
           <mat-form-field>
             <input matInput [matDatepicker]="picker11" placeholder="Select Date">
             <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
@@ -323,14 +324,14 @@
       </div>
       <div class="col-md-3 pl-0 line-height">
         <ul class="custom-ul">
-          <li><b>Spkeaker:</b> Juan Alejos</li>
+          <li><b>Speaker:</b> Juan Alejos</li>
           <li><b>Gender:</b> Male</li>
-          <li><b>City & State</b>: Albany, NY</li>
+          <li><b>City & State:</b> Albany, NY</li>
         </ul>
       </div>
 
-      <div class="col-md-3 pl-0 line-height">
-        <ul>
+      <div class="col-md-3 line-height">
+        <ul class="pad-lft-zero">
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 9/6/2019</li>
           <li><b>Treatment Start Date:</b> 9/6/2019</li>
@@ -387,7 +388,7 @@
           </ng-container>
 
           <ng-container matColumnDef="SA">
-            <th mat-header-cell *matHeaderCellDef> <b>SA</b> </th>
+            <th mat-header-cell *matHeaderCellDef> <b>S</b> </th>
             <td mat-cell *matCellDef="let element">{{element.SA}} </td>
           </ng-container>
 
@@ -396,16 +397,16 @@
 
           <!-- Custom Header || Footer Start -->
           <ng-container matColumnDef="header-row-first-group">
-            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="8">
+            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="7">
               <span class="clr-blue"> Availability </span>
             </th>
           </ng-container>
 
-          <ng-container matColumnDef="header-row-second-group">
+          <!-- <ng-container matColumnDef="header-row-second-group">
             <th mat-header-cell *matHeaderCellDef [attr.colspan]="0"> </th>
-          </ng-container>
+          </ng-container> -->
 
-          <tr mat-header-row *matHeaderRowDef="['header-row-first-group', 'header-row-second-group']"></tr>
+          <tr mat-header-row *matHeaderRowDef="['header-row-first-group']"></tr>
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
@@ -425,14 +426,14 @@
       </div>
       <div class="col-md-3 pl-0 line-height">
         <ul class="custom-ul">
-          <li><b>Spkeaker:</b> Marie Hamilton</li>
+          <li><b>Speaker:</b> Marie Hamilton</li>
           <li><b>Gender:</b> Female</li>
-          <li><b>City & State</b>: Sarasota, FL</li>
+          <li><b>City & State:</b> Sarasota, FL</li>
         </ul>
       </div>
 
-      <div class="col-md-3 pl-0 line-height">
-        <ul>
+      <div class="col-md-3 line-height">
+        <ul class="pad-lft-zero">
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 7/2/2015</li>
           <li><b>Treatment Start Date:</b> 7/25/2015</li>
@@ -489,7 +490,7 @@
           </ng-container>
 
           <ng-container matColumnDef="SA">
-            <th mat-header-cell *matHeaderCellDef> <b>SA</b> </th>
+            <th mat-header-cell *matHeaderCellDef> <b>S</b> </th>
             <td mat-cell *matCellDef="let element">{{element.SA}} </td>
           </ng-container>
 
@@ -498,16 +499,16 @@
 
           <!-- Custom Header || Footer Start -->
           <ng-container matColumnDef="header-row-first-group">
-            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="8">
+            <th class="mat-table-top" mat-header-cell *matHeaderCellDef [style.text-align]="center" [attr.colspan]="7">
               <span class="clr-blue"> Availability </span>
             </th>
           </ng-container>
 
-          <ng-container matColumnDef="header-row-second-group">
+          <!-- <ng-container matColumnDef="header-row-second-group">
             <th mat-header-cell *matHeaderCellDef [attr.colspan]="0"> </th>
-          </ng-container>
+          </ng-container> -->
 
-          <tr mat-header-row *matHeaderRowDef="['header-row-first-group', 'header-row-second-group']"></tr>
+          <tr mat-header-row *matHeaderRowDef="['header-row-first-group']"></tr>
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
@@ -524,7 +525,7 @@
   </mat-step><!-- event-second-section End-->
 
 
-  <mat-step class="event-third-section">
+  <mat-step class="event-third-section" [completed]="false">
    <ng-template matStepLabel>Select Venue</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12">
@@ -544,7 +545,7 @@
         <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
-          <li><b>Terotirry</b>: TM - Austin, TX</li>
+          <li><b>Territory</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
@@ -557,7 +558,7 @@
 
     <mat-card class="second-wrap mat-card-sd">
       <div class="col-md-12">
-        <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next">Save & Next ></span>
+        <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next crsr-ptr" (click)="stepperNext(stepper)">Save & Next ></span>
         <div class="clearfix"></div>
         <hr class="hr-color">
       </div>
@@ -583,7 +584,7 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12">
-        <button mat-button class="primary-custom pull-right"> Save & Next</button>
+        <button mat-button class="primary-custom pull-right" (click)="stepperNext(stepper)"> Save & Next</button>
         <button class="btn btn-reset vanue-delete-btn"> Reset</button>
       </div>
     </mat-card>
@@ -633,9 +634,10 @@
       <div class="col-md-12 text-right">
         <button class="btn btn-search fnt-weigth"> Search</button>
       </div>
-    
+      <div class="clearfix"></div>
+
       <div class="col-md-12">
-        <span class="header-text-style"> Venue Type</span>
+        <span class="header-text-style"> Venue List</span>
         <div class="clearfix"></div>
         <hr class="hr-color">
       </div>
@@ -682,7 +684,7 @@
     </mat-card>
   </mat-step>
 
-  <mat-step class="event-fourth-section">
+  <mat-step class="event-fourth-section" [completed]="false">
     <ng-template matStepLabel>Review & Submit</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12">
@@ -702,7 +704,7 @@
         <ul class="pad-lft-zero">
           <li><b>Program Type</b>: Live</li>
           <li><b>Speaker</b>: Juan Alejos</li>
-          <li><b>Terotirry</b>: TM - Austin, TX</li>
+          <li><b>Territory</b>: TM - Austin, TX</li>
         </ul>
       </div>
 
@@ -777,7 +779,7 @@
       <div class="col-md-12 text-right">
         <button class="btn btn-search fnt-weigth"> Edit Program</button>
       </div>
-
+<div class="clearfix"></div>
       <div>
         <div class="col-md-12 rw-pt-mar">
           <span class="header-text-style"> Speaker</span>
