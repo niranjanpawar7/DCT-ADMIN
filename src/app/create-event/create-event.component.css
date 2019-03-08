@@ -30,7 +30,7 @@ mat-card ul{
     padding-left: 0px;
 }
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     float: left;
     width: 100%;
 }
@@ -96,11 +96,18 @@ float: left;
     color: #1662d8;
 }
 .line-height{
-    line-height: 25px;
+    line-height: 22px;
+} 
+ul li{
+    padding-bottom: 7px;
+    font-size: 16px;
 } 
 .pl-0{
-    padding-left: 0px;
+    padding-left: 0px !important;
 }  
+.right-form-wrap .form-group-custom{
+    margin-bottom: 0px;
+}
 .right-form-wrap .form-group input[type='radio']{
     margin-right: 10px;
     margin-left: 10px;
@@ -111,12 +118,15 @@ float: left;
     color: #fff;
     padding: 3px 30px; 
     margin-left: 15px;
+    height: 55px;
+    width: 180px;
+    border-radius: 4px;
 }
 .second-wrap.mat-card label,
 .form-parent-wrapper.mat-card label{
     display: inline-block;
     max-width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: 300;
     font-size: 13px;
 }
@@ -129,19 +139,21 @@ float: left;
     padding-left: 0px
 }
 .form-control{
-    height: 30px;
+    height: 38px;
 }
 .header-text-style{
     color: #1873d4;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
+    padding-top: 22px;
+    float: left;
 }
 b, strong {
     font-weight: 700;
     color: darkslategrey;
 }
 .clr-blue{
-    color: #1873d4;
+    color: #1873d4 !important;
     font-weight: 600;
 }
 .clr-grey{
@@ -154,7 +166,8 @@ b, strong {
     margin-bottom: 10px;
 }
 .fs-12{
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 50px;
 }
 .border{
     border-right: 1px solid lightgray;
@@ -201,7 +214,9 @@ b, strong {
     font-size: 17px;
 }
 .hr-color{
-    border-top: 1px solid #d4c9c9a1;
+    /* border-top: 1px solid #d4c9c9a1; */
+    border: 0.5px solid #B2B2B2;
+    margin-bottom: 24px;
 }
  .mat-card-sd{
     box-shadow: 7px 6px 24px -8px rgba(0,0,0,.08);
@@ -281,7 +296,7 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }    
 .fnt-weigth{
     font-weight: 600;
-    color: #1873d4; 
+    color: #1873d4 !important; 
 }
 .rw-pt-pad{
     padding-bottom: 12px;
@@ -303,6 +318,10 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 .crsr-ptr{
     cursor: pointer;
+}
+.speaker-inputs .col-md-3{
+    padding-right: 5px;
+    padding-left: 5px;
 }
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{
