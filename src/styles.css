@@ -349,9 +349,10 @@ tr.mat-header-row {
   margin-bottom: 15px;
   font-size: 16px;
 }
-.right-form-wrap .mat-radio-label{
+.right-form-wrap .mat-radio-label,
+.second-wrap.venue-wrapper .rw-pt-mar .mat-radio-label{
   margin-bottom: 10px;
-}
+} 
 
 /* .mat-step-icon .mat-icon, .mat-step-icon-content{
   font-size: 23px !important;
