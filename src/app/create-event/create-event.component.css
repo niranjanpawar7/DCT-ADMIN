@@ -3,6 +3,9 @@
     padding-right: 33px;
     border-radius: 8px;
 }
+.nopadding{
+    padding: 0px;
+}
 mat-horizontal-stepper{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -136,8 +139,7 @@ ul li{
 }
 .view-details-custom{
     background-color: #FFF;
-    border:1px solid #1873d4; 
-    padding: 3px 30px; 
+    border:1px solid #1873d4;  
     margin-left: 15px;
     height: 55px;
     width: 180px;
@@ -337,6 +339,9 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .rw-pt-mar{
     margin-top:18px;
 }
+.second-wrap.venue-wrapper .rw-pt-mar{ 
+    margin-top:9px;
+}   
 .pad-lft-zero{
     padding-left: 0px;
 }
@@ -356,7 +361,9 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     padding-right: 5px;
     padding-left: 5px;
 }
-.second-wrap span.fnt-weigth{
+.second-wrap span.fnt-weigth,
+.lbl-save-next,
+.lbl-add-venue{
     padding-top: 40px;
 } 
 .first-wrap.speaker-selected span.fnt-weigth{
@@ -372,6 +379,31 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .first-wrap.form-parent-wrapper.mat-card{
     padding-bottom: 38px;
 }
+.second-wrap.venue-wrapper.mat-card-sd{
+    padding-bottom: 6px;
+}
+.venue-wrapper p{
+    margin-bottom: 6px;
+} 
+.venue-wrapper hr.last-row-hr{
+    margin-top: 0px;
+} 
+.venue-wrapper .save-margin .form-group{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.venue-wrapper .form-group{ 
+    margin-bottom: 27px;
+}
+.venue-pallet-spacing{
+    margin-top: 19px;
+    margin-bottom: 11px !important;
+}
+.venue-spacing{
+    margin-top: 32px;
+    margin-bottom: 45px !important;
+}
+
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{
         float: left;

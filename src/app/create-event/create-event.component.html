@@ -1,16 +1,16 @@
-<mat-horizontal-stepper #stepper [selectedIndex]="1">
-    <ng-template matStepperIcon="edit">
-        <mat-icon>done</mat-icon>
-    </ng-template>
-  <mat-step >
+<mat-horizontal-stepper #stepper [selectedIndex]="2">
+  <ng-template matStepperIcon="edit">
+    <mat-icon>done</mat-icon>
+  </ng-template>
+  <mat-step>
 
     <mat-card class="first-wrap line-height mat-card-sd">
       <ng-template matStepLabel>Program Logistics</ng-template>
       <div class="col-md-12"><span class="header-text-style">Event Information</span></div>
       <div class="clearfix"></div>
       <div class="col-md-12">
-      <hr class="hr-color">
-    </div>
+        <hr class="hr-color">
+      </div>
       <div class="col-md-4">
         <ul class="pad-lft-zero">
           <li><b>ID</b>: 2858</li>
@@ -34,11 +34,12 @@
       </div>
     </mat-card>
     <mat-card class="second-wrap">
-      <div class="col-md-12"><span class="header-text-style">Patient Program Logistics</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr" (click)="stepperNext(stepper)">Save
+      <div class="col-md-12"><span class="header-text-style">Patient Program Logistics</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr"
+          (click)="stepperNext(stepper)">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <div class="col-md-12">
-      <hr class="hr-color">
+        <hr class="hr-color">
       </div>
       <div class="col-md-6 p-r-25 p-l-0 border">
         <div class="form-group">
@@ -69,7 +70,7 @@
         </div>
         <div class="form-group radio-group">
           <div class="col-md-12">
-            <label>Program Type</label> 
+            <label>Program Type</label>
             <div class="col-md-12 pl-0">
               <mat-radio-group>
                 <mat-radio-button value="1" [checked]="true">Live </mat-radio-button>
@@ -77,7 +78,7 @@
                 <mat-radio-button value="3"> <input type="text" class="form-control" placeholder="Others"></mat-radio-button>
               </mat-radio-group>
             </div>
-           
+
           </div>
         </div>
         <div class="clearfix"></div>
@@ -172,7 +173,7 @@
             <label class="clr-grey">Optional Meeting Services</label>
             <div class="clearfix"></div>
             <mat-checkbox>Px onsite coordinator at your Meeting <b>(ADMIN ONLY)</b></mat-checkbox>
-            <mat-checkbox>Print Invitations generated and mailed to you for distribution </mat-checkbox>  
+            <mat-checkbox>Print Invitations generated and mailed to you for distribution </mat-checkbox>
             <mat-checkbox class="mrb-0">Email Invitations sent to you for distribution</mat-checkbox>
           </div>
         </div>
@@ -184,7 +185,7 @@
         <div class="form-group">
           <div class="col-md-12 text-right">
             <!-- <button mat-button class="fnt-weigth">Reset</button> -->
-            <button mat-button class="primary-custom" (click)="stepperNext(stepper)" >Save & Next</button>
+            <button mat-button class="primary-custom" (click)="stepperNext(stepper)">Save & Next</button>
           </div>
         </div>
       </div><!-- Right-form-wrap -->
@@ -224,7 +225,8 @@
 
 
     <mat-card class="first-wrap speaker-selected line-height mat-card-sd">
-      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr" (click)="stepperNext(stepper)">Save
+      <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr"
+          (click)="stepperNext(stepper)">Save
           & Next ></span></div>
       <div class="clearfix"></div>
       <hr>
@@ -270,7 +272,8 @@
       <div class="clearfix"></div>
       <hr>
       <div class="col-md-12">
-        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to search for one.</p>
+        <p class="mrb-20">If you would like to add an alternative speaker please use the filter criteria to search for
+          one.</p>
       </div>
 
       <div class="form-group">
@@ -312,10 +315,10 @@
         </div>
       </div>
 
-       
-        <div class="col-md-12 text-right">
-          <button class="primary-custom"> Search </button>
-        </div> 
+
+      <div class="col-md-12 text-right">
+        <button class="primary-custom"> Search </button>
+      </div>
 
       <div class="col-md-12 "><span class="header-text-style">Speaker List</span></div>
       <div class="clearfix"></div>
@@ -420,7 +423,7 @@
           <button class="btn primary-custom mat-button">Add Speaker</button>
         </div>
       </div>
-      
+
       <hr>
       <div class="clearfix"></div>
       <div class="col-md-1">
@@ -445,7 +448,7 @@
 
       <div class="col-md-1"></div>
       <div class="col-md-5 pl-0">
-        <p><b>Biography:</b></p>
+        <p class="mr-b-2"><b>Biography:</b></p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -518,7 +521,7 @@
 
       <div class="form-group mrt-60">
         <div class="col-md-12 text-right">
-          <button class="btn btn-search fnt-weigth"> View Details </button>
+          <button class="btn view-details-custom fnt-weigth"> View Details </button>
           <button class="btn primary-custom mat-button">Add Speaker</button>
         </div>
       </div>
@@ -527,8 +530,8 @@
   </mat-step><!-- event-second-section End-->
 
 
-  <mat-step class="event-third-section" >
-   <ng-template matStepLabel>Select Venue</ng-template>
+  <mat-step class="event-third-section">
+    <ng-template matStepLabel>Select Venue</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12">
         <span class="header-text-style">Event Information </span>
@@ -558,64 +561,70 @@
       </div>
     </mat-card>
 
-    <mat-card class="second-wrap mat-card-sd">
+    <mat-card class="second-wrap venue-wrapper mat-card-sd">
       <div class="col-md-12">
-        <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next crsr-ptr" (click)="stepperNext(stepper)">Save & Next ></span>
+        <span class="header-text-style"> Venue Selected</span> <span class="pull-right lbl-save-next crsr-ptr" (click)="stepperNext(stepper)">Save
+          & Next ></span>
         <div class="clearfix"></div>
         <hr class="hr-color">
       </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Name:</span> 111 Chop House</p>
-        <p><span class="vanue-style">Type:</span> Restaurant</p>
-        <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
+      <div class="col-md-12 nopadding">
+        <div class="col-md-4">
+          <p><span class="vanue-style">Name:</span> 111 Chop House</p>
+          <p><span class="vanue-style">Type:</span> Restaurant</p>
+          <p><span class="vanue-style">Phone:</span> 201-555-7948</p>
+        </div>
+        <div class="col-md-4">
+          <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
+          <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
+          <!-- <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
+          <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
+        </p> -->
+        </div>
+        <div class="col-md-4">
+          <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+      </div>
+      <div class="col-md-12 rw-pt-mar"> 
         <mat-radio-group>
           <mat-radio-button value="1" [checked]="true">Preferred Venue </mat-radio-button><br>
           <mat-radio-button value="2">Alternate Venue </mat-radio-button>
         </mat-radio-group>
       </div>
-      <div class="col-md-4">
-        <p><span class="vanue-style">Address:</span> 11 Shrewburry Street</p>
-        <p><span class="vanue-style">City & State:</span> Worecester, MA</p>
-        <p><span class="vanue-style vanue-style-career">Caterer Info: </span>
-          <textarea rows="4" cols="50" class="form-control text-vanue"></textarea>
-        </p>
-      </div>
-      <div class="col-md-4">
-
-        <button class="btn vanue-delete-btn"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-      </div>
       <div class="clearfix"></div>
-      <div class="col-md-12">
-        <button mat-button class="primary-custom pull-right" (click)="stepperNext(stepper)"> Save & Next</button>
-        <button class="btn btn-reset vanue-delete-btn"> Reset</button>
+      <div class="col-md-12 save-margin">
+        <div class="form-group">
+          <button mat-button class="primary-custom pull-right" (click)="stepperNext(stepper)"> Save & Next</button>
+        </div>
+        <!-- <button class="btn btn-reset vanue-delete-btn"> Reset</button> -->
       </div>
-    </mat-card>
+     
 
-    <mat-card class="second-wrap mat-card-sd">
+     
       <div class="col-md-12">
-        <span class="header-text-style"> Search</span> <span class="pull-right lbl-add-venue">Add New Venue </span>
+        <span class="header-text-style"> Search</span>
         <div class="clearfix"></div>
         <hr class="hr-color">
       </div>
       <div class="col-md-4">
-        <div>
+        <div class="form-group">
           Venue Name
           <input type="text" class="form-control search-input-pad">
         </div>
-        <div class="search-padding">
+        <div class="form-group">
           City
           <input type="text" class="form-control search-input-pad">
         </div>
       </div>
       <div class="col-md-4">
-        <div>
+          <div class="form-group">
           Venue Category
           <select class="form-control search-input-pad" name="" id="">
             <option>Select Category</option>
             <option></option>
           </select>
         </div>
-        <div class="search-padding">
+        <div class="form-group">
           State
           <select class="form-control search-input-pad search-state" name="" id="">
             <option>ST</option>
@@ -624,7 +633,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div>
+          <div class="form-group">
           Venue Type
           <select class="form-control search-input-pad" name="" id="">
             <option>Select Type</option>
@@ -633,8 +642,9 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      <div class="col-md-12 text-right">
-        <button class="btn btn-search fnt-weigth"> Search</button>
+      <div class="col-md-12 text-right venue-pallet-spacing">
+        <button class="btn view-details-custom fnt-weigth">Add New Venue</button>
+        <button class="btn primary-custom"> Search</button>
       </div>
       <div class="clearfix"></div>
 
@@ -658,9 +668,9 @@
         <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
       </div>
       <div class="clearfix"></div>
-      <div class="col-md-12 text-right">
+      <div class="col-md-12 text-right venue-spacing">
         <button mat-button class="primary-custom pull-right"> Add Venue</button>
-        <button class="btn btn-search fnt-weigth"> View Details</button>
+        <button class="btn view-details-custom fnt-weigth"> View Details</button>
       </div>
       <div class="clearfix"></div>
       <hr class="hr-color last-row-hr">
@@ -678,15 +688,15 @@
         <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
         <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
       </div>
-      <div class="clearfix"></div><br>
-      <div class="col-md-12 text-right">
+      <div class="clearfix"></div> 
+      <div class="col-md-12 text-right venue-spacing">
         <button mat-button class="primary-custom pull-right"> Add Venue</button>
-        <button class="btn btn-search fnt-weigth"> View Details</button>
+        <button class="btn view-details-custom fnt-weigth"> View Details</button>
       </div>
     </mat-card>
   </mat-step>
 
-  <mat-step class="event-fourth-section" >
+  <mat-step class="event-fourth-section">
     <ng-template matStepLabel>Review & Submit</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12">
@@ -781,7 +791,7 @@
       <div class="col-md-12 text-right">
         <button class="btn btn-search fnt-weigth"> Edit Program</button>
       </div>
-<div class="clearfix"></div>
+      <div class="clearfix"></div>
       <div>
         <div class="col-md-12 rw-pt-mar">
           <span class="header-text-style"> Speaker</span>
@@ -816,7 +826,7 @@
         </div>
         <div class="col-md-4">
           <p><span class="vanue-style">Name:</span> 111 Chop House</p>
-          <p><span class="vanue-style">Type:</span>  Restaurant</p>
+          <p><span class="vanue-style">Type:</span> Restaurant</p>
           <p><span class="vanue-style">Email:</span> chouse@emial.com</p>
         </div>
         <div class="col-md-4">
