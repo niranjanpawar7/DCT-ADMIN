@@ -346,8 +346,11 @@ tr.mat-header-row {
   height: 47px !important;
 }
 .mat-checkbox-layout{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 16px;
+}
+.right-form-wrap .mat-radio-label{
+  margin-bottom: 10px;
 }
 
 /* .mat-step-icon .mat-icon, .mat-step-icon-content{
