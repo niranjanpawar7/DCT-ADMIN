@@ -1,3 +1,8 @@
+.mat-card{
+    padding-left:33px;
+    padding-right: 33px;
+    border-radius: 8px;
+}
 mat-horizontal-stepper{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -74,6 +79,9 @@ float: left;
     color: #1873d4; 
     padding: 10px 25px;
     border: 1px solid;
+    height: 55px;	
+    width: 285px;
+    font-size: 18px;
 }
 .search-padding{
     padding-top: 20px;
@@ -102,6 +110,9 @@ ul li{
     padding-bottom: 7px;
     font-size: 16px;
 } 
+.first-wrap.form-parent-wrapper ul li:last-child{
+    padding-bottom: 0px; 
+} 
 .pl-0{
     padding-left: 0px !important;
 }  
@@ -121,6 +132,25 @@ ul li{
     height: 55px;
     width: 180px;
     border-radius: 4px;
+    font-size: 18px;
+}
+.view-details-custom{
+    background-color: #FFF;
+    border:1px solid #1873d4; 
+    padding: 3px 30px; 
+    margin-left: 15px;
+    height: 55px;
+    width: 180px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+
+.mr-b-2{
+    margin-bottom: 2px;
+}
+.first-wrap.form-parent-wrapper ul{
+    margin-bottom: 6px;
 }
 .second-wrap.mat-card label,
 .form-parent-wrapper.mat-card label{
@@ -233,6 +263,9 @@ hr {
 .mrb-20{
     margin-bottom: 20px;
 }
+.mrb-15{
+    margin-bottom: 15px;
+}
 .custom-search{
     margin-top: 10px;
     margin-bottom: 0px;
@@ -325,6 +358,19 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 .second-wrap span.fnt-weigth{
     padding-top: 40px;
+} 
+.first-wrap.speaker-selected span.fnt-weigth{
+    padding-top: 20px;
+}
+.first-wrap.speaker-selected .form-group{
+    margin-top: 37px;
+    margin-bottom: 30px;
+}
+.first-wrap.speaker-selected ul{
+    padding-left: 0px;
+}
+.first-wrap.form-parent-wrapper.mat-card{
+    padding-bottom: 38px;
 }
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{

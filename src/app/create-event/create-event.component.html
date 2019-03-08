@@ -1,4 +1,4 @@
-<mat-horizontal-stepper #stepper>
+<mat-horizontal-stepper #stepper [selectedIndex]="1">
     <ng-template matStepperIcon="edit">
         <mat-icon>done</mat-icon>
     </ng-template>
@@ -193,7 +193,7 @@
   </mat-step>
 
   <!-- event-second-section Start-->
-  <mat-step class="event-second-section" >
+  <mat-step class="event-second-section">
     <ng-template matStepLabel>Select Speaker</ng-template>
     <mat-card class="first-wrap line-height mat-card-sd">
       <div class="col-md-12"><span class="header-text-style">Event Information</span></div>
@@ -223,7 +223,7 @@
     </mat-card>
 
 
-    <mat-card class="first-wrap line-height mat-card-sd">
+    <mat-card class="first-wrap speaker-selected line-height mat-card-sd">
       <div class="col-md-12"><span class="header-text-style">Speaker Selected</span> <span class="pull-right clr-blue fnt-weigth crsr-ptr" (click)="stepperNext(stepper)">Save
           & Next ></span></div>
       <div class="clearfix"></div>
@@ -257,7 +257,7 @@
       <div class="clearfix"></div>
       <div class="form-group">
         <div class="col-md-12 text-right">
-          <button mat-button class="clr-blue fnt-weigth">Reset</button>
+          <!-- <button mat-button class="clr-blue fnt-weigth">Reset</button> -->
           <button class="btn btn-search fnt-weigth"> ADD HCP/Physician Speaker</button>
           <button mat-button class="primary-custom" (click)="stepperNext(stepper)">Save & Next</button>
         </div>
@@ -306,17 +306,16 @@
       </div>
 
       <div class="form-group">
-        <div class="col-md-3">
+        <div class="col-md-6">
           <label>Search Biography</label>
           <input type="text" class="form-control">
         </div>
       </div>
 
-      <div class="form-group">
+       
         <div class="col-md-12 text-right">
-          <button class="btn btn-search custom-search fnt-weigth"> Search </button>
-        </div>
-      </div>
+          <button class="primary-custom"> Search </button>
+        </div> 
 
       <div class="col-md-12 "><span class="header-text-style">Speaker List</span></div>
       <div class="clearfix"></div>
@@ -333,7 +332,7 @@
         </ul>
       </div>
 
-      <div class="col-md-3 line-height">
+      <div class="col-md-4 line-height">
         <ul class="pad-lft-zero">
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 9/6/2019</li>
@@ -344,7 +343,7 @@
 
       <div class="col-md-1"></div>
       <div class="col-md-5 pl-0">
-        <p><b>Biography:</b></p>
+        <p class="mr-b-2"><b>Biography:</b></p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -416,8 +415,8 @@
       </div>
 
       <div class="form-group mrt-60">
-        <div class="col-md-12 text-right">
-          <button class="btn btn-search fnt-weigth"> View Details </button>
+        <div class="col-md-12 text-right mrb-15">
+          <button class="btn view-details-custom fnt-weigth"> View Details </button>
           <button class="btn primary-custom mat-button">Add Speaker</button>
         </div>
       </div>
@@ -435,7 +434,7 @@
         </ul>
       </div>
 
-      <div class="col-md-3 line-height">
+      <div class="col-md-4 line-height">
         <ul class="pad-lft-zero">
           <li><b>Role:</b> Patient</li>
           <li><b>Date of Diagnosis:</b> 7/2/2015</li>
