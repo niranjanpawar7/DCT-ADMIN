@@ -1,4 +1,4 @@
-<mat-horizontal-stepper #stepper [selectedIndex]="2">
+<mat-horizontal-stepper #stepper [selectedIndex]="3">
   <ng-template matStepperIcon="edit">
     <mat-icon>done</mat-icon>
   </ng-template>
@@ -728,11 +728,11 @@
     </mat-card>
 
 
-    <mat-card class="second-wrap mat-card-sd">
+    <mat-card class="second-card-event second-wrap mat-card-sd">
       <div class="col-md-12">
         <span class="header-text-style"> Status</span>
         <div class="clearfix"></div>
-        <hr>
+        <hr class="last-warp-hr">
       </div>
       <div class="col-md-4">
         <p><span class="vanue-style">Date Submitted:</span> N/A</p>
@@ -749,23 +749,25 @@
 
     </mat-card>
 
-    <mat-card class="second-wrap mat-card-sd">
+    <mat-card class="second-wrap final-mat mat-card-sd">
       <div class="col-md-12">
         <span class="header-text-style"> Summary</span>
         <div class="clearfix"></div>
-        <hr>
+        <hr class="last-warp-hr">
       </div>
       <div>
         <div class="col-md-12">
-          <p class="rw-pt-pad">Please review your Speaker Program Details. To change any details click
+          <div class="col-md-12">
+          <p>Please review your Speaker Program Details. To change any details click
             <strong>Edit Program, </strong>otherwise click <strong>Submit.</strong></p>
+          </div> 
         </div>
       </div>
       <div>
-        <div class="col-md-12">
+        <div class="col-md-12 nopadding logistic-wrapper">
           <span class="header-text-style"> Patient Program Logistics</span>
           <hr>
-        </div>
+        
         <div class="col-md-4">
           <p><span class="vanue-style">Program Series:</span> 2019 Patient Programs</p>
           <p><span class="vanue-style">Product:</span> Neuroscience-MG</p>
@@ -787,16 +789,17 @@
           <p><span class="vanue-style">Total:</span> 15</p>
           <p><span class="vanue-style">Additional Services:</span> PX outsite coordinator at your meeting</p>
         </div>
+      </div> 
       </div>
-      <div class="col-md-12 text-right">
-        <button class="btn btn-search fnt-weigth"> Edit Program</button>
+      <div class="col-md-12 text-right logisitic-pallet-spacing">
+        <button class="btn view-details-custom fnt-weigth"> Edit Program</button>
       </div>
       <div class="clearfix"></div>
       <div>
-        <div class="col-md-12 rw-pt-mar">
+        <div class="col-md-12 nopadding speaker-wrapper">
           <span class="header-text-style"> Speaker</span>
           <hr>
-        </div>
+       
         <div class="col-md-1">
           <img src="assets/img/user-profile.png" width="50">
         </div>
@@ -814,16 +817,17 @@
 
         </div>
       </div>
+      </div>
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search fnt-weigth"> Edit Speaker</button>
+        <button class="btn view-details-custom mr-37 fnt-weigth"> Edit Speaker</button>
       </div>
-      <div class="clearfix"></div><br>
+      <div class="clearfix"></div> 
       <div>
-        <div class="col-md-12">
+        <div class="col-md-12 venue-forth-wrapper">
           <span class="header-text-style">Venue </span>
           <hr class="hr-color">
-        </div>
+        
         <div class="col-md-4">
           <p><span class="vanue-style">Name:</span> 111 Chop House</p>
           <p><span class="vanue-style">Type:</span> Restaurant</p>
@@ -838,20 +842,18 @@
           <p><span class="vanue-style">PX Phone:</span> 908-243-4356</p>
           <p><span class="vanue-style">PX Contact:</span> Michael Tonda</p>
         </div>
-
+      </div>
       </div>
       <div class="clearfix"></div>
       <div class="col-md-12 text-right">
-        <button class="btn btn-search fnt-weigth"> Edit Venue</button>
+        <button class="btn view-details-custom fnt-weigth"> Edit Venue</button>
       </div>
-      <div class="clearfix"></div>
-      <br>
-      <div class="col-md-12 text-center">
-        <button class="btn btn-search fnt-weigth"> Delete</button>
+      <div class="clearfix"></div> 
+      <div class="col-md-12 text-center final-forth-program0-wrap">
+        <button class="btn view-details-custom fnt-weigth"> Delete</button>
         <button class="btn primary-custom mat-button"> Submit</button>
       </div>
-      <div class="clearfix"></div>
-      <br>
+      <div class="clearfix"></div> 
       <div class="col-md-6 ">
         <a class="pgm-exp">Program Exception </a>
       </div>
