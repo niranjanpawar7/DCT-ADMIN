@@ -192,7 +192,7 @@ b, strong {
     color: grey;
 }
 .clr-lightgrey{
-    background-color: lightgrey;
+    background-color: #F0F0F0;
 }
 .mat-checkbox-layout{
     margin-bottom: 10px;
@@ -376,7 +376,8 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .first-wrap.speaker-selected ul{
     padding-left: 0px;
 }
-.first-wrap.form-parent-wrapper.mat-card{
+.first-wrap.form-parent-wrapper.mat-card,
+.final-mat{
     padding-bottom: 38px;
 }
 .second-wrap.venue-wrapper.mat-card-sd{
@@ -403,7 +404,30 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     margin-top: 32px;
     margin-bottom: 45px !important;
 }
-
+.last-warp-hr{
+    margin-bottom: 24px;
+}
+.second-card-event.second-wrap p{
+    margin-bottom: 6px;
+}
+.second-card-event.second-wrap p:last-child{
+    margin-bottom: 8px;
+}
+.logistic-wrapper p,
+.speaker-wrapper p,
+.venue-forth-wrapper p{
+    margin-bottom: 6px;
+}
+.logisitic-pallet-spacing{ 
+    margin-top: 69px;
+}
+.mr-37{
+    margin-top: 31px;
+} 
+.final-forth-program0-wrap{
+    margin-top: 93px;
+    margin-bottom: 30px;
+}
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{
         float: left;
