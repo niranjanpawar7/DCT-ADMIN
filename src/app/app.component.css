@@ -75,7 +75,10 @@
       padding-left: 60px;
        padding-right: 60px;
   }
-  .router-link-active { border-right: 4px solid skyblue;}
+  .router-link-active {
+     border-right: 4px solid skyblue;
+     opacity: 1;
+  }
 
   .pd-nv-0{
     padding: 0px;
