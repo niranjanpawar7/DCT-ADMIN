@@ -64,7 +64,15 @@
 
           <div class="col-md-6 text-right">
             <div class="form-group">
-              <button mat-button class="btn btn-white">Upload Files</button>
+              <button mat-button class="btn btn-white" (click)="openDialog()">Upload Files</button>
+            </div>
+            <div class="upLodedContent" *ngIf="upLodedContent">
+               <i>TrainingDeckFileName1.ppt</i> <img src="/assets/icons/ico-close.png">
+               <div class="clearfix"></div>
+               <i>TrainingDeckFileName2.ppt</i>  <img src="/assets/icons/ico-close.png">
+               <div class="clearfix"></div>
+               <i>TrainingDeckFileName3.ppt</i>  <img src="/assets/icons/ico-close.png">
+               <div class="clearfix"></div>
             </div>
           </div>
 

@@ -13,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
 import { CreateEventComponent } from './create-event/create-event.component';
-import { TrainingComponent } from './training/training.component'; 
+import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 
 
 @NgModule({
@@ -23,6 +23,7 @@ import { TrainingComponent } from './training/training.component';
     FooterComponent,
     PageNotFoundComponent, 
     CreateEventComponent, TrainingComponent, 
+    DialogDataExampleDialog 
   ],
   imports: [
     BrowserModule,
@@ -36,6 +37,7 @@ import { TrainingComponent } from './training/training.component';
     MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogDataExampleDialog]
 })
 export class AppModule { }
