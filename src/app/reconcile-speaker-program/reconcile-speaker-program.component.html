@@ -1,0 +1,591 @@
+<mat-horizontal-stepper #stepper>
+    <ng-template matStepperIcon="edit">
+        <mat-icon>done</mat-icon>
+    </ng-template>
+
+    <mat-step>
+        <mat-card class="first-wrap line-height mat-card-sd">
+            <ng-template matStepLabel>Attendees</ng-template>
+            <div class="col-md-12"><span class="header-text-style">Event Information</span></div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+              <hr class="hr-color">
+            </div>
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>ID</b>: 2858</li>
+                <li><b>Product</b>: Neuroscience-MG</li>
+                <li><b>Program Date</b>: 9/26/2019</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>Program Type</b>: Live</li>
+                <li><b>Speaker</b>: Juan Alejos</li>
+                <li><b>Territory</b>: TM - Austin, TX</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>Venue</b>: 111 Chop House</li>
+                <li><b>Program Status</b>: Completed</li>
+              </ul>
+            </div>
+        </mat-card>
+        <mat-card class="first-wrap line-height mat-card-sd">
+            <div class="col-md-12"><span class="header-text-style">Attendance Summary</span></div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+              <hr class="hr-color">
+            </div>
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>Attendees</b>: 03</li>
+                <li><b>Speaker</b>: 01</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>Alexion Employees</b>: 02</li>
+                <li><b>Coordinators</b>: 00</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4">
+              <ul class="pad-lft-zero">
+                <li><b>Total</b>:  06</li>
+              </ul>
+            </div>
+        </mat-card>
+        <mat-card class="second-wrap line-height mat-card-sd speaker-program-list nopadding">
+            <div class="header">
+              <div class="row">
+                  <div class="col-md-12">
+                      <span class="header-text-style">Attendee Details</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                      <hr class="hr-color">
+                    </div>
+        
+                    <div class="col-md-4">
+                      <ul class="pad-lft-zero">
+                        <li><b>Walk-in Attendees</b>: 03</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="pad-lft-zero">
+                        <li><b>Pre-Registered Attendees</b>: 03</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="pad-lft-zero">
+                        <li><b>Total</b>: 06</li>
+                      </ul>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <hr class="hr-color">
+                    </div>
+              </div>
+            </div>
+
+            <div class="speaker-program-row">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Name</b>: Michela Aab</li>
+                    <li><b>Specialty</b>: Internal Medicine</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Degree</b>: Doctor of Osteopathy</li>
+                    <li><b>City & State</b>: Fox Worth, TX</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li>
+                        <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                        <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                        <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                          <label>Digital Signature</label>
+                          <select class="form-control" name="" id="">
+                            <option>NA</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Paper Sign-in</label>
+                          <select class="form-control" name="" id="">
+                            <option>Select</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Status</label>
+                          <select class="form-control" name="" id="">
+                            <option>Pre-Registered Attendee</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Attended</label>
+                          <select class="form-control" name="" id="">
+                            <option>Yes</option>
+                            <option></option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- Attendee Row -->
+
+            <div class="speaker-program-row dark">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Name</b>: Ram Aach</li>
+                    <li><b>Specialty</b>: Cardiology</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Degree</b>: Medical Doctor</li>
+                    <li><b>City & State</b>: Chicago, IL</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li>
+                        <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                        <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                        <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                          <label>Digital Signature</label>
+                          <select class="form-control" name="" id="">
+                            <option>NA</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Paper Sign-in</label>
+                          <select class="form-control" name="" id="">
+                            <option>Select</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Status</label>
+                          <select class="form-control" name="" id="">
+                            <option>Pre-Registered Attendee</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Attended</label>
+                          <select class="form-control" name="" id="">
+                            <option>Yes</option>
+                            <option></option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- Attendee Row -->
+            
+            <div class="speaker-program-row">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Name</b>: Jack Aaron</li>
+                    <li><b>Specialty</b>: Internal Medicine</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Degree</b>: Medical Doctor</li>
+                    <li><b>City & State</b>: Schenec Tady, NY</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li>
+                        <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                        <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                        <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                          <label>Digital Signature</label>
+                          <select class="form-control" name="" id="">
+                            <option>NA</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Paper Sign-in</label>
+                          <select class="form-control" name="" id="">
+                            <option>Select</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Status</label>
+                          <select class="form-control" name="" id="">
+                            <option>Pre-Registered Attendee</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Attended</label>
+                          <select class="form-control" name="" id="">
+                            <option>Yes</option>
+                            <option></option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- Attendee Row -->
+
+            <div class="clearfix"></div>
+        </mat-card>
+        <mat-card class="second-wrap line-height mat-card-sd speaker-program-list nopadding">
+            <div class="header">
+              <div class="row">
+                  <div class="col-md-12">
+                      <span class="header-text-style">Speaker Details</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                      <hr class="hr-color">
+                    </div>
+        
+                    <div class="col-md-4">
+                      <ul class="pad-lft-zero">
+                        <li><b>Total Speakers</b>: 01</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <hr class="hr-color">
+                    </div>
+              </div>
+            </div>
+
+            <div class="speaker-program-row">
+              <div class="row">
+                  <div class="col-md-2">
+                    <img src="assets/img/user-profile.png" alt="speaker-img" class="img-circle">
+                  </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Name</b>:Juan Alejos</li>
+                    <li><b>Specialty</b>: Internal Medicine</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Degree</b>: APN</li>
+                    <li><b>City & State</b>:Teaneck, NJ</li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <ul class="pad-lft-zero">
+                    <li>
+                        <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                        <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                        <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                          <label>Digital Signature</label>
+                          <select class="form-control" name="" id="">
+                            <option>NA</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Paper Sign-in</label>
+                          <select class="form-control" name="" id="">
+                            <option>Select</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Status</label>
+                          <select class="form-control" name="" id="">
+                            <option>Pre-Registered Attendee</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Attended</label>
+                          <select class="form-control" name="" id="">
+                            <option>Yes</option>
+                            <option></option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- Attendee Row -->
+
+
+            <div class="clearfix"></div>
+        </mat-card>
+        <mat-card class="second-wrap line-height mat-card-sd speaker-program-list nopadding">
+            <div class="header">
+              <div class="row">
+                  <div class="col-md-12">
+                      <span class="header-text-style">Alexion Employee Details</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                      <hr class="hr-color">
+                    </div>
+        
+                    <div class="col-md-4">
+                      <ul class="pad-lft-zero">
+                        <li><b>Total Employees</b>: 02</li>
+                      </ul>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <hr class="hr-color">
+                    </div>
+              </div>
+            </div>
+
+            <div class="speaker-program-row">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Name</b>: Robert Dwayne</li>
+                    <li><b>Specialty</b>: Cardiology</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li><b>Degree</b>: APN</li>
+                    <li><b>City & State</b>: Greensboro, NC</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="pad-lft-zero">
+                    <li>
+                        <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                        <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                        <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                        <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                          <label>Digital Signature</label>
+                          <select class="form-control" name="" id="">
+                            <option>NA</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Paper Sign-in</label>
+                          <select class="form-control" name="" id="">
+                            <option>Select</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Status</label>
+                          <select class="form-control" name="" id="">
+                            <option>Pre-Registered Attendee</option>
+                            <option></option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label>Attended</label>
+                          <select class="form-control" name="" id="">
+                            <option>Yes</option>
+                            <option></option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- Attendee Row -->
+
+            <div class="speaker-program-row dark">
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul class="pad-lft-zero">
+                      <li><b>Name</b>: Louise Albert</li>
+                      <li><b>Specialty</b>: </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="pad-lft-zero">
+                      <li><b>Degree</b>: APN</li>
+                      <li><b>City & State</b>: North Hampton</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="pad-lft-zero">
+                      <li>
+                          <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div class="p-l-0">
+                      <div class="form-group">
+                          <div class="col-md-3"><label>Email</label><input type="email" class="form-control"></div>
+                          <div class="col-md-4"><label>Address</label><input type="text" class="form-control"></div>
+                          <div class="col-md-2"><label>Zip</label><input type="text" class="form-control"></div>
+                          <div class="col-md-3"><label>Phone Number</label><input type="tel" class="form-control"></div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-md-3"><label>NPI</label><input type="text" class="form-control"></div>
+                          <div class="col-md-3"><label>State of License</label><input type="text" class="form-control"></div>
+                          <div class="col-md-3"><label>License Number</label><input type="text" class="form-control"></div>
+                          <div class="col-md-3"><label>Affiliation</label><input type="text" class="form-control"></div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-md-3">
+                            <label>Digital Signature</label>
+                            <select class="form-control" name="" id="">
+                              <option>NA</option>
+                              <option></option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Paper Sign-in</label>
+                            <select class="form-control" name="" id="">
+                              <option>Select</option>
+                              <option></option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Status</label>
+                            <select class="form-control" name="" id="">
+                              <option>Pre-Registered Attendee</option>
+                              <option></option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label>Attended</label>
+                            <select class="form-control" name="" id="">
+                              <option>Yes</option>
+                              <option></option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div><!-- Attendee Row -->
+
+            <div class="clearfix"></div>
+        </mat-card>
+        <div class="form-group rec-speaker-program-btns">
+            <div class="col-md-12 text-center">
+              <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+              <button mat-button class="primary-custom" (click)="stepperNext(stepper)">Save & Next</button>
+            </div>
+          </div>  
+    </mat-step>
+    
+    <mat-step>
+        <mat-card class="first-wrap line-height mat-card-sd">
+            <ng-template matStepLabel>Expense Summary</ng-template>
+        </mat-card>
+    </mat-step>
+
+    <mat-step>
+        <mat-card class="first-wrap line-height mat-card-sd">
+            <ng-template matStepLabel>Program Documents</ng-template>
+        </mat-card>
+    </mat-step>
+
+    <mat-step>
+        <mat-card class="first-wrap line-height mat-card-sd">
+            <ng-template matStepLabel>Submit Program</ng-template>
+        </mat-card>
+    </mat-step>
+</mat-horizontal-stepper>

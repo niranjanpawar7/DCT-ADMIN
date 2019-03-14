@@ -1,5 +1,11 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+/* css variables */
+
+:root{
+  --app-color-primary: #1873d4;
+}
+
 body, html{
   font-family: 'Lato', sans-serif;
   font-size: 16px !important;
@@ -379,4 +385,11 @@ tr.mat-header-row {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
+}
+
+
+/*****************- Akshay css starts -******************/
+
+.mat-btn-primary{
+  color: var(--app-color-primary);
 }
