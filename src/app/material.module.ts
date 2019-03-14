@@ -7,15 +7,15 @@ import {
   MatButtonModule, MatProgressBarModule,
   MatNativeDateModule, MatDatepickerModule,
   MatCheckboxModule, MatRadioModule,
-  MatIconModule
+  MatIconModule, MatDialogModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule, MatIconModule,  MatRadioModule, MatCheckboxModule, MatBadgeModule, MatStepperModule, MatTableModule , MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
+    CommonModule, MatDialogModule, MatIconModule,  MatRadioModule, MatCheckboxModule, MatBadgeModule, MatStepperModule, MatTableModule , MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
   ],
   exports: [
-    MatCardModule, MatIconModule,  MatRadioModule, MatCheckboxModule,  MatBadgeModule, MatStepperModule, MatTableModule, MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
+    MatCardModule, MatDialogModule, MatIconModule,  MatRadioModule, MatCheckboxModule,  MatBadgeModule, MatStepperModule, MatTableModule, MatProgressBarModule,  MatInputModule, MatSelectModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule
   ]
 })
 export class AppMaterialModule { };
