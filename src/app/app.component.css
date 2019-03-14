@@ -23,7 +23,12 @@
     position: fixed;
     height: 100%;
     background: #2B62CA;
+    overflow-y: auto;
   }
+  .sticky-container::-webkit-scrollbar { width: 0 !important };
+  .sticky-container { overflow: -moz-scrollbars-none; };
+  .sticky-container { -ms-overflow-style: none; }
+
   .nopadding {
     padding: 0px;
   }
