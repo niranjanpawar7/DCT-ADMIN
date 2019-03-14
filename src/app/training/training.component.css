@@ -1,5 +1,5 @@
 .training-admin-wrapper mat-card{
-    padding: 38px 44px 38px 45px; 
+    padding: 38px 44px 0px 45px; 
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -7,6 +7,13 @@
     margin-top: 0px;
     margin-bottom: 20px;
 }
+.icon-panel{
+    font-size: 15px;	font-weight: 500;	line-height: 18px;
+    color: #2B62CA;
+}
+.icon-panel img{
+    margin-right: 8px;
+} 
 .nopadding{
     padding: 0px;
 }
@@ -37,24 +44,18 @@
     color: blue;
 }
 .para-heading{   
-    color: blue; height: 25px; 	color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
+    color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
 }
-.odd-content-panel{
-    opacity: 0.3;	background-color: #D8D8D8;
-    padding-top: 30px;
-    padding-bottom: 29px;
-}
-.even-content-panel{
-     background-color: white;
-     padding-top: 30px;
-     padding-bottom: 29px;
-}
+
 
 
 
 @media only screen and (max-width: 800px) {
-    .training-admin-wrapper{
+    .training-admin-wrapper mat-card{
         padding: 15px; 
         margin: 20px 0px;
+    }
+    .AD-form-training .text-right{
+        text-align: center !important;
     }
 }

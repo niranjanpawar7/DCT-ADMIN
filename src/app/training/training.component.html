@@ -1,82 +1,197 @@
 <div class="col-md-12 training-admin-wrapper">
   <mat-card>
-    <div class="col-md-12">
+    <div class="col-md-12 AD-training-form-wrapper">
       <p class="master-heading">Upload Training Material</p>
       <hr>
-
-
-
-      <div class="col-md-12 AD-form-training">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>Product</label>
-            <mat-form-field>
-              <mat-select placeholder="">
-                <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
-                  {{data.viewValue}}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
+      <div class="row">
+        <div class="col-md-12 AD-form-training nopadding">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Product</label>
+              <mat-form-field>
+                <mat-select placeholder="">
+                  <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                    {{data.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>Programing Topic</label>
-            <mat-form-field>
-              <mat-select placeholder="">
-                <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
-                  {{data.viewValue}}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Programing Topic</label>
+              <mat-form-field>
+                <mat-select placeholder="">
+                  <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                    {{data.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>Active Date</label>
-            <mat-form-field>
-              <input matInput [matDatepicker]="picker" placeholder="">
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Active Date</label>
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>End Date</label>
-            <mat-form-field>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>End Date</label>
+              <mat-form-field>
                 <input matInput [matDatepicker]="picker11" placeholder="">
                 <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
                 <mat-datepicker #picker11></mat-datepicker>
               </mat-form-field>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>Title</label>
-            <mat-form-field class="example-full-width">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Title</label>
+              <mat-form-field class="example-full-width">
                 <input matInput placeholder="" value="">
               </mat-form-field>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-right">
+            <div class="form-group">
+              <button mat-button class="btn btn-white">Upload Files</button>
+            </div>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <div class="form-group">
+              <button mat-button class="btn btn-blue">Submit</button>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-6 text-right">
-          <div class="form-group">
-            <button mat-button class="btn btn-white">Upload Files</button> 
-          </div>
-        </div>
-
-        <div class="col-md-12 text-center">
-          <div class="form-group">
-              <button mat-button class="btn btn-blue">Submit</button> 
-          </div>
-        </div>
-
       </div>
-    </div>
+    </div><!-- AD-training-form-wrapper Close -->
+
+    <div class="col-md-12 AD-training-material-wrapper">
+      <p class="master-heading">Training Material List</p>
+      <hr>
+      <div class="row custome-row">
+        <div class="col-md-12 even-content-panel">
+          <p class="para-heading">Physician Combination Therapy Patient Case Deck</p>
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><b>Product:</b> Opsumit</li>
+                <li><b>Topic:</b> Physician Combination Therapy Patient Case Deck</li>
+                <li><b>Active Date:</b> 11/14/2018</li>
+                <li><b>End Date:</b> 1/12/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul>
+                <li><b>File Name:</b> filename.ppt</li>
+                <li><b>Upload Date:</b> 11/14/2018</li>
+                <li><b>Uploaded By:</b> Dot Admin</li>
+              </ul>
+            </div>
+            <div class="col-md-2 icon-panel">
+              <ul>
+                <li><img src="assets/icons/ico-download.png"> Download</li>
+                <li><img src="assets/icons/ico-edit.png"> Edit</li>
+                <li><img src="assets/icons/ico-delete.png"> Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- even-content-panel End-->
+        <div class="col-md-12 odd-content-panel">
+          <p class="para-heading">Physician Combination Therapy Patient Case Deck</p>
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><b>Product:</b> Opsumit</li>
+                <li><b>Topic:</b> Physician Combination Therapy Patient Case Deck</li>
+                <li><b>Active Date:</b> 11/14/2018</li>
+                <li><b>End Date:</b> 1/12/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul>
+                <li><b>File Name:</b> filename.ppt</li>
+                <li><b>Upload Date:</b> 11/14/2018</li>
+                <li><b>Uploaded By:</b> Dot Admin</li>
+              </ul>
+            </div>
+            <div class="col-md-2 icon-panel">
+              <ul>
+                <li><img src="assets/icons/ico-download.png"> Download</li>
+                <li><img src="assets/icons/ico-edit.png"> Edit</li>
+                <li><img src="assets/icons/ico-delete.png"> Delete</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- odd-content-panel End-->
+        <div class="col-md-12 even-content-panel">
+          <p class="para-heading">Physician Combination Therapy Patient Case Deck</p>
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><b>Product:</b> Opsumit</li>
+                <li><b>Topic:</b> Physician Combination Therapy Patient Case Deck</li>
+                <li><b>Active Date:</b> 11/14/2018</li>
+                <li><b>End Date:</b> 1/12/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul>
+                <li><b>File Name:</b> filename.ppt</li>
+                <li><b>Upload Date:</b> 11/14/2018</li>
+                <li><b>Uploaded By:</b> Dot Admin</li>
+              </ul>
+            </div>
+            <div class="col-md-2 icon-panel">
+              <ul>
+                <li><img src="assets/icons/ico-download.png"> Download</li>
+                <li><img src="assets/icons/ico-edit.png"> Edit</li>
+                <li><img src="assets/icons/ico-delete.png"> Delete</li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- even-content-panel End-->
+        <div class="col-md-12 odd-content-panel">
+          <p class="para-heading">Physician Combination Therapy Patient Case Deck</p>
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><b>Product:</b> Opsumit</li>
+                <li><b>Topic:</b> Physician Combination Therapy Patient Case Deck</li>
+                <li><b>Active Date:</b> 11/14/2018</li>
+                <li><b>End Date:</b> 1/12/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <ul>
+                <li><b>File Name:</b> filename.ppt</li>
+                <li><b>Upload Date:</b> 11/14/2018</li>
+                <li><b>Uploaded By:</b> Dot Admin</li>
+              </ul>
+            </div>
+            <div class="col-md-2 icon-panel">
+              <ul>
+                <li><img src="assets/icons/ico-download.png"> Download</li>
+                <li><img src="assets/icons/ico-edit.png"> Edit</li>
+                <li><img src="assets/icons/ico-delete.png"> Delete</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- odd-content-panel End-->
+      </div>
+    </div><!-- AD-training-material-wrapper Close -->
   </mat-card>
 </div>
