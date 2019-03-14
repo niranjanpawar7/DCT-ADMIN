@@ -448,3 +448,10 @@ tr.mat-header-row {
     margin-bottom: 0px !important;
   }
 }
+
+
+/*****************- Akshay css starts -******************/
+
+.mat-btn-primary{
+  color: var(--app-color-primary);
+}
