@@ -12,7 +12,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
-import { CreateEventComponent } from './create-event/create-event.component'; 
+import { CreateEventComponent } from './create-event/create-event.component';
+import { TrainingComponent } from './training/training.component'; 
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { CreateEventComponent } from './create-event/create-event.component';
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent, 
-    CreateEventComponent, 
+    CreateEventComponent, TrainingComponent, 
   ],
   imports: [
     BrowserModule,

@@ -2,12 +2,14 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; 
 import { CreateEventComponent } from '../app/create-event/create-event.component'; 
-
+import { TrainingComponent } from './training/training.component'; 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/create', pathMatch: 'full' },  
+  { path: '', redirectTo: '/training', pathMatch: 'full' },  
   { path: 'create', component : CreateEventComponent },
+  { path: 'training', component: TrainingComponent},
   { path: '**', component: PageNotFoundComponent },
+  
  
 ];
 
