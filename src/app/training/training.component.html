@@ -1,0 +1,82 @@
+<div class="col-md-12 training-admin-wrapper">
+  <mat-card>
+    <div class="col-md-12">
+      <p class="master-heading">Upload Training Material</p>
+      <hr>
+
+
+
+      <div class="col-md-12 AD-form-training">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Product</label>
+            <mat-form-field>
+              <mat-select placeholder="">
+                <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                  {{data.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Programing Topic</label>
+            <mat-form-field>
+              <mat-select placeholder="">
+                <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                  {{data.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Active Date</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>End Date</label>
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker11" placeholder="">
+                <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+                <mat-datepicker #picker11></mat-datepicker>
+              </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Title</label>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="" value="">
+              </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-right">
+          <div class="form-group">
+            <button mat-button class="btn btn-white">Upload Files</button> 
+          </div>
+        </div>
+
+        <div class="col-md-12 text-center">
+          <div class="form-group">
+              <button mat-button class="btn btn-blue">Submit</button> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </mat-card>
+</div>

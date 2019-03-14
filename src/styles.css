@@ -1,10 +1,46 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-/* css variables */
 
-:root{
-  --app-color-primary: #1873d4;
+/* Change in Mat-form-fields component Start */
+mat-card .form-group{
+  margin-bottom: 30px;
 }
+.mat-form-field-ripple{
+  display: none !important;
+}
+.cdk-text-field-autofill-monitored:not(:-webkit-autofill){
+  height: 38px;
+  margin-top: -5px;
+}
+.mat-select-value {
+  display: table-cell;
+  max-width: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 6px 10px;
+}
+.mat-form-field-infix{
+  width: 100%;
+  height: 38px;
+  padding: 5px 11px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0px;
+  }
+/* Change in Mat-form-fields component End */
+
+
+
+
 
 body, html{
   font-family: 'Lato', sans-serif;
@@ -177,12 +213,12 @@ color: white;
   border: 2px solid #1873d4; 
 }
 .mat-step-header .mat-step-icon {
-  background-color: #fff;
-  color: rgba(0,0,0,.54);
-  border: 2px solid rgba(0,0,0,.54);
-  margin-right: auto !important;
-  margin: auto;
-  margin-top: 29px;
+    background-color: #fff;
+    color: rgba(0,0,0,.54);
+    border: 2px solid rgba(0,0,0,.54);
+    margin-right: auto !important;
+    margin: auto;
+    margin-top: 29px;
 }
 .mat-form-field{
   width: 100%;
@@ -302,18 +338,7 @@ color: white;
 .mat-form-field-appearance-legacy .mat-form-field-underline{
   height: 0px !important;
 }
-.mat-form-field-infix{
-width: 100%;
-height: 34px;
-padding: 5px 11px;
-font-size: 14px;
-color: #555;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
+
 .mat-icon.material-icons.ng-star-inserted::before { 
   color: green !important; 
 }
@@ -360,6 +385,7 @@ tr.mat-header-row {
 .second-wrap.venue-wrapper .rw-pt-mar .mat-radio-label{
   margin-bottom: 10px;
 } 
+
 
 /* .mat-step-icon .mat-icon, .mat-step-icon-content{
   font-size: 23px !important;

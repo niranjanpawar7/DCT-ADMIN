@@ -430,7 +430,7 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{
-        float: left;
+        /*float: left;*/
     }
     .text-right{
         float: left;
@@ -467,8 +467,10 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
   }
   .rec-speaker-program-btns{
       margin-top: 40px;
+      text-align: center;
   }
   
   .btn-transparent{
     background-color: transparent !important;
   }
+  
