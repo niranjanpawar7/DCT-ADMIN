@@ -5,6 +5,7 @@ import { CreateEventComponent } from '../app/create-event/create-event.component
 import { ReconcileSpeakerProgramComponent } from '../app/reconcile-speaker-program/reconcile-speaker-program.component'; 
 import { TrainingComponent } from './training/training.component'; 
 import { AddVenueComponent} from './add-venue/add-venue.component'
+import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
 
 const routes: Routes = [
   { path: '', redirectTo: '/training', pathMatch: 'full' },  
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'reconcile-speaker-program', component : ReconcileSpeakerProgramComponent },
   { path: 'training', component: TrainingComponent},
   { path : 'add-venue', component: AddVenueComponent},
+  { path: 'initiatetraining', component: InitiateTrainingComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
