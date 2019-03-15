@@ -13,7 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
 import { CreateEventComponent } from './create-event/create-event.component';
-import { TrainingComponent } from './training/training.component'; 
+import { TrainingComponent } from './training/training.component';
+import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { TrainingComponent } from './training/training.component';
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent, 
-    CreateEventComponent, TrainingComponent, 
+    CreateEventComponent, TrainingComponent, InitiateTrainingComponent, 
   ],
   imports: [
     BrowserModule,
