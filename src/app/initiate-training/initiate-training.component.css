@@ -1,0 +1,47 @@
+.training-initiate-admin-wrapper mat-card{
+    padding: 38px 44px 0px 45px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.training-initiate-admin-wrapper mat-card hr{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.nopadding{
+    padding: 0px;
+}
+ .check-pad{
+    padding: 30px 50px 59px;
+}
+.btn-blue{
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA; margin-top: 14px;
+    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.master-heading{
+    font-size: 26px;
+    color: #2B62CA;
+    font-weight: 600;
+}
+.form-group label{
+    margin-bottom: 6px;
+    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+}
+.zero-bottom-mr ul li{
+    margin-bottom: 0px;
+}
+.AD-training-material-wrapper .odd-content-panel,
+.AD-training-material-wrapper .even-content-panel {
+    padding-bottom: 0px !important;
+  }
+  @media only screen and (max-width: 800px) {
+    .training-initiate-admin-wrapper mat-card{
+        padding: 15px; 
+        margin: 20px 0px;
+    }
+    .AD-form-training-initiate .text-right{
+        text-align: center !important;
+    }
+    .check-pad{
+        padding: 0px 0px 0px 20px;
+    }
+}

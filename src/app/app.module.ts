@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
 import { CreateEventComponent } from './create-event/create-event.component';
+import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 
@@ -23,7 +24,7 @@ import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/re
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent, 
-    CreateEventComponent, TrainingComponent, 
+    CreateEventComponent, TrainingComponent, InitiateTrainingComponent, 
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,  
   ],

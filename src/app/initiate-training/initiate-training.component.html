@@ -1,0 +1,185 @@
+<div class="col-md-12 training-initiate-admin-wrapper">
+  <mat-card>
+    <div class="col-md-12 AD-training-form-wrapper">
+      <p class="master-heading">Initiate Training</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-12 AD-form-training-initiate nopadding">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Product</label>
+              <mat-form-field>
+                <mat-select placeholder="">
+                  <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                    {{data.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Slide Deck</label>
+              <mat-form-field>
+                <mat-select placeholder="">
+                  <mat-option *ngFor="let data of staticDropdown" [value]="data.value">
+                    {{data.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- AD-training-form-wrapper Close -->
+
+    <div class="col-md-12 AD-training-material-wrapper">
+      <p class="master-heading">Select Speaker</p>
+      <hr>
+      <div class="row custome-row">
+        <div class="col-md-12 even-content-panel">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Name: </b> Speaker 1</li>
+                <li><b>Degree:</b>  RN</li>
+                <li><b>Specialty:</b> Cardiology</li>
+              </ul>
+            </div>
+            <div class="col-md-3 zero-bottom-mr">
+              <ul>
+                <li><b>Trained On:</b></li>
+                <li>Training Series A</li>
+                <li>Training Series B</li>
+                <li>Training Series C</li>
+            </ul>
+            </div>
+            <div class="col-md-2 check-pad">
+              <mat-checkbox #checkbox>Select</mat-checkbox>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group" *ngIf="checkbox.checked">
+                <button mat-button class="btn btn-blue">Add Date</button>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- even-content-panel End-->
+        <div class="col-md-12 odd-content-panel">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Name: </b> Speaker 2</li>
+                <li><b>Degree:</b>  RN</li>
+                <li><b>Specialty:</b> Cardiology</li>
+              </ul>
+            </div>
+            <div class="col-md-3 zero-bottom-mr">
+              <ul>
+                <li><b>Trained On:</b></li>
+                <li>Training Series A</li>
+                <li>Training Series B</li>
+                <li>Training Series C</li>
+            </ul>
+            </div>
+            <div class="col-md-2 check-pad">
+              <mat-checkbox #checkbox1>Select</mat-checkbox>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group" *ngIf="checkbox1.checked">
+                <button mat-button class="btn btn-blue">Add Date</button>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- odd-content-panel End-->
+        <div class="col-md-12 even-content-panel">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Name: </b> Speaker 3</li>
+                <li><b>Degree:</b>  RN</li>
+                <li><b>Specialty:</b> Cardiology</li>
+              </ul>
+            </div>
+            <div class="col-md-3 zero-bottom-mr">
+              <ul>
+                <li><b>Trained On:</b></li>
+                <li>Training Series A</li>
+                <li>Training Series B</li>
+                <li>Training Series C</li>
+            </ul>
+            </div>
+            <div class="col-md-2 check-pad">
+              <mat-checkbox #checkbox2>Select</mat-checkbox>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group" *ngIf="checkbox2.checked">
+                <button mat-button class="btn btn-blue">Add Date</button>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- even-content-panel End-->
+        <div class="clearfix"></div>
+        <div class="col-md-12 odd-content-panel">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Name: </b> Speaker 4</li>
+                <li><b>Degree:</b>  RN</li>
+                <li><b>Specialty:</b> Cardiology</li>
+              </ul>
+            </div>
+            <div class="col-md-3 zero-bottom-mr">
+              <ul>
+                <li><b>Trained On:</b></li>
+                <li>Training Series A</li>
+                <li>Training Series B</li>
+                <li>Training Series C</li>
+            </ul>
+            </div>
+            <div class="col-md-2 check-pad">
+              <mat-checkbox #checkbox3>Select</mat-checkbox>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group" *ngIf="checkbox3.checked">
+                <button mat-button class="btn btn-blue">Add Date</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- odd-content-panel End-->
+        <div class="col-md-12 even-content-panel">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Name: </b> Speaker 5</li>
+                <li><b>Degree:</b>  RN</li>
+                <li><b>Specialty:</b> Cardiology</li>
+              </ul>
+            </div>
+            <div class="col-md-3 zero-bottom-mr">
+              <ul>
+                <li><b>Trained On:</b></li>
+                <li>Training Series A</li>
+                <li>Training Series B</li>
+                <li>Training Series C</li>
+            </ul>
+            </div>
+            <div class="col-md-2 check-pad">
+              <mat-checkbox #checkbox4>Select</mat-checkbox>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group" *ngIf="checkbox4.checked">
+                <button mat-button class="btn btn-blue">Add Date</button>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- even-content-panel End-->
+      </div>
+    </div><!-- AD-training-material-wrapper Close -->
+  </mat-card>
+</div>
