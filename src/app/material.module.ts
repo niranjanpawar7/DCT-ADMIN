@@ -7,7 +7,7 @@ import {
   MatButtonModule, MatProgressBarModule,
   MatNativeDateModule, MatDatepickerModule,
   MatCheckboxModule, MatRadioModule,
-  MatIconModule, MatDialogModule
+  MatIconModule, MatDialogModule,
 } from '@angular/material';
 
 @NgModule({
