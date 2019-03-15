@@ -13,8 +13,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
 import { CreateEventComponent } from './create-event/create-event.component';
-import { TrainingComponent } from './training/training.component';
 import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
+import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
+import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 
 
 @NgModule({
@@ -24,6 +25,8 @@ import { InitiateTrainingComponent } from './initiate-training/initiate-training
     FooterComponent,
     PageNotFoundComponent, 
     CreateEventComponent, TrainingComponent, InitiateTrainingComponent, 
+    DialogDataExampleDialog,  
+    ReconcileSpeakerProgramComponent,  
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { InitiateTrainingComponent } from './initiate-training/initiate-training
     MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogDataExampleDialog]
 })
 export class AppModule { }

@@ -36,6 +36,10 @@ mat-card .form-group{
   .mat-form-field-appearance-legacy .mat-form-field-wrapper {
     padding-bottom: 0px;
   }
+  .mat-dialog-container {
+    height: 500px !important;	width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
+    padding: 53px !important;
+  }
 /* Change in Mat-form-fields component End */
 
 .row.custome-row{
@@ -130,66 +134,16 @@ hr {
   border-radius: 8px !important; 
 }
 
-.dailog-wrapper .fc-toolbar .fc-right,
-.dailog-wrapper .btn.btn-default,
-.dailog-wrapper .fc-state-disabled {
-  display: none;
-}
-.dailog-wrapper .fc button, .fc table, body .fc {
-  font-size: 11px;
-}
-.dailog-wrapper .fc .fc-toolbar>*>:first-child {
-  margin-left: 0;
-  font-size: 16px; 
-  font-weight: bold;
-}
-.border-wrap,
-.dailog-form-wrap{
-  height: 350px;
-}
-.dailog-wrapper .border-wrap{
-  border-right: 1px solid #cecece;  
-  border-bottom: 1px solid #cecece; 
-}
-.dailog-wrapper .border-wrap p{
-  margin-left: 18px;
-}
-/* .dailog-wrapper .border-wrap p:last-child{
-  border-bottom: 1px solid #cecece;
-}  */
-.dailog-wrapper .mat-dialog-content { 
-  margin: 0 -24px;
-  padding: 0 24px;
-  max-height: none !important;
-  height: auto;
-  overflow: none; 
-}
+ 
 .mtp-15{
   margin-top: 15px;
 } 
 .nopadding{
   padding: 0px;
-}
-.dailog-form-wrap{
-  border-bottom: 1px solid #cecece;
-}
-.dailog-form-wrap hr{
-  margin-top: 7px;
-  margin-bottom: 10px;
-}
-.dailog-wrapper .custom-hr{
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
+} 
 .mrtp{
   margin-top: 20px;
-}
-.dailog-wrapper .btn-wrap{
-  margin-top: 10px;
-}
-.dailog-wrapper .btn-wrap .btn.btn-primary{
-  margin-left: 15px;
-}
+} 
 .fc-view, .fc-view>table { 
   background: #fff;
 }
@@ -226,15 +180,7 @@ color: white;
   background: #000;
   border: 1px solid #000;
 }
-.mat-dialog-content {
-  display: block;
-  margin: 0 -24px;
-  padding: 0 24px;
-  height: 440px;
-  max-height: 500px !important;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
+ 
 .mat-step-icon-state-number.mat-step-icon.mat-step-icon-selected{
   background-color: white;
   color: #1873d4;
@@ -447,4 +393,11 @@ tr.mat-header-row {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
   }
+}
+
+
+/*****************- Akshay css starts -******************/
+
+.mat-btn-primary{
+  color: var(--app-color-primary);
 }
