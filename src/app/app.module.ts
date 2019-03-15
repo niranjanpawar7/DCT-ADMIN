@@ -13,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
 import { CreateEventComponent } from './create-event/create-event.component';
-import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
+import { InitiateTrainingComponent, DialogDateExampleDialog } from './initiate-training/initiate-training.component'; 
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 import { AddVenueComponent} from './add-venue/add-venue.component'
@@ -25,7 +25,7 @@ import { AddVenueComponent} from './add-venue/add-venue.component'
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent, 
-    CreateEventComponent, TrainingComponent, InitiateTrainingComponent, 
+    CreateEventComponent, TrainingComponent, InitiateTrainingComponent,DialogDateExampleDialog, 
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,
     AddVenueComponent  
@@ -43,6 +43,6 @@ import { AddVenueComponent} from './add-venue/add-venue.component'
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog]
+  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog]
 })
 export class AppModule { }
