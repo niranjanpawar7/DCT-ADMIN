@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
+import { AddVenueComponent} from './add-venue/add-venue.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/re
     PageNotFoundComponent, 
     CreateEventComponent, TrainingComponent, 
     DialogDataExampleDialog,  
-    ReconcileSpeakerProgramComponent,  
+    ReconcileSpeakerProgramComponent,
+    AddVenueComponent  
   ],
   imports: [
     BrowserModule,
