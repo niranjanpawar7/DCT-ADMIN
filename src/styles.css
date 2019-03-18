@@ -47,15 +47,10 @@ mat-card .form-group{
   .mat-form-field-appearance-legacy .mat-form-field-wrapper {
     padding-bottom: 0px;
   }
-<<<<<<< HEAD
-  /*.mat-dialog-container {
-    height: 500px !important;	width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
-=======
   .mat-dialog-container { 
     width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
->>>>>>> 3a181a61b389a9e2b4768d93dc7a8f87ba875f5d
     padding: 53px !important;
-  }*/
+  }
 /* Change in Mat-form-fields component End */
 
 .row.custome-row{
