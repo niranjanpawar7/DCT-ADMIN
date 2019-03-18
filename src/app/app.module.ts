@@ -16,7 +16,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
 import { InitiateTrainingComponent, DialogDateExampleDialog } from './initiate-training/initiate-training.component'; 
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
-import { AddVenueComponent} from './add-venue/add-venue.component'
+import { AddVenueComponent} from './add-venue/add-venue.component';
+import { ManageSpkeakerContentComponent } from './manage-spkeaker-content/manage-spkeaker-content.component'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AddVenueComponent} from './add-venue/add-venue.component'
     CreateEventComponent, TrainingComponent, InitiateTrainingComponent,DialogDateExampleDialog, 
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,
-    AddVenueComponent  
+    AddVenueComponent,
+    ManageSpkeakerContentComponent  
   ],
   imports: [
     BrowserModule,

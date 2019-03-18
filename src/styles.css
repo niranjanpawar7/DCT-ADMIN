@@ -8,6 +8,17 @@ mat-card .form-group{
 .mat-form-field-ripple{
   display: none !important;
 }
+.assign-content-wrapper .mat-checkbox-inner-container{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.assign-content-wrapper .mat-checkbox-label{
+ color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 18px; 
+} 
+.assign-content-wrapper .mat-checkbox-layout{
+  margin-bottom: 10px;
+}
 .cdk-text-field-autofill-monitored:not(:-webkit-autofill){
   height: 38px;
   margin-top: -5px;
