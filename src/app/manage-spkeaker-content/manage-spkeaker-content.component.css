@@ -1,0 +1,44 @@
+.assign-content-wrapper mat-card{
+    padding: 38px 44px 84px 45px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.assign-content-wrapper hr{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}  
+.nopadding{
+    padding: 0px;
+}
+.btn-blue{
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
+    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.btn-white{
+    height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.training-venue-wrapper .form-control{
+	height: 38px; border: 1px solid #CECECE;	border-radius: 4px; margin-bottom: 30px;
+}
+.form-group label{
+    margin-bottom: 6px;
+    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+}
+.master-heading{
+    font-size: 30px;
+    color: blue;
+}
+.mat-check-wrap label{
+    color: #757575;	font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .venue-admin-wrapper mat-card{
+        padding: 25px;  
+    }
+}
