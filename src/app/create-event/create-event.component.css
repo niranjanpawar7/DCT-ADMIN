@@ -428,6 +428,24 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     margin-top: 93px;
     margin-bottom: 30px;
 }
+.speaker-popup .header-text-style{
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.speaker-popup .form-group {
+     margin-bottom: 45px;
+}
+.speaker-popup .form-group label{
+    color: #757575;	font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px;
+}
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
     .vanue-delete-btn{
         float: left;

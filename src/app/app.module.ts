@@ -12,7 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
 import { MatInputModule } from '@angular/material'; 
-import { CreateEventComponent } from './create-event/create-event.component';
+import { CreateEventComponent, createEventPopup } from './create-event/create-event.component';
 import { InitiateTrainingComponent, DialogDateExampleDialog } from './initiate-training/initiate-training.component'; 
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
@@ -27,7 +27,8 @@ import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent, 
-    CreateEventComponent, TrainingComponent, InitiateTrainingComponent,DialogDateExampleDialog, 
+    CreateEventComponent, createEventPopup,
+    TrainingComponent, InitiateTrainingComponent,DialogDateExampleDialog, 
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,
     AddVenueComponent,
@@ -47,6 +48,6 @@ import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog, LoginDialog, speakerUpload]
+  entryComponents: [DialogDataExampleDialog, createEventPopup, DialogDateExampleDialog, speakerUpload, LoginDialog]
 })
 export class AppModule { }

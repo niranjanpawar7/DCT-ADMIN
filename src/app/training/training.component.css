@@ -82,6 +82,13 @@
 .upLodedContent img{
     margin-left: 16px
 }
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 800px) {
