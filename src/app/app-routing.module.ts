@@ -8,9 +8,11 @@ import { AddVenueComponent} from './add-venue/add-venue.component'
 import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
 import { ManageSpkeakerContentComponent } from './manage-spkeaker-content/manage-spkeaker-content.component'
 import { DashboardComponent } from './dashboard/dashboard.component'
+import { LoginComponent } from './login/login.component'
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '/training', pathMatch: 'full' },  
+  { path: '', redirectTo: '/login', pathMatch: 'full' },  
   { path: 'create', component : CreateEventComponent },
   { path: 'reconcile-speaker-program', component : ReconcileSpeakerProgramComponent },
   { path: 'training', component: TrainingComponent },
@@ -18,6 +20,7 @@ const routes: Routes = [
   { path: 'initiatetraining', component: InitiateTrainingComponent },
   { path: 'speaker-content', component: ManageSpkeakerContentComponent },
   { path : 'dashboard', component: DashboardComponent },
+  { path: 'login', component: LoginComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
