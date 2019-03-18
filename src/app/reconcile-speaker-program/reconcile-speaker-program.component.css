@@ -473,4 +473,51 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
   .btn-transparent{
     background-color: transparent !important;
   }
+
+  .upload-popup-parent .daliog-master-heading{ 
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    margin-bottom: 35px;
+}
+.file-info{
+    height: 38px; border: 1px solid #CECECE;	border-radius: 4px;
+    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    padding: 8px;
+    margin-bottom: 10px;
+} 
+.file-info.mr-b-0{
+    margin-bottom: 0px;
+}
+.file-info img{
+    margin-top: -5px;
+}
+.choose-btn{
+    margin-top: 17px;
+    margin-bottom: 60px;
+}
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
+.upLodedContent{
+    margin-bottom: 20px;
+}
+.upLodedContent i{
+    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 14px;	font-style: italic;	line-height: 30px;	text-align: right;
+}
+.upLodedContent img{
+    margin-left: 16px
+}
+
+.action-card .vanue-delete-btn{
+    padding: 0px;
+    float: none !important;
+}
+
+.card-link{
+    padding: 10px 15px;
+}
+
   

@@ -1,0 +1,126 @@
+<div class="col-md-12 upload-popup-parent">
+    
+    <div class="col-md-12">
+        
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <span class="header-text-style nopadding">Jack Aaron Airfare Expense Type (Program ID: 2861)</span> 
+        </div>
+        
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img src="/assets/icons/popup-close.png" class="close-position pull-right">
+        </div>
+        
+    
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12">
+        <hr class="hr-color">
+    </div>
+    <div class="col-md-12 nopadding">
+        <div class="rsp-form">
+            <div class="form-group">
+                <div class="col-md-4">
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker1" placeholder="Date of Charge">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker2" placeholder="Date of Travel">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker3" placeholder="Date Submitted">
+                        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                        <mat-datepicker #picker3></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label>Flight Number</label>
+                    <mat-form-field class="example-full-width">
+                    <input type="email" matInput placeholder="" value="">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <label>Airline Expense</label>
+                    <mat-form-field class="example-full-width">
+                        <input type="text" matInput placeholder="" value="">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label>Upload</label>
+                    <mat-form-field class="example-full-width">
+                    <input type="email" matInput placeholder="" value="">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn view-details-custom fnt-weigth"> Choose File </button>
+                </div>
+            </div>
+            <div class="form-group">
+                    <div class="col-md-12">
+                        <label>Notes</label>
+                        <mat-form-field class="example-full-width">
+                            <textarea matInput rows="4" cols="50"></textarea>
+                        </mat-form-field>
+                    </div>
+            </div>
+            <div class="form-group rec-speaker-program-btns">
+                <div class="col-md-12">
+                    <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+                    <button mat-button class="primary-custom" [mat-dialog-close]="">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 nopadding">
+        <div class="cust-mat-table">
+            <h3>Total Airfare Expenses</h3>
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="Submitted By">
+                      <th mat-header-cell *matHeaderCellDef> <span>Submitted By </span></th>
+                      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                    </ng-container>
+                  
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="Date Submitted">
+                      <th mat-header-cell *matHeaderCellDef> <span>Date Submitted</span> </th>
+                      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+                  
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="Payee">
+                      <th mat-header-cell *matHeaderCellDef> <span>Payee</span> </th>
+                      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                    </ng-container>
+                  
+                    <!-- Symbol Column -->
+                    <ng-container matColumnDef="Total">
+                      <th mat-header-cell *matHeaderCellDef> <span>Total</span> </th>
+                      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Action">
+                        <th mat-header-cell *matHeaderCellDef> <span>Action</span> </th>
+                        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                    </ng-container>
+                  
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  </table>
+        </div>
+        <div class="no-data">
+            No Data Found
+        </div>
+    </div>
+</div>
