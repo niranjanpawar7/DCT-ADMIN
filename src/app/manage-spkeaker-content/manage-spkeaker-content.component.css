@@ -25,6 +25,14 @@
     margin-bottom: 6px;
     font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
 }
+.speaker-popup .master-heading{
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 36px;
+    margin-bottom: 13px;
+} 
+.speaker-popup p{  
+    margin-bottom: 36px;
+    text-align: center;
+}
 .master-heading{
     font-size: 30px;
     color: blue;

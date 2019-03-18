@@ -17,8 +17,8 @@ import { InitiateTrainingComponent, DialogDateExampleDialog } from './initiate-t
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 import { AddVenueComponent} from './add-venue/add-venue.component';
-import { ManageSpkeakerContentComponent } from './manage-spkeaker-content/manage-spkeaker-content.component';
 import { LoginComponent, DialogLoginExampleDialog } from './login/login.component'
+import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component'
 
 
 @NgModule({
@@ -31,8 +31,8 @@ import { LoginComponent, DialogLoginExampleDialog } from './login/login.componen
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,
     AddVenueComponent,
-    ManageSpkeakerContentComponent,
-    LoginComponent,DialogLoginExampleDialog  
+    LoginComponent,DialogLoginExampleDialog,
+    ManageSpkeakerContentComponent, speakerUpload 
   ],
   imports: [
     BrowserModule,
@@ -47,6 +47,6 @@ import { LoginComponent, DialogLoginExampleDialog } from './login/login.componen
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog, DialogLoginExampleDialog]
+  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog, DialogLoginExampleDialog, speakerUpload]
 })
 export class AppModule { }
