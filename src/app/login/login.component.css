@@ -13,15 +13,21 @@
     padding: 0px;
 }
 .btn-blue{
-    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA; margin-top: 14px;
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
     color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .form-group label{
     margin-bottom: 6px;
     font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
 }
-.form-group .btn-forgot{
+.btn-forgot{
   color: #2B62CA;
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+}
+.mr-tp-30{
+  margin-top: 30px;
 }
 .para-forgot{
     color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
