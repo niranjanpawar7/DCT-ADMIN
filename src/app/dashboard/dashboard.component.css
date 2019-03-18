@@ -15,6 +15,12 @@ table {
     width: 100%;
     margin-bottom: 30px;
 }
+.table-clr-blue{
+    color: #2B62CA;
+}
+tr.mat-footer-row, tr.mat-row {
+    height: 60px;
+}
  
 .mat-row:nth-child(odd){ 
     background-color: #F0F0F0;

@@ -14,9 +14,9 @@ const ELEMENT_DATA = [
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
-
+  selectedOption = '1';
   constructor(public dialog: MatDialog) { }
-
+  
 
 
   ngOnInit() {
