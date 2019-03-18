@@ -17,7 +17,7 @@ import { InitiateTrainingComponent, DialogDateExampleDialog } from './initiate-t
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
 import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 import { AddVenueComponent} from './add-venue/add-venue.component';
-import { LoginComponent, DialogLoginExampleDialog } from './login/login.component'
+import { LoginComponent, LoginDialog } from './login/login.component'
 import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component'
 
 
@@ -31,7 +31,7 @@ import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker
     DialogDataExampleDialog,  
     ReconcileSpeakerProgramComponent,
     AddVenueComponent,
-    LoginComponent,DialogLoginExampleDialog,
+    LoginComponent,LoginDialog,
     ManageSpkeakerContentComponent, speakerUpload 
   ],
   imports: [
@@ -47,6 +47,6 @@ import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog, DialogLoginExampleDialog, speakerUpload]
+  entryComponents: [DialogDataExampleDialog, DialogDateExampleDialog, LoginDialog, speakerUpload]
 })
 export class AppModule { }
