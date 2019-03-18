@@ -25,6 +25,9 @@
     margin-bottom: 6px;
     font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
 }
+.speaker-popup{
+    position: relative;
+}
 .speaker-popup .master-heading{
     color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 36px;
     margin-bottom: 13px;
@@ -45,7 +48,13 @@
       margin-top: 45px;
       margin-bottom: 45px;  
 }
-
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 800px) {
