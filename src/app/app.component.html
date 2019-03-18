@@ -65,7 +65,25 @@
             </li>
 
             <li>
-              <a [routerLink]="['/venue']" [routerLinkActive]="['router-link-active']">
+                <a [routerLink]="['/training']" [routerLinkActive]="['router-link-active']">
+                  <span class="nav-pad">
+                    <img src="assets/icons/training.svg" class="img-responsive" />
+                    UPLOAD REFERENCE MATERIAL
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                  <a [routerLink]="['/speaker-content']" [routerLinkActive]="['router-link-active']">
+                    <span class="nav-pad">
+                      <img src="assets/icons/training.svg" class="img-responsive" />
+                      MANAGE SPEAKER CONTENT
+                    </span>
+                  </a>
+              </li>
+             
+            <li>
+              <a [routerLink]="['/add-venue']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                     <span class="glyphicon glyphicon-map-marker"></span>
                     <div class="clearfix"></div>

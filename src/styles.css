@@ -8,6 +8,17 @@ mat-card .form-group{
 .mat-form-field-ripple{
   display: none !important;
 }
+.assign-content-wrapper .mat-checkbox-inner-container{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.assign-content-wrapper .mat-checkbox-label{
+ color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 18px; 
+} 
+.assign-content-wrapper .mat-checkbox-layout{
+  margin-bottom: 10px;
+}
 .cdk-text-field-autofill-monitored:not(:-webkit-autofill){
   height: 38px;
   margin-top: -5px;
@@ -36,8 +47,13 @@ mat-card .form-group{
   .mat-form-field-appearance-legacy .mat-form-field-wrapper {
     padding-bottom: 0px;
   }
+<<<<<<< HEAD
   /*.mat-dialog-container {
     height: 500px !important;	width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
+=======
+  .mat-dialog-container { 
+    width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
+>>>>>>> 3a181a61b389a9e2b4768d93dc7a8f87ba875f5d
     padding: 53px !important;
   }*/
 /* Change in Mat-form-fields component End */
@@ -129,6 +145,7 @@ hr {
 .mat-form-field-infix{
   width: 100% !important; 
   border-top: 0px; 
+  border: 1px solid #CECECE;
 } 
 .mat-horizontal-stepper-header-container{
   border-radius: 8px !important; 

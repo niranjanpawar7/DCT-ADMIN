@@ -1,0 +1,53 @@
+<div class="col-md-12 select-date-popup-parent">
+    <img src="/assets/icons/popup-close.png" class="close-position">
+    
+    <div class="daliog-master-heading">Select Training Date</div>
+    <div class="col-md-12 nopadding">
+       <div class="col-md-12 file-info">
+        <div class="form-group">
+            <label>Training Type</label>
+            <mat-form-field>
+              <mat-select placeholder="" [(ngModel)]="selectedDate">
+                <mat-option *ngFor="let data of selectDate" [value]="data.value">
+                  {{data.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+       </div>
+       <div class="col-md-12 file-info">
+        <div class="form-group" *ngIf="selectedDate==='live'">
+            <label>Start Date</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+       </div>
+       <div class="col-md-12 file-info mr-b-0">
+        <div class="form-group" *ngIf="selectedDate==='live'">
+            <label>End Date</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker11" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+              <mat-datepicker #picker11></mat-datepicker>
+            </mat-form-field>
+          </div>
+       </div> 
+       <div class="col-md-12 file-info mr-b-0">
+        <div class="form-group" *ngIf="selectedDate==='online'">
+            <label>Complte By Date</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker11" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="picker11"></mat-datepicker-toggle>
+              <mat-datepicker #picker11></mat-datepicker>
+            </mat-form-field>
+          </div>
+       </div>  
+       <div class="col-md-12 text-center nopadding">
+            <button mat-button [mat-dialog-close]="" class="btn btn-blue">Submit</button>
+             
+       </div> 
+    </div>
+</div>
