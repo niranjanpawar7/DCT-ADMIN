@@ -15,7 +15,7 @@ import { MatInputModule } from '@angular/material';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { InitiateTrainingComponent } from './initiate-training/initiate-training.component'; 
 import { TrainingComponent, DialogDataExampleDialog } from './training/training.component'; 
-import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/reconcile-speaker-program.component';  
+import { ReconcileSpeakerProgramComponent, RecSpeakComp, UploadFileModal } from './reconcile-speaker-program/reconcile-speaker-program.component';  
 
 
 @NgModule({
@@ -25,8 +25,10 @@ import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/re
     FooterComponent,
     PageNotFoundComponent, 
     CreateEventComponent, TrainingComponent, InitiateTrainingComponent, 
-    DialogDataExampleDialog,  
-    ReconcileSpeakerProgramComponent,  
+    DialogDataExampleDialog,
+    RecSpeakComp,  
+    ReconcileSpeakerProgramComponent, 
+    UploadFileModal 
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,6 @@ import { ReconcileSpeakerProgramComponent } from './reconcile-speaker-program/re
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog]
+  entryComponents: [DialogDataExampleDialog, RecSpeakComp, UploadFileModal]
 })
 export class AppModule { }
