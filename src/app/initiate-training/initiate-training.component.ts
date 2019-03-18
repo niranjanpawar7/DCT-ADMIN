@@ -24,7 +24,7 @@ export class InitiateTrainingComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogDateExampleDialog);
 
       dialogRef.afterClosed().subscribe(result => { 
-        console.log("heee")
+        
       });
   };
   ngOnInit() {
@@ -43,7 +43,7 @@ export class DialogDateExampleDialog {
     {value: 'online', viewValue: 'Online'}
   ];
   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {
-      
+    this.selectedDate='live';
   }
 }
 

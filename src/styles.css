@@ -5,6 +5,9 @@
 mat-card .form-group{
   margin-bottom: 30px;
 }
+.mat-elevation-z8 {
+  box-shadow: none;
+}
 .mat-form-field-ripple{
   display: none !important;
 }
