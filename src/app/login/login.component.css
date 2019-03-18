@@ -1,0 +1,39 @@
+.login-forgot-popup-parent .daliog-master-heading{ 
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    margin-bottom: 0px;
+}
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
+.nopadding{
+    padding: 0px;
+}
+.btn-blue{
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA; margin-top: 14px;
+    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.form-group label{
+    margin-bottom: 6px;
+    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+}
+.form-group .btn-forgot{
+  color: #2B62CA;
+}
+.para-forgot{
+    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+}
+.logo-header{
+    background: linear-gradient(317.31deg, #1C447F 0%, #32BDE7 100%);
+    margin-top: -53px;
+    padding: 35px;
+    margin-bottom: 25px;
+}
+.custom-row{
+    margin-right: -53px;
+    margin-left: -53px;
+    text-align: center;
+}
