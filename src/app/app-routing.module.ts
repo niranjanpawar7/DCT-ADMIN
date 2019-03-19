@@ -9,6 +9,7 @@ import { InitiateTrainingComponent } from './initiate-training/initiate-training
 import { ManageSpkeakerContentComponent } from './manage-spkeaker-content/manage-spkeaker-content.component'
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent } from './login/login.component'
+import { SpeakerComponent } from './speaker/speaker.component'
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'speaker-content', component: ManageSpkeakerContentComponent },
   { path : 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent},
+  { path: 'speaker', component: SpeakerComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
