@@ -73,4 +73,10 @@ mat-card .form-group {
     .speaker-admin-wrapper mat-card{
         padding: 25px;  
     }
+    .mr-top-67{
+        margin-top: 15px;
+    }
+    .text-right.white-btn-wrap{
+        text-align: left;
+      }
 }
