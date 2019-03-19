@@ -16,6 +16,14 @@ const TASK_DATA = [
   {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management',  Speaker: 'Charlotte Ford', SalesRep: 'Georgia Copeland', Task: 'Finalize Contract'},
 ];
 
+const NOTIFICATION_DATA = [
+  {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management', Action: 'Georgia Copeland', By: 'Finalize Contract',  Speaker: 'Charlotte Ford',},
+  {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management', Action: 'Georgia Copeland', By: 'Finalize Contract',  Speaker: 'Charlotte Ford',},
+  {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management', Action: 'Georgia Copeland', By: 'Finalize Contract',  Speaker: 'Charlotte Ford',},
+  {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management', Action: 'Georgia Copeland', By: 'Finalize Contract',  Speaker: 'Charlotte Ford',},
+  {ID: 6234, Date: 3/6/19, Topic: 'Neuroscience Management', Action: 'Georgia Copeland', By: 'Finalize Contract',  Speaker: 'Charlotte Ford',},
+];
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -28,6 +36,9 @@ export class DashboardComponent implements OnInit {
 
   displayedColumns1: string[] = ['ID', 'Date', 'Topic', 'Speaker', 'SalesRep', 'Task'];
   dataSource1 = TASK_DATA;
+
+  displayedColumns2: string[] = ['ID', 'Date', 'Topic', 'Action', 'By',  'Speaker'];
+  dataSource2 = NOTIFICATION_DATA;
 
   constructor() { }
 
