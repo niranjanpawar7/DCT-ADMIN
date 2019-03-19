@@ -1,0 +1,396 @@
+<div class="col-md-12 speaker-admin-wrapper">
+  <mat-card>
+    <div class="master-heading">Patient Details</div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="row form-wrapper">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>First Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Last Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>City</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label>State</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="ST">
+              <mat-option value="Type1">State 1</mat-option>
+              <mat-option value="Type1">State 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Gender</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Gender">
+              <mat-option value="male">Male</mat-option>
+              <mat-option value="female">Female</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Role</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Role">
+              <mat-option value="Role1">Role 1</mat-option>
+              <mat-option value="Role2">Role 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Speaker Language</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Language">
+              <mat-option value="language1">Language 1</mat-option>
+              <mat-option value="language2">Language 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Speaker Secondary Language</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Language">
+              <mat-option value="language1">Language 1</mat-option>
+              <mat-option value="language2">Language 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <label>Trained</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="trained">Trained</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label>Contracted</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="trained">Contracted</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Date of Diagnosis</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Treatment Start Date</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker1" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Insurance Type</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="col-md-6 form-group-wraper">
+        <div class="form-group">
+          <label>Speaker Biography</label>
+          <mat-form-field class="custom-text-area">
+            <textarea matInput placeholder=""></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-6 form-group-wraper">
+        <div class="form-group">
+          <label>Any Internal Notes</label>
+          <mat-form-field class="custom-text-area">
+            <textarea matInput placeholder=""></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Speaker Profile Photo</label>
+          <div class="form-group btn-wrap">
+            <button mat-button class="btn btn-white" (click)="openDialog()">Upload Photo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="clr-lbl-btn">Speaker Photo Library</label>
+          <div class="form-group btn-wrap">
+            <button mat-button class="btn btn-sky-white" (click)="openDialog()">Upload Photo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>  
+  
+  <mat-card>
+    <div class="master-heading">Family/Caregiver Details</div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="row form-wrapper">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>First Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Last Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Email</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Primary Phone Number</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Secondary Phone Number</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label>Gender</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Gender">
+              <mat-option value="male">Male</mat-option>
+              <mat-option value="female">Female</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group">
+          <label>Date of Brith</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker99" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker99"></mat-datepicker-toggle>
+            <mat-datepicker #picker99></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group">
+          <label>Patient Name(s)</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Date of Diagnosis</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker33" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker33"></mat-datepicker-toggle>
+            <mat-datepicker #picker33></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Treatment Start Date</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker12" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
+            <mat-datepicker #picker12></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </mat-card> 
+
+  <mat-card>
+    <div class="master-heading">Preferences</div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="row form-wrapper">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Mail Checks to</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="mail">Mail</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Travel with caregiver required</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="Travel">Travel</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Travel with support/comfort animal</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="Travel1">Travel1</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Preferred Hotel Chain</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="Hotel">Hotel</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Preferred Airline</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="airline">Airline</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Handicap accessible required</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="handicap">Handicap</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Dietary Needs/Restrictions </label>
+          <mat-form-field class="custom-text-area">
+            <textarea matInput placeholder=""></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Other notes</label>
+          <mat-form-field class="custom-text-area">
+            <textarea matInput placeholder=""></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </mat-card> 
+  <div class="clearfix"></div>
+  <div class="col-md-12 mr-top-67">
+    <div class="col-md-6">
+      <div class="form-group btn-wrap text-right">
+        <button mat-button class="btn btn-white">Reset</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group btn-wrap">
+        <button mat-button class="btn btn-blue">Submit</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
