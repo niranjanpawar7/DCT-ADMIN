@@ -2,6 +2,7 @@
     padding: 38px 44px 84px 45px; 
     margin-top: 70px;
     margin-bottom: 70px;
+    box-shadow: 0 6px 24px 0 #E2E9F7;
 }
 .assign-content-wrapper hr{
     margin-top: 10px;
