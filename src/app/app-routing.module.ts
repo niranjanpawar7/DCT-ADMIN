@@ -12,7 +12,8 @@ import { LoginComponent } from './login/login.component'
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { SpeakerComponent } from './speaker/speaker.component'
 import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
-import { TaskFilterComponent } from './task-filter/task-filter.component'
+import { TaskFilterComponent } from './task-filter/task-filter.component';
+import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },  
@@ -28,7 +29,7 @@ const routes: Routes = [
   { path: 'speaker', component: SpeakerComponent},
   { path : 'upload-reference', component : UploadReferancesComponent},
   { path : 'task-filter', component : TaskFilterComponent},
-  
+  { path: 'attendee-list', component: AttendeeListComponent},
   { path: '**', component: PageNotFoundComponent },
   
   

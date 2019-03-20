@@ -1,19 +1,9 @@
-.mat-card{
-    padding-left:33px;
-    padding-right: 33px;
-    border-radius: 8px;
-}
 .nopadding{
     padding: 0px;
 }
-mat-horizontal-stepper{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 mat-card ul{
     list-style-type: none;
-    padding-left: 15px;
-    margin: 0px; 
+    padding-left: 10px; 
 }
 .mat-step-icon .mat-icon{
     display: none;
@@ -143,7 +133,7 @@ ul li{
     border:1px solid #1873d4;  
     margin-left: 15px;
     height: 55px;
-    width: 180px;
+/*     width: 180px; */
     border-radius: 4px;
     font-size: 18px;
 }
@@ -450,16 +440,6 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     .text-center{
         float: left;
     }
-     .speaker-program-list .speaker-program-row {
-        padding-bottom: 30px !important;
-    }
-    .border-right {
-        border: none !important;
-    }
-    .btn-view button{
-        margin-top: 40px !important;
-    }
-    
   }
 
    .speaker-program-list .header{
@@ -530,76 +510,34 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .card-link{
     padding: 10px 15px;
 }
-.btn-view {
-    padding: 0px;
-    text-align: right;
-}
-.btn-view button {width: auto !important;/*margin: 0px !important*/;margin-right: 15px !important;margin-bottom: 20px !important;}
-li {min-height: 40px;}
-.add-btn {
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 40px !important;
-    margin-top: 15px;
-}
 
-.center {
-    text-align: center;
-    margin-top: 40px !important;
-    margin-bottom: 30px !important;
+.no-pad {
+    padding: 0px !important;
 }
-
-.center button {
-    background-color: transparent;
+.pad-left {
+    padding-left: 38px !important;
 }
-.paddingtop {
-    padding: 30px 50px 0px 50px !important;
+.mat-pad span {
+    padding-left: 20px;
 }
-.no-mar {
+.pad-hr {
+    padding-left: 36px;
+    padding-right: 30px;
+}
+.pad-hr hr {
     margin-bottom: 0px !important;
 }
-.border-right {
-    border-left: 1px solid #717171;
+
+
+@media only screen and (max-width: 800px){
+    .pad-left {
+        padding-left: 38px;
+    }
 }
-span.subtitle-speaker-exp {
-    font-size: 22px;
-    color: #1D232F;
-    margin-left: 13px;
-}
-span.subtitl-exp-blue {
-    color: #2B62CA;
-    font-size: 22px;
-    font-weight: 600;
-}
-.top-mar {
+.btn-view {
     margin-top: 25px;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
 }
 
-@media (max-width: 767px)
-{
-    .card-table .view-details-custom.pull-right{
-        float: none !important;
-    }
-    .btn-view {
-        text-align: left;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
-{
-  
-  
-}
-
-@media screen and (min-width: 1400px) {
- 
-}
-@media screen and (min-width: 1600px) {
-  
-}
-@media screen and (min-width: 1900px) {
-  
-}
-@media screen and (min-width: 2100px) {
-  
-}
+.btn-view button {width: auto !important;margin: 0px !important;margin-right: 15px !important;}

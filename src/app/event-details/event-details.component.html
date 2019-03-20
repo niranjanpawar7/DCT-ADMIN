@@ -1,4 +1,3 @@
-
 <div class="row">
   <div class="col-md-12">
     <mat-card class="first-wrap line-height mat-card-sd">
@@ -8,21 +7,22 @@
         <hr class="hr-color">
       </div>
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
+        <ul>
           <li><b>Speaker Program ID</b>: 2861</li>
           <li><b>Speaker</b>: Jack Aaron</li>
+          <li><b>HCP Speaker</b>: Jack Aaron</li>
         </ul>
       </div>
     
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
+        <ul>
           <li><b>Start Date</b>: 02/20/2019</li>
-          <li><b>Product</b>: Patient Support Program Speaker Program</li>
+          <li><b>Product</b>: Patient Support Program<br> Speaker Program</li>
         </ul>
       </div>
     
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
+        <ul>
           <li><b>Program Type</b>: Live</li>
           <li><b>Territory</b>: KAM-New Hampshire</li>
         </ul>
@@ -33,22 +33,57 @@
       </div>
 
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
+        <ul>
           <li><b>Date Submitted</b>: 02/10/2019</li>
-          <li><b>Speaker Confirmed</b>: 02/10/2019</li>
         </ul>
       </div>
     
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
-          <li><b>Date Approved</b>: 02/10/2019</li>
+        <ul>
+          <li><b>Program Confirmation</b>: 02/10/2019</li>
+        </ul>
+      </div>
+    
+      <div class="col-md-4">
+        <ul>
           <li><b>SRF/Expenses Submitted</b>: N/A</li>
         </ul>
       </div>
+
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+      
+      <div class="col-md-12 btn-view float">
+        <button class="btn view-details-custom-attendee fnt-weigth"> Speaker Program Reconciliation </button>
+        <button class="btn view-details-custom-attendee fnt-weigth" (click)="ProgramStatus()"> Program Status </button>
+        <button class="btn view-details-custom-attendee fnt-weigth" (click)="viewDetails()"> View Audit Trail Invitation </button>
+      </div>
+    </mat-card>
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12"><span class="header-text-style">Program Details</span></div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>Date:</b> 02/20/2019</li>
+          <li><b>Start Time:</b> 01:00 PM</li>
+        </ul>
+      </div>
     
       <div class="col-md-4">
-        <ul class="pad-lft-zero">
-          <li><b>Venue Confirmed</b>: 02/10/2019</li>
+        <ul>
+          <li><b>Alternate Date:</b> 02/27/2019</li>
+          <li><b>End Time:</b> 02:00 PM</li>
+        </ul>
+      </div>
+    
+      <div class="col-md-4">
+        <ul>
+          <li></li>
+          <li><b>Time Zone:</b> Atlantic</li>
         </ul>
       </div>
 
@@ -56,20 +91,406 @@
         <hr class="hr-color">
       </div>
 
-      
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="rec-speaker-program-btns">
-          <div class="col-md-12">
-              <!-- <button mat-button class="fnt-weigth">Reset</button> -->
-              <button mat-button class="primary-custom">Speaker Program Reconci</button>
-              <button mat-button class="primary-custom">Upload</button>
-              <button mat-button class="primary-custom">Upload</button>
-          </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>Sales Rep Name:</b> Missy Long</li>
+          <li><b>Territory:</b> KAM - New Hampshire</li>
+          <li><b>Meal Type:</b> No Meal</li>
+        </ul>
       </div>
+    
+      <div class="col-md-4">
+        <ul>
+          <li><b>Sales Rep Email:</b><br>pooja.chandel@alexion.com</li>
+          <li><b>Product:</b> Patient Support Program</li> 
+          <li><b>Program Type:</b> Live</li> 
+        </ul>
+      </div>
+    
+      <div class="col-md-4">
+        <ul>
+          <li><b>Phone:</b> 603-918-1559</li>
+          <li><b>Program Topic:</b> PAH-Coping With<br> A Chronic Condition</li>
+        </ul>
+      </div>
+    </mat-card>
+
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12"><span class="header-text-style">Speaker Details</span></div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>Name:</b> Jack Aaron</li>
+          <li><b>Email:</b> jack@aaron.com</li>
+        </ul>
+      </div>
+    
+      <div class="col-md-4">
+        <ul>
+          <li><b>Office City:</b> Schenectady</li>
+          <li><b>Office Phone:</b> 946-585-6621</li>
+        </ul>
+      </div>
+    
+      <div class="col-md-4">
+        <ul>
+          <li><b>Office State:</b> New York</li>
+        </ul>
+      </div>
+
+      <div class="col-md-12">
+        <hr class="hr-color">
       </div>
       
+      <div class="col-md-12 btn-view float">
+        <button class="btn view-details-custom-attendee fnt-weigth" (click)="TravelInfo()"> Travel Info </button>
+        <button class="btn view-details-custom-attendee fnt-weigth" (click)="HotelInfo()"> Hotel Info </button>
+      </div>
 
     </mat-card>
+
+    <mat-card class="second-wrap line-height mat-card-sd speaker-program-list nopadding">
+        <div class="header">
+          <div class="row">
+              <div class="col-md-9"><span class="header-text-style">Registration and Attendee Status</span></div>
+              <div class="col-md-3">
+                <button class="btn view-details-custom-attendee fnt-weigth pull-right" (click)="openAddAttendee()"> Add Attendee </button>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-12">
+                <hr class="hr-color">
+              </div>
+  
+              <div class="col-md-4">
+                <ul class="pad-lft-zero">
+                  <li><b>Registered:</b> 04</li>
+                </ul>
+              </div>                
+              <div class="col-md-12">
+                  <hr class="hr-color">
+              </div>
+          </div>
+        </div>
+        <div class="speaker-program-row">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Name:</b> Michela Aab</li>
+                <li><b>City & State:</b> Fort Worth, TX</li>
+                <li><b>Phone Number:</b> 817-923-2677</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Date of Registration:</b> 02/20/2019</li>
+                <label>Status</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        Pre-Registered
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                </li>
+                <li><b>Email:</b> michela.aab@Alexion.com</li>
+                <label>Attended</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        N/A
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program Row -->
+        <div class="speaker-program-row dark">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Name:</b> Michela Aab</li>
+                <li><b>City & State:</b> Fort Worth, TX</li>
+                <li><b>Phone Number:</b> 817-923-2677</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Date of Registration:</b> 02/20/2019</li>
+                <label>Status</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        Pre-Registered
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                </li>
+                <li><b>Email:</b> michela.aab@Alexion.com</li>
+                <label>Attended</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        N/A
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program dark Row -->
+        <div class="speaker-program-row">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Name:</b> Michela Aab</li>
+                <li><b>City & State:</b> Fort Worth, TX</li>
+                <li><b>Phone Number:</b> 817-923-2677</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Date of Registration:</b> 02/20/2019</li>
+                <label>Status</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        Pre-Registered
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                </li>
+                <li><b>Email:</b> michela.aab@Alexion.com</li>
+                <label>Attended</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        N/A
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program Row -->
+        <div class="speaker-program-row dark">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Name:</b> Michela Aab</li>
+                <li><b>City & State:</b> Fort Worth, TX</li>
+                <li><b>Phone Number:</b> 817-923-2677</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li></li>
+                <li><b>Date of Registration:</b> 02/20/2019</li>
+                <label>Status</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        Pre-Registered
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>
+                  <button class="btn vanue-delete-btn btn-transparent"><span  class="glyphicon glyphicon-trash"></span> Delete</button>
+                </li>
+                <li><b>Email:</b> michela.aab@Alexion.com</li>
+                <label>Attended</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NA">
+                      <mat-option value="NA">
+                        N/A
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program dark Row -->
+        <div class="clearfix"></div>
+    </mat-card>   
+
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12"><span class="header-text-style">Venue Details: J Alexander's</span></div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><b>Address:</b> 7970 Washington Village Dr.</li>
+          <li><b>City:</b> Dayton</li>
+          <li><b>State:</b> Ohio</li>
+          <li><b>Zip:</b> 45459</li>
+          <li><b>Phone:</b> 937-435-4441</li>
+        </ul>
+        
+      </div>
+      <div class="col-md-6 border-right">
+        <ul>
+          <li><b>Caterer Name:</b> Jack Aaron</li>
+          <li><b>Caterer Phone:</b> 946-585-6621</li>
+          <li><b>Caterer Contact:</b> Caterer</li>
+          <li><b>Caterer Address:</b> Caterer Schenectady</li>
+          <li><b>Caterer City:</b> Caterer City</li>
+          <li><b>Caterer State:</b> FL</li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+      <div class="col-md-4">
+        <ul>
+          <li><b>Contact Person's Name:</b> M</li>
+        </ul>
+      </div>
+    </mat-card> 
+
+    <mat-card class="first-wrap line-height mat-card-sd">
+      <div class="col-md-12"><span class="header-text-style">Financial Estimate Summary</span>
+      <span class="header-text-style pull-right">Total Expense: $1,040.00</span></div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+        <hr class="hr-color">
+      </div>
+
+        <div class="col-md-12">
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <span class="subtitle-speaker-exp">Speaker Jack Aaron Expenses $1,040.00</span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <span class="subtitl-exp-blue pull-right">Patient Speaker Expense</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-3 top-mar">
+          <ul>
+            <li><b>Expense Type</b></li>
+            <li>Airfare</li>
+            <li>Lodging</li>
+            <li>Ground Transportation</li>
+            <li>Other</li>
+          </ul>
+        </div>
+        <div class="col-md-3 top-mar">
+          <ul>
+            <li><b>Expenses</b></li>
+            <li>$000.00</li>
+            <li>$540.00</li>
+            <li>$300.00</li>
+            <li>$000.00</li>
+          </ul>
+        </div>
+    </mat-card>  
+
+    <mat-card class="first-wrap speaker-program-list nopadding">
+      <div class="header">
+          <div class="row">
+            <div class="col-md-12"><span class="header-text-style">Speaker Program Notes</span></div>
+          <div class="clearfix"></div>
+          <div class="col-md-12">
+            <hr class="hr-color no-mar">
+          </div>
+        </div>
+      </div>    
+        <div class="speaker-program-row paddingtop">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Date:</b> 02/09/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>                
+                <li><b>Form:</b> Missy Long</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><b>Note:</b> N/A</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program Row -->
+        <div class="speaker-program-row dark paddingtop">
+          <div class="row">
+            <div class="col-md-4">
+              <ul>
+                <li><b>Date:</b> 02/09/2019</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>                
+                <li><b>Form:</b> Missy Long</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><b>Note:</b> N/A</li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- Speaker Program dark Row -->
+        <div class="speaker-program-row paddingtop">
+          <div class="row">
+            <div>
+                <label class="small">Note</label>
+                <mat-form-field>
+                        <textarea matInput></textarea>
+                </mat-form-field>
+                <label class="small">500 Characters remaining</label>
+            </div>
+          </div>
+        </div><!-- Speaker Program Row -->
+        <div class="add-btn">
+          <button mat-button class="primary-custom" (click)="stepperNext(stepper)">Add Note</button>
+        </div>
+    </mat-card> 
+    <div class="clearfix"></div>
+    <div class="col-md-12 btn-view center">
+        <button class="btn view-details-custom-attendee fnt-weigth">Cancel Event</button>
+    </div>
+
   </div>  
 </div>
 

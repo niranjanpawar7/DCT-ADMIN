@@ -1,0 +1,103 @@
+<div class="cust-modal">
+       <div class="cust-modal-title">
+         
+         <div class="row">
+              
+              <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                   <h3>Travel Details</h3>
+              </div>
+              
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                   <button class="btn-close pull-right" [mat-dialog-close]=""><img src="/assets/icons/popup-close.png"></button>
+              </div>
+                   
+         </div>
+         <hr>        
+    </div>
+        <div class="cust-modal-content">
+            <div class="p-l-0">
+                <div class="form-group">
+                    <div class="col-md-4">
+                      <label>Flight Name</label>
+                      <mat-form-field class="example-full-width">
+                        <input type="email" matInput placeholder="" value="">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                      <label>Depart City</label>
+                      <mat-form-field class="example-full-width">
+                          <input type="text" matInput placeholder="" value="">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                      <label>Arrive City</label>
+                      <mat-form-field class="example-full-width">
+                          <input type="text" matInput placeholder="" value="">
+                      </mat-form-field>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label>Depart Date</label>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                      <label>Flight Departure Time</label>
+                      <div class="row">
+                         
+                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                              </mat-form-field>
+                         </div>
+                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                              </mat-form-field>
+                         </div>
+                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                              </mat-form-field>
+                         </div>
+                         
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-4">
+                        <label>Flight Arrival Time</label>
+                        <div class="row">
+                           
+                           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="" value="">
+                                </mat-form-field>
+                           </div>
+                           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="" value="">
+                                </mat-form-field>
+                           </div>
+                           <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="" value="">
+                                </mat-form-field>
+                           </div>
+                           
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="form-group rec-speaker-program-btns">
+                    <div class="col-md-12">
+                        <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+                        <button mat-button [mat-dialog-close]="" class="primary-custom">Update</button>
+                    </div>
+                </div> 
+            </div>  
+        </div>
+   </div>
