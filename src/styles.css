@@ -96,7 +96,7 @@ mat-card .form-group{
 
 
 body, html{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
 }
 .nopadding {

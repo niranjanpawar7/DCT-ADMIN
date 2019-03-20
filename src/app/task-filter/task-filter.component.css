@@ -1,0 +1,93 @@
+.dashboard-admin-wrapper mat-card:first-child{
+    padding: 38px 44px 0px 45px; 
+    margin-top: 70px;
+    margin-bottom: 0px;
+    box-shadow: 0 6px 24px 0 #E2E9F7;
+}
+.dashboard-admin-wrapper mat-card{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 38px 44px 0px 45px; 
+    box-shadow: 0 6px 24px 0 #E2E9F7;
+}
+.dashboard-admin-wrapper mat-card:last-child{ 
+    margin-bottom: 50px;
+    box-shadow: 0 6px 24px 0 #E2E9F7;
+}
+.dashboard-admin-wrapper mat-card hr{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.table-clr-blue{
+    color: #2B62CA;
+}
+tr.mat-footer-row, tr.mat-row {
+    height: 60px;
+}
+ 
+.mat-row:nth-child(odd){ 
+    background-color: #F0F0F0;
+}
+.dashboard-heading-wrapper .clr-blue{
+    float: right;
+    color: #2B62CA;	font-size: 18px;	line-height: 22px;	 
+    margin-top: 20px;
+}
+.mat-header-cell {
+    color: #757575;	font-size: 16px;	line-height: 22px;
+}
+.master-heading{
+    font-size: 30px;
+    color: blue;
+}
+.para-heading{   
+    color: #2B62CA; margin-bottom: 25px;	font-size: 20px;	line-height: 22px;
+} 
+.form-group label{
+    margin-bottom: 6px;
+    font-size: 14px;	line-height: 16px; color: #757575;
+}
+.btn-blue{
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
+    color: #FFFFFF;	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    margin-bottom: 50px;
+}
+.pagination-panel{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.pagination-panel .btn-white{ 
+    width: 70px;
+    border: 1px solid blue;
+    height: 56px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pagination-panel .btn-blue{  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ 
+@media only screen and (max-width: 800px) {
+    .dashboard-admin-wrapper mat-card{
+        padding: 15px; 
+        margin: 20px 0px;
+    }
+    .pagination-panel .btn-white{ 
+        width: 30px;
+        border: 1px solid blue;
+        height: 56px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .pagination-panel .btn-blue{  
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
