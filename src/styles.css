@@ -429,7 +429,7 @@ tr.mat-header-row {
 }
 
 .speaker-expense-edit-form mat-dialog-container {
-  width: 100%;
+  width: 100% !important;
 }
 
 .rsp-form .form-group, .speaker-expense-edit-form mat-dialog-container .rsp-form .form-group label{
@@ -567,4 +567,30 @@ tr.mat-header-row {
   .cust-modal .cust-modal-title h3 {
     text-align: left !important;
   }
+}
+
+ul.submenu {
+  width: auto;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  background: #ddd;
+  padding: 17px;
+  margin: 0px;
+  top: 0px;
+  right: 0;
+  transition: right .3s;
+}
+
+li.has-submenu {
+  position: relative;
+}
+li.has-submenu:hover .submenu {
+  z-index: 1;
+  right: -5.5em;
+}
+
+.submenu li{
+    list-style: none;
+    color: #fff;
 }

@@ -520,4 +520,30 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     padding: 10px 15px;
 }
 
+@media (max-width: 767px)
+{
+    .card-table .view-details-custom.pull-right{
+        float: none !important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
+{
+  
+  
+}
+
+@media screen and (min-width: 1400px) {
+ 
+}
+@media screen and (min-width: 1600px) {
+  
+}
+@media screen and (min-width: 1900px) {
+  
+}
+@media screen and (min-width: 2100px) {
+  
+}
+
   
