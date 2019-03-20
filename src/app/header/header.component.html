@@ -8,9 +8,20 @@
       <h2 class="header-text">Create Event</h2>
     </div>
 
-    <div class="col-md-6 text-right clr-blue header-text-right">
-      <span>User Profile</span><span><img src="assets/icons/ico-view-profile.png"  /></span> 
+    <div class="col-md-6 text-right clr-blue header-text-right dropdown">
+      <div class="right-panel-links">
+      <span>User Profile</span><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      <img src="assets/icons/ico-view-profile.png"  /></button>
+        <!-- <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button> -->
+     
+        <ul class="dropdown-menu position-drop">
+            <span>User Profile</span><span><img src="assets/icons/ico-view-profile.png" class="nopadding-left"  /></span> 
+          <li class="mr-40"><a >Edit Profile <img src="assets/icons/ico-edit.png"  /></a></li>
+          <li class="mr-40"><a >Logout <img src="assets/icons/exit.png"  /></a></li>
+        </ul>
     </div>
+  </div>  
   </div>
 </div>
 <!-- <div class="col-md-12 sub-header header-section">
