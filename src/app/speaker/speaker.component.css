@@ -1,0 +1,82 @@
+.master-heading{
+    font-size: 28px;
+    color: #2B62CA;
+    font-weight: bold;
+}
+.speaker-admin-wrapper mat-card{
+    padding: 21px 40px 31px 41px; 
+    margin-top: 40px;
+    /* margin-bottom: 70px; */
+    box-shadow: 0 6px 24px 0 #E2E9F7;
+}
+.mr-top-67{
+    margin-top: 67px;
+}
+.speaker-admin-wrapper hr{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.nopadding{
+    padding: 0px;
+}
+.btn-blue{
+    height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
+    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.btn-white{
+    height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.btn-sky-white{
+    height: 55px;	width: 180px;	border: 1px solid #CECECE;	border-radius: 4px;	background-color: #FFFFFF; 
+    color: #CECECE;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+}
+.form-group label{
+    /* margin-bottom: 6px; */
+    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+}
+.clr-lbl-btn{
+    color: #CECECE !important;
+}
+mat-card .form-group {
+    margin-bottom: 25px;
+}
+.speaker-admin-wrapper mat-card .form-group-wraper .form-group{
+    margin-bottom: 18px;
+}
+.speaker-popup-parent .daliog-master-heading{ 
+    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    margin-bottom: 28px;
+}
+.file-info{
+    height: 38px; border: 1px solid #CECECE;	border-radius: 4px;
+    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    padding: 8px;
+    margin-bottom: 10px;
+} 
+.file-info img{
+    margin-top: -5px;
+}
+.choose-btn{
+    margin-top: 21px;
+    margin-bottom: 77px;
+}
+.close-position{
+    position: absolute;
+    right: -36px;
+    top: -34px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .speaker-admin-wrapper mat-card{
+        padding: 25px;  
+    }
+    .mr-top-67{
+        margin-top: 15px;
+    }
+    .text-right.white-btn-wrap{
+        text-align: left;
+      }
+}

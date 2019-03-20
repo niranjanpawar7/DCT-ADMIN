@@ -2,6 +2,7 @@
     padding: 38px 44px 0px 45px; 
     margin-top: 70px;
     margin-bottom: 70px;
+    box-shadow: 0 6px 24px 0 #E2E9F7;
 }
 .training-initiate-admin-wrapper mat-card hr{
     margin-top: 0px;

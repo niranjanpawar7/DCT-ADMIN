@@ -19,8 +19,9 @@ import { ReconcileSpeakerProgramComponent, RecSpeakComp, UploadFileModal } from 
 import { AddVenueComponent} from './add-venue/add-venue.component';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent, LoginDialog } from './login/login.component'
-import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component'
 import { EventDetailsComponent } from './event-details/event-details.component';
+import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component';
+import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component'
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { EventDetailsComponent } from './event-details/event-details.component';
     DashboardComponent, LoginComponent,
     LoginDialog,
     EventDetailsComponent,
+    SpeakerComponent, SpeakerPopupUpload,
      
   ],
   imports: [
@@ -56,6 +58,6 @@ import { EventDetailsComponent } from './event-details/event-details.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog, createEventPopup, DialogDateExampleDialog, speakerUpload, LoginDialog, RecSpeakComp, UploadFileModal]
+  entryComponents: [DialogDataExampleDialog, createEventPopup, DialogDateExampleDialog, speakerUpload, LoginDialog, RecSpeakComp, UploadFileModal, SpeakerPopupUpload]
 })
 export class AppModule { }

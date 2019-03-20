@@ -54,6 +54,13 @@ mat-card .form-group{
     width: 570px !important;	border-radius: 8px !important;	background-color: #FFFFFF;	box-shadow: 0 6px 24px 0 rgba(0,0,0,0.38);
     padding: 53px !important;
   }
+  .custom-text-area .mat-form-field-wrapper .mat-form-field-infix{
+    height: 122px;
+  }
+  .custom-text-area .mat-form-field-wrapper .cdk-text-field-autofill-monitored:not(:-webkit-autofill){
+    height: 122px;
+  }
+
 /* Change in Mat-form-fields component End */
 
 .row.custome-row{

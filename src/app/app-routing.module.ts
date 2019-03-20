@@ -10,6 +10,7 @@ import { ManageSpkeakerContentComponent } from './manage-spkeaker-content/manage
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent } from './login/login.component'
 import { EventDetailsComponent } from './event-details/event-details.component';
+import { SpeakerComponent } from './speaker/speaker.component'
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path : 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent},
   { path: 'event-details', component: EventDetailsComponent},
+  { path: 'speaker', component: SpeakerComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
