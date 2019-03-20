@@ -1,10 +1,22 @@
 <div class="col-md-12 speaker-admin-wrapper">
   <mat-card>
-    <div class="master-heading">Patient Details</div>
+    <div class="master-heading">Speaker Details</div>
     <hr>
     <div class="clearfix"></div>
     <div class="row form-wrapper">
-      <div class="col-md-6">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Patient/Caregiver</label>
+          <mat-form-field floatLabel="never">
+            <mat-select value="Patient" (selectionChange)="doSomething($event)">
+              <mat-option value="Patient">Patient</mat-option>
+              <mat-option value="Caregiver">Caregiver</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-4">
         <div class="form-group">
           <label>First Name</label>
           <mat-form-field>
@@ -13,7 +25,16 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Middle Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
         <div class="form-group">
           <label>Last Name</label>
           <mat-form-field>
@@ -112,7 +133,7 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      
+
       <div class="col-md-4">
         <div class="form-group">
           <label>Date of Diagnosis</label>
@@ -169,23 +190,132 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <!-- <div class="col-md-3">
         <div class="form-group">
           <label class="clr-lbl-btn">Speaker Photo Library</label>
           <div class="form-group btn-wrap">
             <button mat-button class="btn btn-sky-white" (click)="openDialog()">Upload Photo</button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-  </mat-card>  
-  
+  </mat-card>
+
   <mat-card>
-    <div class="master-heading">Family/Caregiver Details</div>
-    <hr>
-    <div class="clearfix"></div>
-    <div class="row form-wrapper">
-      <div class="col-md-6">
+    <div class="family" *ngIf="!patient">
+      <div class="master-heading">Family/Caregiver Details</div>
+      <hr>
+      <div class="clearfix"></div>
+      <div class="row form-wrapper">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>First Name</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Last Name</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Email</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Primary Phone Number</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Secondary Phone Number</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Gender</label>
+            <mat-form-field floatLabel="never">
+              <mat-select placeholder="Select Gender">
+                <mat-option value="male">Male</mat-option>
+                <mat-option value="female">Female</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <label>Date of Brith</label>
+            <mat-form-field floatLabel="never">
+              <input matInput [matDatepicker]="picker99" placeholder="Select Date">
+              <mat-datepicker-toggle matSuffix [for]="picker99"></mat-datepicker-toggle>
+              <mat-datepicker #picker99></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <label>Patient Name(s)</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Date of Diagnosis</label>
+            <mat-form-field floatLabel="never">
+              <input matInput [matDatepicker]="picker33" placeholder="Select Date">
+              <mat-datepicker-toggle matSuffix [for]="picker33"></mat-datepicker-toggle>
+              <mat-datepicker #picker33></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Treatment Start Date</label>
+            <mat-form-field floatLabel="never">
+              <input matInput [matDatepicker]="picker12" placeholder="Select Date">
+              <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
+              <mat-datepicker #picker12></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div><!-- family -->
+
+    <div class="patient" *ngIf="patient">
+      <div class="master-heading">Patient Details</div>
+      <hr>
+      <div class="clearfix"></div>
+      <div class="row">
+      <div class="col-md-4">
         <div class="form-group">
           <label>First Name</label>
           <mat-form-field>
@@ -194,38 +324,18 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Middle Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="col-md-4">
         <div class="form-group">
           <label>Last Name</label>
-          <mat-form-field>
-            <input matInput>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-
-      <div class="col-md-4">
-        <div class="form-group">
-          <label>Email</label>
-          <mat-form-field>
-            <input matInput>
-          </mat-form-field>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group">
-          <label>Primary Phone Number</label>
-          <mat-form-field>
-            <input matInput>
-          </mat-form-field>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group">
-          <label>Secondary Phone Number</label>
           <mat-form-field>
             <input matInput>
           </mat-form-field>
@@ -244,49 +354,133 @@
           </mat-form-field>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-2">
         <div class="form-group">
-          <label>Date of Brith</label>
+          <label>Date of Birth</label>
           <mat-form-field floatLabel="never">
-            <input matInput [matDatepicker]="picker99" placeholder="Select Date">
-            <mat-datepicker-toggle matSuffix [for]="picker99"></mat-datepicker-toggle>
-            <mat-datepicker #picker99></mat-datepicker>
+            <input matInput [matDatepicker]="pickerdob" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="pickerdob"></mat-datepicker-toggle>
+            <mat-datepicker #pickerdob></mat-datepicker>
           </mat-form-field>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-2">
         <div class="form-group">
-          <label>Patient Name(s)</label>
+          <label>Employee Status</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="full">Fulltime</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Cellphone Number</label>
           <mat-form-field>
             <input matInput>
           </mat-form-field>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Home Number</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
       <div class="clearfix"></div>
-      
-      <div class="col-md-4">
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label>Work Number</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group">
+          <label>Email Primary</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group">
+          <label>Email Secondary</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="col-md-3">
         <div class="form-group">
           <label>Date of Diagnosis</label>
           <mat-form-field floatLabel="never">
-            <input matInput [matDatepicker]="picker33" placeholder="Select Date">
-            <mat-datepicker-toggle matSuffix [for]="picker33"></mat-datepicker-toggle>
-            <mat-datepicker #picker33></mat-datepicker>
+            <input matInput [matDatepicker]="pickerdodog" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="pickerdodog"></mat-datepicker-toggle>
+            <mat-datepicker #pickerdodog></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Treatment Start Date</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="pickerdotreat" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="pickerdotreat"></mat-datepicker-toggle>
+            <mat-datepicker #pickerdotreat></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Treating Physician Name</label>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Site of Treatment</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="site">Treatment</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Case Manager</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select">
+              <mat-option value="case">Manager</mat-option>
+            </mat-select>
           </mat-form-field>
         </div>
       </div>
       <div class="col-md-4">
         <div class="form-group">
-          <label>Treatment Start Date</label>
-          <mat-form-field floatLabel="never">
-            <input matInput [matDatepicker]="picker12" placeholder="Select Date">
-            <mat-datepicker-toggle matSuffix [for]="picker12"></mat-datepicker-toggle>
-            <mat-datepicker #picker12></mat-datepicker>
+          <label>Case Manager Name if Applicable</label>
+          <mat-form-field>
+            <input matInput>
           </mat-form-field>
         </div>
       </div>
-      <div class="clearfix"></div>
     </div>
-  </mat-card> 
+    </div><!-- family -->
+  </mat-card>
 
   <mat-card>
     <div class="master-heading">Preferences</div>
@@ -378,7 +572,7 @@
       </div>
       <div class="clearfix"></div>
     </div>
-  </mat-card> 
+  </mat-card>
   <div class="clearfix"></div>
   <div class="col-md-12 mr-top-67">
     <div class="col-md-6">
@@ -392,5 +586,5 @@
       </div>
     </div>
   </div>
-  
+
 </div>
