@@ -20,7 +20,8 @@ import { AddVenueComponent} from './add-venue/add-venue.component';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent, LoginDialog } from './login/login.component'
 import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component';
-import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component'
+import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component';
+import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.componen
     ManageSpkeakerContentComponent, speakerUpload,
     DashboardComponent, LoginComponent,
     LoginDialog,
-    SpeakerComponent, SpeakerPopupUpload,
+    SpeakerComponent, SpeakerPopupUpload, UploadReferancesComponent,
      
   ],
   imports: [

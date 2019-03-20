@@ -98,4 +98,7 @@
     .main-container{
       padding-left: 15px; padding-right: 15px;
      } 
+     .custom-hide{
+       display: none;
+     }
   }
