@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent } from './login/login.component'
 import { SpeakerComponent } from './speaker/speaker.component'
 import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
-
+import { TaskFilterComponent } from './task-filter/task-filter.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },  
@@ -25,6 +25,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'speaker', component: SpeakerComponent},
   { path : 'upload-reference', component : UploadReferancesComponent},
+  { path : 'task-filter', component : TaskFilterComponent},
+  
   { path: '**', component: PageNotFoundComponent },
   
   
