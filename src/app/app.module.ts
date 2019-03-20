@@ -21,7 +21,8 @@ import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent, LoginDialog } from './login/login.component'
 import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component';
 import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component';
-import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
+import { UploadReferancesComponent } from './upload-referances/upload-referances.component';
+import { TaskFilterComponent } from './task-filter/task-filter.component'
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { UploadReferancesComponent } from './upload-referances/upload-referances
     ManageSpkeakerContentComponent, speakerUpload,
     DashboardComponent, LoginComponent,
     LoginDialog,
-    SpeakerComponent, SpeakerPopupUpload, UploadReferancesComponent,
+    SpeakerComponent, SpeakerPopupUpload, UploadReferancesComponent, TaskFilterComponent,
      
   ],
   imports: [
