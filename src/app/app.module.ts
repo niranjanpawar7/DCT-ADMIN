@@ -19,10 +19,12 @@ import { ReconcileSpeakerProgramComponent, RecSpeakComp, UploadFileModal } from 
 import { AddVenueComponent} from './add-venue/add-venue.component';
 import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent, LoginDialog } from './login/login.component'
+import { EventDetailsComponent, ViewAuditPopup, ProgramStatusPopup, TravelInfoPopup, HotelInfoPopup, AddAttendeePopup } from './event-details/event-details.component';
 import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component';
 import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component';
 import { UploadReferancesComponent } from './upload-referances/upload-referances.component';
-import { TaskFilterComponent } from './task-filter/task-filter.component'
+import { TaskFilterComponent } from './task-filter/task-filter.component';
+import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 
 
 @NgModule({
@@ -42,8 +44,16 @@ import { TaskFilterComponent } from './task-filter/task-filter.component'
     ManageSpkeakerContentComponent, speakerUpload,
     DashboardComponent, LoginComponent,
     LoginDialog,
-    SpeakerComponent, SpeakerPopupUpload, UploadReferancesComponent, TaskFilterComponent,
-     
+    EventDetailsComponent,
+    SpeakerComponent, SpeakerPopupUpload,
+    UploadReferancesComponent, TaskFilterComponent,
+    AttendeeListComponent,
+    ViewAuditPopup,
+    ProgramStatusPopup,
+    TravelInfoPopup,
+    HotelInfoPopup,
+    AddAttendeePopup
+
   ],
   imports: [
     BrowserModule,
@@ -58,6 +68,20 @@ import { TaskFilterComponent } from './task-filter/task-filter.component'
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [DialogDataExampleDialog, createEventPopup, DialogDateExampleDialog, speakerUpload, LoginDialog, RecSpeakComp, UploadFileModal, SpeakerPopupUpload]
+  entryComponents: [
+    DialogDataExampleDialog, 
+    createEventPopup, 
+    DialogDateExampleDialog, 
+    speakerUpload, 
+    LoginDialog, 
+    RecSpeakComp, 
+    UploadFileModal, 
+    SpeakerPopupUpload, 
+    ViewAuditPopup,
+    ProgramStatusPopup,
+    TravelInfoPopup,
+    HotelInfoPopup,
+    AddAttendeePopup
+  ]
 })
 export class AppModule { }

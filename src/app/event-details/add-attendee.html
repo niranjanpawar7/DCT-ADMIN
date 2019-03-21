@@ -1,0 +1,162 @@
+<div class="cust-modal">
+        <div class="cust-modal-title">
+          
+          <div class="row">
+               
+               <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    <h3>Add Attendee</h3>
+               </div>
+               
+               <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <button class="btn-close pull-right" [mat-dialog-close]=""><img src="/assets/icons/popup-close.png"></button>
+               </div>
+                    
+          </div>
+          <hr>        
+     </div>
+         <div class="cust-modal-content">
+             <div class="add-attendee-form">
+                <div class="p-l-0">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                        <label>*First Name</label>
+                        <mat-form-field class="example-full-width">
+                            <input type="email" matInput placeholder="" value="">
+                        </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                        <label>*Last City</label>
+                        <mat-form-field class="example-full-width">
+                            <input type="text" matInput placeholder="" value="">
+                        </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                        <label>*Email Address</label>
+                        <mat-form-field class="example-full-width">
+                            <input type="text" matInput placeholder="" value="">
+                        </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label>*Country</label>
+                        <mat-form-field class="example-full-width">
+                            <input type="text" matInput placeholder="" value="">
+                        </mat-form-field>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Address</label>
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                            </mat-form-field>
+                        
+                        </div>
+                        <div class="col-md-4">
+                            <label>Address 2</label>
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                            </mat-form-field>
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="col-md-4">
+                            <label>City</label>
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                            </mat-form-field>
+                            </div>
+                            <div class="col-md-4">
+                            <label>State/Province</label>
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                            </mat-form-field>
+                            
+                            </div>
+                            <div class="col-md-2">
+                            <label>*Zip Code</label>
+                            <mat-form-field class="example-full-width">
+                                <input type="text" matInput placeholder="" value="">
+                            </mat-form-field>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <label>*Confirm Zip Code</label>
+                                <mat-form-field class="example-full-width">
+                                    <input type="text" matInput placeholder="" value="">
+                                </mat-form-field>
+                                    
+                                </div>
+                        </div>
+                </div>
+                <h4>
+                    Please fill out information below.(*) connotes required field
+                </h4>
+                <p>
+                    * Please let us know why you are attending today by selecting one of the following. Please note, the MG MakinG Connections™ Programs are intended for U.S. Patients and Caregivers only.
+                </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <mat-form-field>
+                            <mat-select placeholder="" value="Select Appropriate Response">
+                                <mat-option value="Select Appropriate Response">
+                                    Select Appropriate Response
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <p>
+                    *Are you currently taking an Alexion product?
+                </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <mat-form-field>
+                            <mat-select placeholder="" value="Select Appropriate Response">
+                                <mat-option value="Select Appropriate Response">
+                                    Select Appropriate Response
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <p>
+                    How did you hear about the MakinG Connections™ education program?
+                </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <mat-form-field>
+                            <mat-select placeholder="" value="Select Appropriate Response">
+                                <mat-option value="Select Appropriate Response">
+                                    Select Appropriate Response
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <p>
+                    Please indicate if you have any dietary restrictions, will need handicap accessibility or will require special accommodations:
+                </p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <mat-form-field>
+                                <textarea matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <p>
+                    By providing my contact information, I am giving Alexion and the companies working with Alexion permission to contact me for marketing purposes or otherwise provide me with information about Alexion’s products, services, and programs or other topics of interest, conduct market research, or otherwise ask me about my experience with or thoughts about such topics. Alexion will not sell or transfer my information to any unrelated third party for marketing purposes without my express permission.
+                </p>
+                <mat-radio-button class="pull-left"></mat-radio-button><p>I do not wish to receive marketing materials from Alexion or third-party companies working on behalf of Alexion. I understand that checking this box does not prohibit me from receiving non-marketing Alexion materials nor does it prohibit my ability to attend this program.</p>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group rec-speaker-program-btns">
+                        <div class="col-md-12">
+                            <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+                            <button mat-button [mat-dialog-close]="" class="btn view-details-custom">Cancel</button>
+                            <button mat-button [mat-dialog-close]="" class="primary-custom">Submit</button>
+                        </div>
+                    </div>   
+                </div>
+            </div>  
+         </div>
+    </div>
