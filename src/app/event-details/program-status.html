@@ -1,0 +1,47 @@
+<div class="cust-modal">
+        <div class="cust-modal-title">
+             
+                <div class="row">
+                     
+                     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                          <h3>Change Program Status</h3>
+                     </div>
+                     
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <button class="btn-close pull-right" [mat-dialog-close]=""><img src="/assets/icons/popup-close.png"></button>
+                       </div>
+                          
+                </div>
+                
+           </div>
+        <div class="cust-modal-content">
+           <div class="row">
+               
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <div class="controls">
+                        <label>Program Status</label>
+                        <mat-form-field>
+                            <mat-select placeholder="" value="NA">
+                            <mat-option value="NA">
+                                Select
+                            </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+               </div>
+              
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="form-group rec-speaker-program-btns">
+                            <div class="col-md-12">
+                                <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+                                <button mat-button [mat-dialog-close]="" class="primary-custom">Update</button>
+                            </div>
+                        </div>   
+                </div>
+               
+           </div>
+            
+            
+             
+        </div>
+   </div>

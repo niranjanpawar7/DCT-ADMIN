@@ -429,7 +429,7 @@ tr.mat-header-row {
 }
 
 .speaker-expense-edit-form mat-dialog-container {
-  width: 100%;
+  width: 100% !important;
 }
 
 .rsp-form .form-group, .speaker-expense-edit-form mat-dialog-container .rsp-form .form-group label{
@@ -576,4 +576,150 @@ tr.mat-header-row {
     height: 46px !important;
     margin: 0 -45px !important;
   }
+}
+
+ul.submenu {
+  width: auto;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  background: #ddd;
+  padding: 17px;
+  margin: 0px;
+  top: 0px;
+  right: 0;
+  transition: right .3s;
+}
+
+li.has-submenu {
+  position: relative;
+}
+li.has-submenu:hover .submenu {
+  z-index: 1;
+  right: -5.5em;
+}
+
+.submenu li{
+    list-style: none;
+    color: #fff;
+}
+
+.view-audit-modal mat-dialog-container{
+  width:100% !important;
+}
+
+.cust-modal .cust-modal-content ul{
+  list-style: none !important;
+}
+
+.title-row{
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.title-row h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: darkslategrey;
+  margin: 0px;
+}
+
+.cust-modal .cust-modal-content .AD-training-material-wrapper .even-content-panel {
+  padding-top: 16px !important;
+  padding-bottom: 0px !important;
+}
+
+.cust-modal .cust-modal-content .AD-training-material-wrapper .odd-content-panel {
+  padding-top: 16px !important;
+  padding-bottom: 0px !important;
+}
+.pagination-btn-row{
+  text-align: center;
+  margin-top: 15px;
+}
+.pagination-btn-row .page-number{
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    margin-left: 15px;
+    height: 55px;
+    width: auto;
+    padding: 18px !important;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.pagination-btn-row .page-number.active{
+  border: 1px solid #1873d4 !important;
+}
+.view-details-custom{
+    background-color: #FFF;
+    border: 1px solid #1873d4 !important;
+    margin-left: 15px;
+    height: 55px;
+    width: 180px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #1873d4;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+label.small{
+  font-weight: 300;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+.travel-info-modal mat-dialog-container {
+  width: 100% !important;
+}
+
+.hotel-info-modal mat-dialog-container {
+  width: 100% !important;
+}
+
+.btn-close{
+  background: transparent;
+  border:none;
+  outline: none;
+}
+
+.add-attendee-modal mat-dialog-container {
+  width: 100% !important;
+}
+
+.add-attendee-modal{
+  position: relative !important;
+  overflow-y: scroll;
+}
+
+.add-attendee-modal::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.add-attendee-modal::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.add-attendee-modal::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.add-attendee-modal::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.add-attendee-form h4 {
+  font-weight: 600;
+  margin: 15px 0px;
+}
+
+.add-attendee-form p {
+  color: #636363;
+  margin: 20px 0px;
+}
+.add-attendee-form mat-radio-button {
+  margin: 0px;
 }

@@ -1,18 +1,9 @@
-.mat-card{
-    padding-left:33px;
-    padding-right: 33px;
-    border-radius: 8px;
-}
 .nopadding{
     padding: 0px;
 }
-mat-horizontal-stepper{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 mat-card ul{
     list-style-type: none;
-    /* padding-left: 15px; */
+    padding-left: 10px; 
 }
 .mat-step-icon .mat-icon{
     display: none;
@@ -82,7 +73,7 @@ float: left;
     color: #1873d4; 
     padding: 10px 25px;
     border: 1px solid;
-    height: 55px;	
+    height: 55px;   
     width: 285px;
     font-size: 18px;
 }
@@ -137,12 +128,12 @@ ul li{
     border-radius: 4px;
     font-size: 18px;
 }
-.view-details-custom{
+.view-details-custom-attendee{
     background-color: #FFF;
     border:1px solid #1873d4;  
     margin-left: 15px;
     height: 55px;
-    width: 180px;
+/*     width: 180px; */
     border-radius: 4px;
     font-size: 18px;
 }
@@ -330,7 +321,7 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     margin-bottom: 5px;
 }    
 .fnt-weigth{
-    font-weight: 600;
+/*     font-weight: 600; */
     color: #1873d4 !important; 
 }
 .rw-pt-pad{
@@ -475,12 +466,12 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
   }
 
   .upload-popup-parent .daliog-master-heading{ 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    color: #2B62CA; font-family: "Helvetica Neue";  font-size: 28px;    font-weight: bold;  line-height: 34px;  text-align: center;
     margin-bottom: 35px;
 }
 .file-info{
-    height: 38px; border: 1px solid #CECECE;	border-radius: 4px;
-    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    height: 38px; border: 1px solid #CECECE;    border-radius: 4px;
+    color: #4F4F4F; font-family: "Helvetica Neue";  font-size: 16px;    line-height: 22px;
     padding: 8px;
     margin-bottom: 10px;
 } 
@@ -505,7 +496,7 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     margin-bottom: 20px;
 }
 .upLodedContent i{
-    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 14px;	font-style: italic;	line-height: 30px;	text-align: right;
+    color: #4F4F4F; font-family: "Helvetica Neue";  font-size: 14px;    font-style: italic; line-height: 30px;  text-align: right;
 }
 .upLodedContent img{
     margin-left: 16px
@@ -520,30 +511,33 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
     padding: 10px 15px;
 }
 
-@media (max-width: 767px)
-{
-    .card-table .view-details-custom.pull-right{
-        float: none !important;
+.no-pad {
+    padding: 0px !important;
+}
+.pad-left {
+    padding-left: 38px !important;
+}
+.mat-pad span {
+    padding-left: 20px;
+}
+.pad-hr {
+    padding-left: 36px;
+    padding-right: 30px;
+}
+.pad-hr hr {
+    margin-bottom: 0px !important;
+}
+
+
+@media only screen and (max-width: 800px){
+    .pad-left {
+        padding-left: 38px;
     }
 }
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
-{
-  
-  
+.btn-view {
+    margin-top: 25px;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
 }
 
-@media screen and (min-width: 1400px) {
- 
-}
-@media screen and (min-width: 1600px) {
-  
-}
-@media screen and (min-width: 1900px) {
-  
-}
-@media screen and (min-width: 2100px) {
-  
-}
-
-  
+.btn-view button {width: auto !important;margin: 0px !important;margin-right: 15px !important;}
