@@ -109,4 +109,11 @@
         width: 100%;
         padding: 0px;
     }
+   .header-section.custom-header{
+        display: none;
+    }
+    .navbar-nav{
+        margin: 0px;
+    }
+    
 }
