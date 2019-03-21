@@ -38,7 +38,7 @@ tr.mat-footer-row, tr.mat-row {
     margin-top: 20px;
 }
 .mat-header-cell {
-    color: #757575;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    color: #757575;	 font-size: 16px;	line-height: 22px;
 }
  
 .master-heading{
@@ -50,9 +50,15 @@ tr.mat-footer-row, tr.mat-row {
 } 
 @media only screen and (max-width: 800px) {
     .dashboard-admin-wrapper mat-card{
-        padding: 15px; 
+        padding: 0px !important; 
         margin: 20px 0px;
     }
-    
+    .mat-cell, .mat-footer-cell {
+        font-size: 9px !important; 
+        padding: 5px !important;
+    }
+    .mat-header-cell{ 
+        font-size: 9px; 
+    }
 }
 

@@ -551,6 +551,11 @@ tr.mat-header-row {
     font-weight: normal;
 }
 
+.mat-icon.material-icons.ng-star-inserted {
+  color: green;
+  position: relative;
+  left: -15px;
+}
 @media only screen and (max-width: 425px) {
   .header-text-style {
     line-height: 35px;
@@ -566,6 +571,10 @@ tr.mat-header-row {
 
   .cust-modal .cust-modal-title h3 {
     text-align: left !important;
+  }
+  .mat-stepper-horizontal-line {
+    height: 46px !important;
+    margin: 0 -45px !important;
   }
 }
 

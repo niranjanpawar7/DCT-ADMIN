@@ -79,7 +79,7 @@ tr.mat-footer-row, tr.mat-row {
         margin: 20px 0px;
     }
     .pagination-panel .btn-white{ 
-        width: 30px;
+        width: auto;
         border: 1px solid blue;
         height: 56px;
         margin-left: 5px;
@@ -87,7 +87,8 @@ tr.mat-footer-row, tr.mat-row {
     }
     .pagination-panel .btn-blue{  
         margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 5px; 
+        width: auto
     }
 }
 
