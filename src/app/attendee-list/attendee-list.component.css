@@ -129,7 +129,7 @@ ul li{
     font-size: 18px;
 }
 .view-details-custom-attendee{
-    background-color: #FFF;
+    background-color: transparent;
     border:1px solid #1873d4;  
     margin-left: 15px;
     height: 55px;
@@ -541,3 +541,32 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 }
 
 .btn-view button {width: auto !important;margin: 0px !important;margin-right: 15px !important;}
+
+@media (max-width: 767px)
+{
+    .card-table .view-details-custom.pull-right{
+        float: none !important;
+    }
+    .btn-view {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
+{
+  
+  
+}
+
+@media screen and (min-width: 1400px) {
+ 
+}
+@media screen and (min-width: 1600px) {
+  
+}
+@media screen and (min-width: 1900px) {
+  
+}
+@media screen and (min-width: 2100px) {
+  
+}

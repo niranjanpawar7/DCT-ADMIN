@@ -42,8 +42,9 @@ tr.mat-footer-row, tr.mat-row {
 }
  
 .master-heading{
-    font-size: 30px;
-    color: blue;
+    font-size: 28px;
+    color: #2B62CA;
+    font-weight: bold;
 }
 .para-heading{   
     color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
