@@ -1,0 +1,218 @@
+<div class="col-md-12 search-speaker-wrapper">
+  <mat-card>
+    <div class="col-md-12">
+      <div class="master-heading"> Search By Keyword</div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-12 nopadding">
+        <p>If you would like to search by Keyword please use the filter below.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="form-group">
+            <label>Keywords</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="form-group btn-wrap text-right">
+            <button mat-button class="btn btn-blue">Submit</button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div><!-- row -->
+    </div>
+
+    <div class="col-md-12">
+      <div class="master-heading"> Search By Speaker Details</div>
+      <div class="clearfix"></div>
+      <hr>
+      <div class="col-md-12 nopadding">
+        <p>If you would like to search by speaker details please use the filter criteria below.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>First Name</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label>Last Name</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>City</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>State</label>
+            <mat-form-field floatLabel="never">
+              <mat-select placeholder="Select">
+                <mat-option value="state">Maharashtra</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Gender</label>
+            <mat-form-field floatLabel="never">
+              <mat-select placeholder="Select Gender">
+                <mat-option value="male">Male</mat-option>
+                <mat-option value="female">Female</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label>Role</label>
+          <mat-form-field floatLabel="never">
+            <mat-select placeholder="Select Role">
+              <mat-option value="Role1">Role 1</mat-option>
+              <mat-option value="Role2">Role 2</mat-option>
+            </mat-select>
+          </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Date of Diagnosis</label>
+            <mat-form-field floatLabel="never">
+              <input matInput [matDatepicker]="picker" placeholder="Select Date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Treatment Start Date</label>
+          <mat-form-field floatLabel="never">
+            <input matInput [matDatepicker]="picker1" placeholder="Select Date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Search Biography</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-12">
+          <div class="form-group text-right btn-wrap">
+            <button mat-button class="btn btn-blue">Submit</button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div><!-- row -->
+    </div>
+  </mat-card>
+
+  <mat-card class="mr-top-0">
+    <div class="col-md-12 "><span class="master-heading">Speaker List</span></div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="col-md-1">
+      <img src="assets/img/user-profile.png" width="50">
+    </div>
+    <div class="col-md-3 pl-0 line-height">
+      <ul class="custom-ul">
+        <li><b>Speaker:</b> Juan Alejos</li>
+        <li><b>Gender:</b> Male</li>
+        <li><b>City & State:</b> Albany, NY</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 line-height">
+      <ul class="pad-lft-zero">
+        <li><b>Role:</b> Patient</li>
+        <li><b>Date of Diagnosis:</b> 9/6/2019</li>
+        <li><b>Treatment Start Date:</b> 9/6/2019</li>
+      </ul>
+    </div>
+    <div class="col-md-4 icon-panel">
+      <ul class="flt-rt">
+          <li><img src="assets/icons/ico-view-profile.png" class="img-view"> View Profile</li>
+          <li><img src="assets/icons/ico-edit.png"> Edit</li>
+          <li><img src="assets/icons/ico-delete.png"> Delete</li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-md-1"></div>
+    <div class="col-md-5 pl-0">
+      <p class="mr-b-2"><b>Biography:</b></p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries,
+      </p>
+    </div>
+    <div class="clearfix"></div>
+     <hr>
+
+    <div class="col-md-1">
+      <img src="assets/img/user-profile2.png" width="50">
+    </div>
+    <div class="col-md-3 pl-0 line-height">
+      <ul class="custom-ul">
+        <li><b>Speaker:</b> Juan Alejos</li>
+        <li><b>Gender:</b> Male</li>
+        <li><b>City & State:</b> Albany, NY</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 line-height">
+      <ul class="pad-lft-zero">
+        <li><b>Role:</b> Patient</li>
+        <li><b>Date of Diagnosis:</b> 9/6/2019</li>
+        <li><b>Treatment Start Date:</b> 9/6/2019</li>
+      </ul>
+    </div>
+    <div class="col-md-4 icon-panel">
+      <ul class="flt-rt">
+          <li><img src="assets/icons/ico-view-profile.png" class="img-view"> View Profile</li>
+          <li><img src="assets/icons/ico-edit.png"> Edit</li>
+          <li><img src="assets/icons/ico-delete.png"> Delete</li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-md-1"></div>
+    <div class="col-md-5 pl-0">
+      <p class="mr-b-2"><b>Biography:</b></p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries,
+      </p>
+    </div>
+
+  </mat-card>
+</div>
