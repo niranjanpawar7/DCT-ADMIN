@@ -14,6 +14,7 @@ import { SpeakerComponent } from './speaker/speaker.component'
 import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
 import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
+import { CalenderComponent } from './calender/calender.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },  
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path : 'upload-reference', component : UploadReferancesComponent},
   { path : 'task-filter', component : TaskFilterComponent},
   { path: 'attendee-list', component: AttendeeListComponent},
+  { path: 'calender', loadChildren: './calender/calender.module#CalenderModule' },
   { path: '**', component: PageNotFoundComponent },
   
   

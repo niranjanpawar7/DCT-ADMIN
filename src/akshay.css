@@ -1,0 +1,173 @@
+
+
+:root {
+
+    /*Colors*/
+      --white-color: #fff;
+      --primary-color: #1873d4;
+      --primary-color-hover: #1873d4;
+      --secondary-color: #FFC000;
+      --secondary-color-hover: #FFC000;
+      --color-black: #001117;
+      --color-dark-blue: #1673BF;
+      --color-light-blue: #F2FBFE;
+      --color-dark-grey: #798285;
+      --color-light-grey: #F0F0F0;
+      --color-light-orange: #FBB755;
+      --border-color-grey: #E7E9E9;
+      --shadow-grey: #eee;
+    
+    /*Fonts*/
+      --primary-font: 'Roboto', sans-serif;
+      --secondary-font: 'Oswald', sans-serif;
+    
+    /*Font-widths*/
+      --font-light: 300;
+      --font-regular: 400;
+      --font-semibold: 600;
+      --font-bold: 700;
+    
+    /*Dimenstions*/
+      --main-container-size: 1200px;
+      --full: 100%;
+    
+    /*text*/
+      --default-text: 18px;   	 
+}
+
+
+.fill-space{
+    flex: 1 1 auto;
+}
+.mat-card-ak{
+    box-shadow: 7px 6px 24px -8px rgba(0,0,0,.08) !important;
+    padding: 25px 30px !important;
+    border-radius: 8px !important;
+}
+.mat-card-ak .card-title{
+    margin-bottom: 25px;
+    display: flex;
+    position: relative;
+
+}
+.mat-card-ak .card-title h3{
+    margin: 0px;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+    font-size: 28px;
+}
+.mat-card-ak .card-title.bordered::after{
+    content: '';
+    display: block;
+    height: 1px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+}
+.mat-card-ak .card-content{
+}
+.mat-input-group{
+    margin-bottom: 15px;
+}
+.mat-input-group label{
+    font-size: 14px;
+    font-weight: var(--font-light);
+    color: var(--color-dark-grey);
+}
+
+.mat-button-primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 0px !important;
+    min-width: 180px !important;
+    font-size: var(--default-text);
+}
+.mat-button-primary:hover{
+    color: var(--white-color);
+}
+
+.mat-button-primary-transparent{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 12px 0px !important;
+    min-width: 180px !important;
+    font-size: var(--default-text);
+}
+
+.mat-button-primary-transparent:hover{
+    color: var(--primary-color);
+}
+
+.my-events .admin-calender .fc-day-header {
+    display: none;
+}
+
+.my-events .admin-calender .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    float: left;
+    font-size: 24px;
+}
+
+.my-events .admin-calender .fc-day-grid-event .fc-content {
+    background: transparent !important;
+    border: none !important;
+}
+.my-events .admin-calender .fc-header-toolbar .fc-event{
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+}
+.my-events .admin-calender .fc-header-toolbar .fc-button{
+    background: var(--color-light-grey);
+    border: none;
+    padding: 4px 8px;
+    color: #5a5a5a;
+    outline: none;
+    margin: 0px;
+}
+.my-events .admin-calender .fc-event {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+}
+.my-events .admin-calender .fc-header-toolbar h2{
+    font-size: var(--default-text);
+    font-weight: var(--font-bold);
+    color: var(--color-dark-grey);
+    margin: 8px 10px;
+}
+.mat-button-row button{
+    margin-right: 15px;
+}
+.mat-button-row button:last-child{
+    margin-right: 0px;
+}
+
+
+/******************Responsive*********************/
+
+@media (max-width: 767px)
+{
+    .mat-button-row button{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
+{
+  
+}
+
+@media screen and (min-width: 1400px) {
+ 
+}
+@media screen and (min-width: 1600px) {
+  
+}
+@media screen and (min-width: 1900px) {
+  
+}
+@media screen and (min-width: 2100px) {
+  
+}

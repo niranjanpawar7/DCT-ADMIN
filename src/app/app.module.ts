@@ -64,7 +64,7 @@ import { AttendeeListComponent } from './attendee-list/attendee-list.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
