@@ -26,6 +26,7 @@ import { UploadReferancesComponent, upoadRefPopup } from './upload-referances/up
 import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
+import { SearchSpeakerComponent } from './search-speaker/search-speaker.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.compo
     TravelInfoPopup,
     HotelInfoPopup,
     AddAttendeePopup,
-    UpcomingFilterComponent
+    UpcomingFilterComponent,
+    SearchSpeakerComponent
 
   ],
   imports: [

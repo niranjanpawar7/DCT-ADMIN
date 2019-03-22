@@ -15,6 +15,7 @@ import { UploadReferancesComponent } from './upload-referances/upload-referances
 import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
+import { SearchSpeakerComponent } from './search-speaker/search-speaker.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },  
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path : 'task-filter', component : TaskFilterComponent},
   { path: 'attendee-list', component: AttendeeListComponent},
   { path : 'upcoming-filter', component: UpcomingFilterComponent},
+  { path : 'search-speaker', component: SearchSpeakerComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
