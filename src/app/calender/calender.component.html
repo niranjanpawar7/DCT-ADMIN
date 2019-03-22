@@ -1,0 +1,209 @@
+<section class="my-events">
+  <div class="container-fluid">
+      <mat-card class="mat-card-ak">
+        <div class="card-title bordered">
+          <h3>Search Events</h3>
+          <span class="fill-space"></span>
+        </div>
+        <div class="card-content">
+          
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="mat-input-group">
+                <label>Speaker Program ID</label>
+                <mat-form-field class="example-full-width">
+                    <input type="text" matInput placeholder="" value="">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Topic</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Sales Rep</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Venue</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Status</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Speaker</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>From</label>
+                  <mat-form-field>
+                      <input matInput [matDatepicker]="picker1">
+                      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                      <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>To</label>
+                  <mat-form-field>
+                      <input matInput [matDatepicker]="picker2">
+                      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                      <mat-datepicker #picker2></mat-datepicker>
+                  </mat-form-field>
+                </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="card-footer text-center">
+            <button mat-button class="btn mat-button-primary">Search</button>
+        </div>
+      </mat-card>
+      <mat-card class="mat-card-ak admin-calender-view">
+          <div class="card-title">
+            
+            <div class="row">
+              
+              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                  <h3 class="">Upcoming Events</h3>
+              </div>
+              
+              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                  <div class="mat-button-row text-right">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="data.calenderView = false">List View</button>
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="data.calenderView = true">Month View</button>
+                  </div>
+              </div>
+              
+            </div>
+            
+            
+            
+            
+            <div class="grey-border"></div>
+          </div>
+          <div class="card-content">
+            <div class="admin-calender">
+              <div *ngIf="data.calenderView">
+                <app-view-calender></app-view-calender>
+              </div>
+              <div *ngIf="!data.calenderView" class="calender-list-view">
+                  <mat-card>
+                      <div class="col-md-1 left-content">
+                        <span class="upper-text">OCT</span>
+                        <div class="clearfix"></div>
+                        <div class="ft-sz"> 12 </div>
+                      </div>
+                      <div class="col-md-5 right-content" routerLink="event/1">
+                        Understanding the Complexity of Living with Cancer
+                      </div>
+                      <div class="col-md-3 middle-panel text-center">1 - 4 PM, New York, NY</div>
+                      <div class="col-md-3 icon-panel text-right">
+                        <span><img routerLink="/calender" src="assets/icons/add.svg"></span>
+                        <span><img src="assets/icons/map.svg"></span>
+                        <span><img src="assets/icons/details.svg"></span>
+                        <span><img routerLink="/calender/event/1/expenses/2" src="assets/icons/check-mark.svg"></span>
+                      </div>
+                    </mat-card>
+              
+                    <mat-card>
+                      <div class="col-md-1 left-content">
+                        <span class="upper-text">OCT</span>
+                        <div class="clearfix"></div>
+                        <div class="ft-sz"> 17 </div>
+                      </div>
+                      <div class="col-md-5 right-content" routerLink="event/2">
+                        Shared Experiences Roundtable
+                      </div>
+                      <div class="col-md-3 middle-panel text-center">3 - 5 PM, Virtual Event</div>
+                      <div class="col-md-3 icon-panel text-right">
+                        <span><img src="assets/icons/add.svg"></span>
+                        <span><img src="assets/icons/map.svg"></span>
+                        <span><img src="assets/icons/details.svg"></span>
+                        <span><img routerLink="/calender/event/1/expenses/2" src="assets/icons/check-mark.svg"></span>
+                      </div>
+                    </mat-card>
+              
+                    <mat-card>
+                      <div class="col-md-1 left-content">
+                        <span class="upper-text">OCT</span>
+                        <div class="clearfix"></div>
+                        <div class="ft-sz"> 23 </div>
+                      </div>
+                      <div class="col-md-5 right-content" routerLink="event/3">
+                        Patient Perspectives of Clinical Trial Enrollment
+                      </div>
+                      <div class="col-md-3 middle-panel text-center">1 - 4 PM, New York, NY</div>
+                      <div class="col-md-3 icon-panel text-right">
+                        <span><img src="assets/icons/add.svg"></span>
+                        <span><img src="assets/icons/map.svg"></span>
+                        <span><img src="assets/icons/details.svg"></span>
+                        <span><img routerLink="/calender/event/1/expenses/2" src="assets/icons/check-mark.svg"></span>
+                      </div>
+                    </mat-card>
+                    <div class="clearfix"></div>
+                    <p class="ft-18 mr-tp-39">
+                        NOVEMBER
+                    </p>
+                    <mat-card>
+                      <div class="col-md-1 left-content">
+                        <span class="upper-text">NOV</span>
+                        <div class="clearfix"></div>
+                        <div class="ft-sz"> 3 </div>
+                      </div>
+                      <div class="col-md-5 right-content" routerLink="event/1">
+                        Staying Positive When Treatment isn't as Effective as you Thought
+                      </div>
+                      <div class="col-md-3 middle-panel text-center">3 - 5 PM,  Secaucus, NJ</div>
+                      <div class="col-md-3 icon-panel text-right">
+                        <span><img routerLink="/calender" src="assets/icons/add.svg"></span>
+                        <span><img src="assets/icons/map.svg"></span>
+                        <span><img src="assets/icons/details.svg"></span>
+                        <span><img routerLink="/calender/event/1/expenses/2" src="assets/icons/check-mark.svg"></span>
+                      </div>
+                    </mat-card>
+
+                    <div class="pagination-btn-row">
+                        <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+                        <button mat-button class="btn mat-button-primary">Prev
+                        </button>
+                        <button class="btn page-number active"> 1 </button>
+                        <button class="btn page-number"> 2 </button>
+                        <button class="btn page-number"> 3 </button>
+                        <button class="btn page-number"> 4 </button>
+                        <button mat-button class="btn mat-button-primary">Next
+                        </button>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+  </div>
+</section>
+

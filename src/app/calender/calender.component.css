@@ -1,0 +1,141 @@
+.my-events{
+    margin: 40px 0px;
+}
+.my-events .mat-card-ak{
+    margin-bottom: 40px;
+}
+.my-events .mat-card-ak .card-title .grey-border
+{
+    height: 4px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: -8px;
+}
+.my-events .admin-calender-view .card-title h3{
+    margin: 10px 0px;
+}
+.my-events .admin-calender-view .card-title{
+    display: block;
+}
+
+.nopadding{
+    padding: 0px;
+} 
+.events-btn-position.form-control{
+    width: 177px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #2B62CA;
+    padding-left: 0px;
+    text-align: left;
+    margin-left: -3px;
+    text-transform:uppercase;
+}
+.my-events .admin-calender .calender-list-view mat-card .left-content{
+    color: #1D232F;		font-size: 40px; font-family: Lato;	line-height: 25px; border-right: 1px solid #DBE6F8; padding: 0px;
+}
+.my-events .admin-calender .calender-list-view mat-card .middle-panel{
+    color: #1D232F;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 17px;
+    padding-top: 32px;
+}
+.icon-panel {
+    padding-top: 30px
+}
+.my-events .admin-calender .calender-list-view mat-card .icon-panel span{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.my-events .admin-calender .calender-list-view mat-card .right-content{
+    color: #2B62CA;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 25px;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+.my-events .admin-calender .calender-list-view mat-card .upper-text{
+    color: #1D232F;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    display: block;
+    text-align: center;  
+}
+.mat-card{
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 24px 0 #E2E9F7;
+} 
+.icon-panel span{
+    margin-right: 21px;
+}
+.icon-panel span img{
+    height: 26px;
+}
+.ft-18{
+    font-size: 18px;
+    font-family: Lato;
+    color: #1D232F;
+}
+.ft-sz{
+    font-size: 48px !important;
+    margin-top: 8px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+.mr-tp-39{
+    margin-top: 39px;
+}
+
+.my-events .admin-calender .calender-list-view .pagination-btn-row .page-number {
+    margin-left: 0px !important;
+    margin: 0px 10px !important;
+}
+@media (max-width: 768px)
+{
+    .mat-button-row button {
+        margin-right: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mat-tab-group{
+        width: 100%;
+    }
+    .my-events .admin-calender .calender-list-view mat-card .right-content{
+       padding-left: 0px;
+    }
+    .my-events .admin-calender .calender-list-view mat-card .middle-panel{
+       text-align: left;
+       padding-left: 0px;
+    }
+    .icon-panel {
+        padding-left: 0px;
+        text-align: left;
+    }
+    .my-events .admin-calender .calender-list-view mat-card .left-content{
+        border-right: 0px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .my-events .admin-calender-view .mat-button-row{
+        text-align: center !important;
+    }
+    .ft-sz{
+        text-align: left;
+    }
+    .my-events .admin-calender .calender-list-view mat-card .upper-text{
+        text-align: left;  
+    }
+}

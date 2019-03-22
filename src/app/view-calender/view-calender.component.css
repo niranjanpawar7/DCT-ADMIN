@@ -1,0 +1,14 @@
+.calender-nav-btn button{
+    background: var(--color-light-grey);
+    border: none;
+    padding: 4px 8px;
+    color: #5a5a5a;
+    outline: none;
+}
+
+.calender-nav-btn .month{
+    margin: 0px 15px;
+    font-size: var(--default-text);
+    font-weight: var(--font-bold);
+    color: var(--color-dark-grey);
+}

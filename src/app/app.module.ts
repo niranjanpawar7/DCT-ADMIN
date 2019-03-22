@@ -69,7 +69,7 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

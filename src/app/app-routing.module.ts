@@ -32,6 +32,7 @@ const routes: Routes = [
   { path : 'upload-reference', component : UploadReferancesComponent},
   { path : 'task-filter', component : TaskFilterComponent},
   { path: 'attendee-list', component: AttendeeListComponent},
+  { path: 'calender', loadChildren: './calender/calender.module#CalenderModule' },
   { path : 'upcoming-filter', component: UpcomingFilterComponent},
   { path : 'search-speaker', component: SearchSpeakerComponent},
   { path: '**', component: PageNotFoundComponent },
