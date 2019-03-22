@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
 
 export interface DialogData {
-   
+
 }
 @Component({
   selector: 'app-speaker',
@@ -10,20 +10,34 @@ export interface DialogData {
   styleUrls: ['./speaker.component.css']
 })
 export class SpeakerComponent implements OnInit {
+  patient: boolean = true;
+
+
+
+
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
-  }
-  openDialog() {
      
-    const dialogRef = this.dialog.open(SpeakerPopupUpload);
+  }
 
-      dialogRef.afterClosed().subscribe(result => { 
-       
-      });
+  doSomething(event) {
+    if (event.value == 'Caregiver') {
+      this.patient = false;
+    } else {
+      this.patient = true;
+    }
+
+  }
+  openDialog() { 
+    const dialogRef = this.dialog.open(SpeakerPopupUpload); 
+    dialogRef.afterClosed().subscribe(result => { 
+    });
   };
-  
+
+
+
 }
 @Component({
   selector: 'dialog-speaker-example-dialog',
@@ -32,6 +46,6 @@ export class SpeakerComponent implements OnInit {
 })
 export class SpeakerPopupUpload {
   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {
-      
+
   }
 }

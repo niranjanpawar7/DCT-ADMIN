@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatStepper } from '@angular/material';
-import { MatDialog } from '@angular/material';
+import { MatDialog, MatHorizontalStepper } from '@angular/material';
 
 
 const ELEMENT_DATA = [
@@ -16,21 +16,25 @@ const ELEMENT_DATA = [
 export class CreateEventComponent implements OnInit {
   selectedOption = '1';
   constructor(public dialog: MatDialog) { }
-  
+  @ViewChild(MatHorizontalStepper) stepper: MatHorizontalStepper;
 
 
   ngOnInit() {
-    setTimeout(()=>{
+    setTimeout(() => {
       this.openDialog();
     })
-    
+
+  } 
+
+  ngAfterViewInit() {
+    this.stepper._getIndicatorType = () => 'number';
   }
 
   openDialog() {
     const dialogRef = this.dialog.open(createEventPopup);
 
     dialogRef.afterClosed().subscribe(result => {
-       console.log('dailog close')
+      console.log('dailog close')
     });
   }
 
