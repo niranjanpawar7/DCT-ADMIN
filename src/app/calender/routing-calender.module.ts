@@ -8,7 +8,7 @@ import { CalenderComponent } from "./calender.component";
 
 const routes: Routes = [
     { path: "", component: CalenderComponent },
-    { path : "event/:id", loadChildren: '../event-detail/event-detail.module#EventDetailModule'
+    { path : "event/:id", loadChildren: '/event-detail/event-detail.module#EventDetailModule'
     // children: [
     //     { path: 'expenses',  component: ExpensesComponent },
     //   ]
