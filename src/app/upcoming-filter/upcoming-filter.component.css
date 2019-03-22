@@ -78,7 +78,7 @@ tr.mat-footer-row, tr.mat-row {
 }
  
 @media only screen and (max-width: 800px) {
-    .dashboard-admin-wrapper mat-card{
+    .dashboard-admin-upcoming-wrapper mat-card{
         padding: 15px; 
         margin: 20px 0px;
     }
