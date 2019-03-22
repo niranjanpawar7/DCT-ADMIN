@@ -612,6 +612,25 @@ li.has-submenu:hover .submenu {
   list-style: none !important;
 }
 
+.view-audit-modal::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.view-audit-modal::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.view-audit-modal::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.view-audit-modal::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .title-row{
   padding: 15px 20px;
   border-top: 1px solid #ddd;
@@ -711,6 +730,7 @@ label.small{
   background: #555; 
 }
 
+
 .add-attendee-form h4 {
   font-weight: 600;
   margin: 15px 0px;
@@ -722,4 +742,33 @@ label.small{
 }
 .add-attendee-form mat-radio-button {
   margin: 0px;
+}
+
+@media (max-width: 767px)
+{
+  .primary-custom {
+    margin-left: 0px !important;
+  }
+  .add-attendee-modal mat-dialog-container {
+    padding: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
+{
+  
+  
+}
+
+@media screen and (min-width: 1400px) {
+ 
+}
+@media screen and (min-width: 1600px) {
+  
+}
+@media screen and (min-width: 1900px) {
+  
+}
+@media screen and (min-width: 2100px) {
+  
 }
