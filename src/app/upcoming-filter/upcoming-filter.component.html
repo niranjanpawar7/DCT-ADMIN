@@ -1,7 +1,7 @@
-<div class="col-md-12 dashboard-admin-wrapper">
+<div class="col-md-12 dashboard-admin-upcoming-wrapper">
   <mat-card>
     <div class="col-md-12 dashboard-heading-wrapper">
-      <p><span class="master-heading"> Tasks Filter </span></p>
+      <p><span class="master-heading"> Upcoming Program Filter </span></p>
       <hr>
       <div class="row">
         <div class="col-md-4">
@@ -31,6 +31,16 @@
           </div>
         </div>
 
+        <div class="clearfix"></div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Location</label>
+            <mat-form-field>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
         <div class="col-md-4">
           <div class="form-group">
             <label>From</label>
@@ -54,7 +64,7 @@
           </div>
         </div>
 
-
+        <div class="clearfix"></div>
         <div class="col-md-4">
           <div class="form-group">
             <label>Speaker</label>
@@ -75,7 +85,7 @@
   </mat-card>
   <mat-card>
     <div class="col-md-12 dashboard-heading-wrapper">
-      <p><span class="master-heading"> Tasks </span></p>
+      <p><span class="master-heading"> Upcoming Program </span></p>
       <hr>
       <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
 
