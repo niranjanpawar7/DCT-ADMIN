@@ -7,6 +7,8 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
   styleUrls: ['./event-details.component.css']
 })
 export class EventDetailsComponent implements OnInit {
+  
+   
 
   constructor(public dialog: MatDialog) { }
 
