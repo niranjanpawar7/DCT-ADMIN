@@ -1,12 +1,18 @@
 .training-admin-wrapper mat-card{
     padding: 38px 44px 0px 45px; 
-    margin-top: 70px;
+    margin-top: 25px;
     margin-bottom: 70px;
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
 .training-admin-wrapper mat-card hr{
     margin-top: 0px;
     margin-bottom: 20px;
+}
+.sub-link{
+    margin-top: 25px;
+}
+.clr-blue{
+    color: #2B62CA !important;
 }
 .icon-panel{
     font-size: 15px;	font-weight: 500;	line-height: 18px;
@@ -41,8 +47,9 @@
     font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
 }
 .master-heading{
-    font-size: 30px;
-    color: blue;
+    font-size: 28px;
+    color: #2B62CA;
+    font-weight: bold;
 }
 .para-heading{   
     color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;

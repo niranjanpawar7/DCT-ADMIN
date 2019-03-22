@@ -10,7 +10,7 @@ export interface DialogData {
   styleUrls: ['./speaker.component.css']
 })
 export class SpeakerComponent implements OnInit {
-  patient: boolean = true;
+  patient: boolean = false;
 
 
 
@@ -24,9 +24,9 @@ export class SpeakerComponent implements OnInit {
 
   doSomething(event) {
     if (event.value == 'Caregiver') {
-      this.patient = false;
-    } else {
       this.patient = true;
+    } else {
+      this.patient = false;
     }
 
   }

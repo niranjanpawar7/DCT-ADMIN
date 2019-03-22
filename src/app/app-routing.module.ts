@@ -14,7 +14,8 @@ import { SpeakerComponent } from './speaker/speaker.component'
 import { UploadReferancesComponent } from './upload-referances/upload-referances.component'
 import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
-import { CalenderComponent } from './calender/calender.component';
+import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
+import { SearchSpeakerComponent } from './search-speaker/search-speaker.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },  
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path : 'task-filter', component : TaskFilterComponent},
   { path: 'attendee-list', component: AttendeeListComponent},
   { path: 'calender', loadChildren: './calender/calender.module#CalenderModule' },
+  { path : 'upcoming-filter', component: UpcomingFilterComponent},
+  { path : 'search-speaker', component: SearchSpeakerComponent},
   { path: '**', component: PageNotFoundComponent },
   
   
