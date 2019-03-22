@@ -5,7 +5,7 @@
 }
 .speaker-admin-wrapper mat-card{
     padding: 21px 40px 31px 41px; 
-    margin-top: 40px;
+    margin-top: 25px;
     /* margin-bottom: 70px; */
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
@@ -67,6 +67,12 @@ mat-card .form-group {
     top: -34px;
     z-index: 99;
     cursor: pointer;
+}
+.sub-link{
+    margin-top: 25px;
+}
+.clr-blue{
+    color: #2B62CA !important;
 }
 
 @media only screen and (max-width: 800px) {
