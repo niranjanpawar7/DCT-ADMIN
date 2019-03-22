@@ -537,10 +537,10 @@ td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:
 .btn-view button {width: auto !important;/*margin: 0px !important*/;margin-right: 15px !important;margin-bottom: 20px !important;}
 li {min-height: 40px;}
 .add-btn {
-    float: right;
     margin-right: 35px;
     margin-bottom: 40px !important;
     margin-top: 15px;
+    text-align: right;
 }
 
 .center {
@@ -570,9 +570,29 @@ span.subtitl-exp-blue {
     color: #2B62CA;
     font-size: 22px;
     font-weight: 600;
+    text-align: right;
+    display: block;
 }
 .top-mar {
     margin-top: 25px;
+}
+@media (max-width: 768px){
+    .btn-view {
+        text-align: center;
+    }
+    .border-right {
+        border-left: none;
+    }
+    .header-text-style {
+        font-size: 20px;
+        float: left !important;
+    }
+    span.subtitl-exp-blue{
+        font-size: 20px;
+    }
+    span.subtitle-speaker-exp{
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 767px)
@@ -581,14 +601,29 @@ span.subtitl-exp-blue {
         float: none !important;
     }
     .btn-view {
+        text-align: center;
+    }
+    .btn-view button {
+        margin-top: 0px !important;
+    }
+    span.subtitl-exp-blue {
         text-align: left;
+        margin-top: 15px;
+    }
+    .add-btn {
+        text-align: center;
+    }
+    .border-right {
+        border-left: none;
+    }
+    span.subtitle-speaker-exp{
+        margin-left: 0px;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
 {
-  
-  
+    
 }
 
 @media screen and (min-width: 1400px) {
