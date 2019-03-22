@@ -1,20 +1,20 @@
-.dashboard-admin-wrapper mat-card:first-child{
+.dashboard-admin-upcoming-wrapper mat-card:first-child{
     padding: 38px 44px 0px 45px; 
     margin-top: 70px;
     margin-bottom: 0px;
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
-.dashboard-admin-wrapper mat-card{
+.dashboard-admin-upcoming-wrapper mat-card{
     margin-top: 50px;
     margin-bottom: 0px;
     padding: 38px 44px 0px 45px; 
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
-.dashboard-admin-wrapper mat-card:last-child{ 
+.dashboard-admin-upcoming-wrapper mat-card:last-child{ 
     margin-bottom: 50px;
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
-.dashboard-admin-wrapper mat-card hr{
+.dashboard-admin-upcoming-wrapper mat-card hr{
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -44,7 +44,7 @@ tr.mat-footer-row, tr.mat-row {
     color: #757575;	font-size: 16px;	line-height: 22px;
 }
 .master-heading{
-    font-size: 30px;
+    font-size: 28px;
     color: #2B62CA;
     font-weight: bold;
 }
