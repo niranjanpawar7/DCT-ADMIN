@@ -22,7 +22,7 @@ import { LoginComponent, LoginDialog } from './login/login.component'
 import { EventDetailsComponent, ViewAuditPopup, ProgramStatusPopup, TravelInfoPopup, HotelInfoPopup, AddAttendeePopup } from './event-details/event-details.component';
 import { ManageSpkeakerContentComponent, speakerUpload } from './manage-spkeaker-content/manage-spkeaker-content.component';
 import { SpeakerComponent, SpeakerPopupUpload } from './speaker/speaker.component';
-import { UploadReferancesComponent } from './upload-referances/upload-referances.component';
+import { UploadReferancesComponent, upoadRefPopup } from './upload-referances/upload-referances.component';
 import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
@@ -48,7 +48,8 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     LoginDialog,
     EventDetailsComponent,
     SpeakerComponent, SpeakerPopupUpload,
-    UploadReferancesComponent, TaskFilterComponent,
+    UploadReferancesComponent, upoadRefPopup,
+    TaskFilterComponent,
     AttendeeListComponent,
     ViewAuditPopup,
     ProgramStatusPopup,
@@ -85,7 +86,8 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     ProgramStatusPopup,
     TravelInfoPopup,
     HotelInfoPopup,
-    AddAttendeePopup
+    AddAttendeePopup,
+    upoadRefPopup
   ]
 })
 export class AppModule { }

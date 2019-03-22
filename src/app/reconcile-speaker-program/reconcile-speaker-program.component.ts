@@ -1,6 +1,6 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, ViewChild, OnInit, Inject } from '@angular/core';
 import { MatStepper } from '@angular/material';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
+import {MatDialog, MAT_DIALOG_DATA, MatHorizontalStepper} from '@angular/material'; 
 
 export interface DialogData {
    
@@ -12,6 +12,9 @@ export interface DialogData {
   styleUrls: ['./reconcile-speaker-program.component.css']
 })
 export class ReconcileSpeakerProgramComponent implements OnInit {
+  
+  @ViewChild(MatHorizontalStepper) stepper: MatHorizontalStepper;
+
   dataSource = [
     {type: 'Airfare', alexon: '$000.00', speaker: '$000.00', total: '$000.00'},
     {type: 'Lodging', alexon: '$000.00', speaker: '$000.00', total: '$000.00'},
@@ -25,6 +28,10 @@ export class ReconcileSpeakerProgramComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    this.stepper._getIndicatorType = () => 'number';
+  }
+  
   stepperNext(stepper: MatStepper){
     stepper.next();
   }
