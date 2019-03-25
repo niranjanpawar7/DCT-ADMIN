@@ -37,7 +37,7 @@
               </a>
             </li>
 
-            <li class="has-submenu" #hasMenu>
+            <!-- <li class="has-submenu" #hasMenu>
               <a>
                 <span class="nav-pad">
                   <span class="glyphicon glyphicon-plus"></span>
@@ -45,13 +45,13 @@
                   CREATE EVENT
                 </span>
                 <ul class="submenu">
-                  <li>menu 1</li>
-                  <li>menu 2</li>
+                  <li [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">menu 1</li>
+                  <li [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">menu 2</li>
                 </ul>
               </a>
-            </li>
+            </li> -->
 
-            <li class="has-submenu" #hasMenu>
+            <!-- <li class="has-submenu" #hasMenu>
               <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <span class="glyphicon glyphicon-plus"></span>
@@ -63,9 +63,9 @@
                   <li>menu 2</li>
                 </ul>
               </a>
-            </li>
+            </li> -->
 
-            <li class="has-submenu" #hasMenu>
+            <!-- <li class="has-submenu" #hasMenu>
               <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <span class="glyphicon glyphicon-plus"></span>
@@ -77,71 +77,44 @@
                   <li>menu 2</li>
                 </ul>
               </a>
-            </li>
+            </li> -->
+          
             <li class="has-submenu" #hasMenu>
-              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
-                <span class="nav-pad">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <div class="clearfix"></div>
-                  CREATE EVENT
-                </span>
-                <ul class="submenu">
-                  <li>menu 1</li>
-                  <li>menu 2</li>
-                </ul>
-              </a>
-            </li>
-            <li class="has-submenu" #hasMenu>
-              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
-                <span class="nav-pad">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <div class="clearfix"></div>
-                  CREATE EVENT
-                </span>
-                <ul class="submenu">
-                  <li>menu 1</li>
-                  <li>menu 2</li>
-                </ul>
-              </a>
-            </li>
-            <li class="has-submenu" #hasMenu>
-              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
-                <span class="nav-pad">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <div class="clearfix"></div>
-                  CREATE EVENT
-                </span>
-                <ul class="submenu">
-                  <li>menu 1</li>
-                  <li>menu 2</li>
-                </ul>
-              </a>
-            </li>
-
-            <li>
-              <a [routerLink]="['/event-details']" [routerLinkActive]="['router-link-active']">
+              <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <img src="assets/icons/calendar.svg" class="img-responsive" />
                   MY EVENTS
                 </span>
+                <ul class="submenu">
+                  <li [routerLink]="['/event-details']">List View</li>
+                  <li [routerLink]="['/calender']">Calender View</li>
+                </ul>
               </a>
             </li>
 
-            <li>
-              <a [routerLink]="['/speaker']" [routerLinkActive]="['router-link-active']">
+            <li class="has-submenu" #hasMenu>
+              <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <img src="assets/icons/slides.svg" class="img-responsive" />
                   SPEAKER
                 </span>
+                <ul class="submenu">
+                  <li [routerLink]="['/search-speaker']">Search Speaker</li>
+                  <li [routerLink]="['/speaker']">Add Speaker</li>
+                </ul>
               </a>
             </li>
 
-            <li>
-              <a [routerLink]="['/training']" [routerLinkActive]="['router-link-active']">
+            <li class="has-submenu" #hasMenu>
+              <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <img src="assets/icons/training.svg" class="img-responsive" />
                   TRAINING
                 </span>
+                <ul class="submenu training-submenu">
+                  <li [routerLink]="['/training']">Upload Training Deck</li>
+                  <li [routerLink]="['/initiatetraining']">Initiate Training</li>
+                </ul>
               </a>
             </li>
 
@@ -163,13 +136,17 @@
               </a>
             </li>
 
-            <li>
-              <a [routerLink]="['/add-venue']" [routerLinkActive]="['router-link-active']">
+            <li class="has-submenu" #hasMenu>
+              <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <span class="glyphicon glyphicon-map-marker"></span>
                   <div class="clearfix"></div>
                   VENUE
                 </span>
+                <ul class="submenu">
+                  <li [routerLink]="['/venue-listing']">Venue Listing</li>
+                  <li [routerLink]="['/add-venue']" >Add Venue</li>
+                </ul>
               </a>
             </li>
 
@@ -204,7 +181,6 @@
             </li>
 
             <li>
-
               <a [routerLink]="['/myprofile']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <img src="assets/icons/profile.svg" class="img-responsive" />
@@ -212,20 +188,7 @@
                 </span>
               </a>
             </li>
-            <li class="has-submenu" #hasMenu>
-              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
-                <span class="nav-pad">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <div class="clearfix"></div>
-                  CREATE EVENT
-                </span>
-                <ul class="submenu">
-                  <li>menu 1</li>
-                  <li>menu 2</li>
-                </ul>
-              </a>
-            </li>
-
+          
           </ul>
         </div>
       </div><!-- navbar -->
