@@ -597,7 +597,7 @@ li.has-submenu {
 }
 li.has-submenu:hover .submenu {
   z-index: 1;
-  right: -5.4em;
+  right: -7.99em;
   box-shadow: 5px 2px 5px #0000001f;
 }
 
@@ -605,6 +605,10 @@ li.has-submenu:hover .submenu {
   list-style: none;
   color: #1B3D7D;
   font-weight: var(--font-bold);
+  padding-bottom: 8px;
+}
+li.has-submenu:hover .training-submenu{
+  right: -11.49em;
 }
 
 .view-audit-modal mat-dialog-container{
