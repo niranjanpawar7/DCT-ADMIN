@@ -16,15 +16,19 @@
     font-size: 35px;
   }
   .nopadding.sticky-container{
-    height: 100%;
+    height: auto;
     background: #2B62CA;
   } 
   .sticky-container {
-    position: fixed;
+    position: relative;
     height: 100%;
     background: #2B62CA;
-    overflow-y: auto;
+    z-index: 9999;
   }
+.sticky-nav{
+  position: fixed;
+}
+
   .sticky-container::-webkit-scrollbar { width: 0 !important };
   .sticky-container { overflow: -moz-scrollbars-none; };
   .sticky-container { -ms-overflow-style: none; }
@@ -101,4 +105,18 @@
      .custom-hide{
        display: none;
      }
+  }
+
+  .no-overflow{
+    overflow-y: unset !important;
+  }
+
+  .has-submenu a:hover{
+    background: #70CDFF !important;
+    color: #1B3D7D !important;
+    font-weight: var(--font-bold);
+  }
+
+  .has-submenu a:hover .nav-pad{
+    color: #1B3D7D;
   }

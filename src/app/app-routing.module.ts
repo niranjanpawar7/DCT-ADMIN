@@ -35,10 +35,7 @@ const routes: Routes = [
   { path: 'calender', loadChildren: './calender/calender.module#CalenderModule' },
   { path : 'upcoming-filter', component: UpcomingFilterComponent},
   { path : 'search-speaker', component: SearchSpeakerComponent},
-  { path: '**', component: PageNotFoundComponent },
-  
-  
- 
+  { path: '**', component: PageNotFoundComponent }, 
 ];
 
 @NgModule({

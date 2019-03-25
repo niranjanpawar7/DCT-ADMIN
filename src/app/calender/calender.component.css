@@ -138,4 +138,14 @@
     .my-events .admin-calender .calender-list-view mat-card .upper-text{
         text-align: left;  
     }
+    .mat-button-row button {
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .mat-button-row button {
+        margin-right: 0px !important;
+    }
 }

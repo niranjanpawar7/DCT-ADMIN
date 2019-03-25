@@ -152,11 +152,48 @@
     .mat-button-row button{
         margin-right: 0px;
     }
+    .activeNav .submenu{
+        right: 0 !important;
+        width: 100% !important;
+        top: 0em !important;
+        display: block;
+    }
+    .activeNav .submenu:hover{
+        transition: none !important;
+        right: 0 !important;
+    }
+    .sticky-nav{
+        position: relative !important;
+    }
+    ul.submenu {
+        position: relative;
+        display: none;
+        left: 0px;
+        transition: display .3s;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait)
 {
-  
+    .activeNav .submenu{
+        right: 0 !important;
+        width: 100% !important;
+        top: 0em !important;
+        display: block;
+    }
+    .activeNav .submenu:hover{
+        transition: none !important;
+        right: 0 !important;
+    }
+    .sticky-nav{
+        position: relative !important;
+    }
+    ul.submenu {
+        position: relative;
+        display: none;
+        left: 0px;
+        transition: display .3s;
+    }
 }
 
 @media screen and (min-width: 1400px) {
