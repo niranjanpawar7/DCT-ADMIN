@@ -1,4 +1,4 @@
-<div class="col-md-1 nopadding sticky-container">
+<div class="col-md-1 nopadding sticky-container" #sideNavBar>
   <div class="col-md-12 logo-section">
     <img src="assets/img/logo-2.png" alt="company logo" class="img-responsive custom-logo" />
   </div><!-- col-md-12-->
@@ -37,19 +37,86 @@
               </a>
             </li>
 
-            <!-- <li class="has-submenu">
+            <li class="has-submenu" #hasMenu>
+              <a>
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
+
+            <li class="has-submenu" #hasMenu>
               <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
                   <span class="glyphicon glyphicon-plus"></span>
                   <div class="clearfix"></div>
                   CREATE EVENT
                 </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
               </a>
-              <ul class="submenu">
-                <li>menu 1</li>
-                <li>menu 2</li>
-              </ul>
-            </li> -->
+            </li>
+
+            <li class="has-submenu" #hasMenu>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
+            <li class="has-submenu" #hasMenu>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
+            <li class="has-submenu" #hasMenu>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
+            <li class="has-submenu" #hasMenu>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
 
             <li>
               <a [routerLink]="['/event-details']" [routerLinkActive]="['router-link-active']">
@@ -145,6 +212,19 @@
                 </span>
               </a>
             </li>
+            <li class="has-submenu" #hasMenu>
+              <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
+                <span class="nav-pad">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  <div class="clearfix"></div>
+                  CREATE EVENT
+                </span>
+                <ul class="submenu">
+                  <li>menu 1</li>
+                  <li>menu 2</li>
+                </ul>
+              </a>
+            </li>
 
           </ul>
         </div>
@@ -155,7 +235,7 @@
 </div>
 <div class="col-md-1"></div><!-- col-md-2 -->
 
-<div class="col-md-11 nopadding">
+<div class="col-md-11 nopadding" #mainContainer>
   <app-header></app-header>
   <div class="col-md-12 main-container">
     <router-outlet></router-outlet>

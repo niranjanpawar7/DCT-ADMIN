@@ -583,12 +583,13 @@ ul.submenu {
   position: absolute;
   display: block;
   z-index: -1;
-  background: #ddd;
+  background: #70CDFF;
   padding: 17px;
   margin: 0px;
   top: 0px;
   right: 0;
   transition: right .3s;
+  height: 100%;
 }
 
 li.has-submenu {
@@ -596,12 +597,14 @@ li.has-submenu {
 }
 li.has-submenu:hover .submenu {
   z-index: 1;
-  right: -5.5em;
+  right: -5.4em;
+  box-shadow: 5px 2px 5px #0000001f;
 }
 
 .submenu li{
-    list-style: none;
-    color: #fff;
+  list-style: none;
+  color: #1B3D7D;
+  font-weight: var(--font-bold);
 }
 
 .view-audit-modal mat-dialog-container{
