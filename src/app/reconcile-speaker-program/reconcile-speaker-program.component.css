@@ -185,7 +185,7 @@ b, strong {
     color: darkslategrey;
 }
 .clr-blue{
-    color: #1873d4 !important;
+    color: #2B62CA !important;
     font-weight: 600;
 }
 .clr-grey{
@@ -213,7 +213,9 @@ b, strong {
 .search-state{
     width: auto !important;
 }
-
+.clr-blue-expense{
+    color:#2B62CA;
+}
 /*------------ fourth section------- */
 
 .delete-btn-fnl{

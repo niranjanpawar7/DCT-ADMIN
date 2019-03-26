@@ -476,7 +476,7 @@ tr.mat-header-row {
     border-bottom: 1px solid #ddd;
 }
 .cust-mat-table table tr td button{
-    margin: 0px auto;
+    margin: 0px;
     text-align: center;
     display: block;
 }
