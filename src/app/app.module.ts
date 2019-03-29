@@ -27,6 +27,7 @@ import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
 import { SearchSpeakerComponent } from './search-speaker/search-speaker.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     HotelInfoPopup,
     AddAttendeePopup,
     UpcomingFilterComponent,
-    SearchSpeakerComponent
+    SearchSpeakerComponent,
+    ResetPasswordComponent
 
   ],
   imports: [
