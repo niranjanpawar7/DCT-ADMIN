@@ -4,6 +4,9 @@
     margin-bottom: 0px;
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
+.dashboard-heading-wrapper:first-child h4{
+    margin-top: 14px;
+}
 .dashboard-admin-wrapper mat-card{
     margin-top: 50px;
     margin-bottom: 0px;
@@ -27,6 +30,9 @@ table {
 }
 tr.mat-footer-row, tr.mat-row {
     height: 60px;
+}
+.dashboard-admin-wrapper td.mat-cell, td.mat-footer-cell, th.mat-header-cell { 
+    border-bottom-width: 0px; 
 }
  
 .mat-row:nth-child(odd){ 
