@@ -4,8 +4,8 @@
 
     /*Colors*/
       --white-color: #fff;
-      --primary-color: #1873d4;
-      --primary-color-hover: #1873d4;
+      --primary-color: #2b62ca;
+      --primary-color-hover: #2b62ca;
       --secondary-color: #FFC000;
       --secondary-color-hover: #FFC000;
       --color-black: #001117;
@@ -60,7 +60,7 @@
     content: '';
     display: block;
     height: 1px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dbe6f8;
     position: absolute;
     width: 100%;
     top: 40px;
@@ -79,7 +79,7 @@
 .mat-button-primary{
     background-color: var(--primary-color);
     color: var(--white-color);
-    padding: 12px 0px !important;
+    padding: 10px 0px !important;
     min-width: 180px !important;
     font-size: var(--default-text);
 }
@@ -90,8 +90,8 @@
 .mat-button-primary-transparent{
     background-color: transparent;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 12px 0px !important;
+    border: 1px solid var(--primary-color) !important;
+    padding: 10px 0px !important;
     min-width: 180px !important;
     font-size: var(--default-text);
 }
@@ -144,6 +144,39 @@
     margin-right: 0px;
 }
 
+.list-item{
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.list-item ul{
+    padding: 0px;
+    list-style: none;
+}
+.list-item ul li{
+    margin-bottom: 15px;
+    color: darkslategrey;
+    font-weight: var(--font-bold);
+}
+.list-item ul li span{
+    color: #757575;
+    font-weight: var(--font-light);
+}
+
+.view-venue-details mat-dialog-container{
+    width: 90% !important;
+    margin: 0px auto !important;
+    padding: 25px 50px !important;
+}
+
+.view-venue-details mat-dialog-container .cust-modal .cust-modal-title .btn-close.pull-right {
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.no-padding{
+    padding: 0px !important;
+}
 
 /******************Responsive*********************/
 

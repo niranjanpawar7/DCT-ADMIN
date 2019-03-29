@@ -1,0 +1,44 @@
+.venue-list{
+    margin: 40px 0px;
+}
+
+.venue-list .mat-card-ak{
+    margin-bottom: 40px;
+}
+
+.venue-list .search-venue .card-content p{
+    padding: 15px 0px;
+    color: #505050;
+    font-size: 18px;
+}
+.venue-list .search-venue .card-footer{
+    margin-top: 15px;
+}
+
+.venue-list .search-venue .card-title.bordered::after, .venue-list .list-venue .card-title.bordered::after {
+    top: 45px !important;
+}
+
+.venue-list .list-venue .list-item {
+    padding: 30px 0px !important;
+}
+
+.venue-list .list-venue .card-title {
+    margin-bottom: 15px !important;
+}
+
+.venue-list .list-venue .search-btn-wrap{
+    text-align: right;
+}
+
+.venue-list .list-venue .pagination-btn-row .page-number {
+    margin-left: 0px !important;
+    margin: 0px 10px !important;
+}
+
+@media (max-width: 768px)
+{
+    .venue-list .list-venue .search-btn-wrap{
+        text-align: center;
+    }
+}

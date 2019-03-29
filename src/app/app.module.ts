@@ -27,6 +27,7 @@ import { TaskFilterComponent } from './task-filter/task-filter.component';
 import { AttendeeListComponent } from './attendee-list/attendee-list.component';
 import { UpcomingFilterComponent } from './upcoming-filter/upcoming-filter.component';
 import { SearchSpeakerComponent } from './search-speaker/search-speaker.component';
+import { VenueListComponent, ViewVenueDetailsPopup } from './venue-list/venue-list.component';
 
 
 @NgModule({
@@ -57,8 +58,9 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     HotelInfoPopup,
     AddAttendeePopup,
     UpcomingFilterComponent,
-    SearchSpeakerComponent
-
+    SearchSpeakerComponent,
+    VenueListComponent,
+    ViewVenueDetailsPopup
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ import { SearchSpeakerComponent } from './search-speaker/search-speaker.componen
     TravelInfoPopup,
     HotelInfoPopup,
     AddAttendeePopup,
-    upoadRefPopup
+    upoadRefPopup,
+    ViewVenueDetailsPopup
   ]
 })
 export class AppModule { }

@@ -1,0 +1,391 @@
+<section class="venue-list">
+  <div class="container-fluid">
+      <mat-card class="mat-card-ak search-venue">
+        <div class="card-title bordered">
+          <h3>Search Venue</h3>
+          <span class="fill-space"></span>
+        </div>
+        <div class="card-content">
+          <p>Please enter your search criteria for a Venue.</p>
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="mat-input-group">
+                <label>Venue Name</label>
+                <mat-form-field class="example-full-width">
+                    <input type="text" matInput placeholder="" value="">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Venue Category</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="Select Category">
+                        <mat-option value="Select Category">
+                            Select Category
+                        </mat-option>
+                        <mat-option value="In Office">
+                                In Office
+                        </mat-option>
+                        <mat-option value="Out Of Office">
+                                Out Of Office
+                        </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>Venue Type</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="Select Type">
+                        <mat-option value="Select Type">
+                            Select Type
+                        </mat-option>
+                        <mat-option value="Caterer">
+                                Caterer
+                        </mat-option>
+                        <mat-option value="Hospital">
+                                Hospital
+                        </mat-option>
+                        <mat-option value="Hotel">
+                                Hotel
+                        </mat-option>
+                        <mat-option value="Medical Office">
+                                Medical Office
+                        </mat-option>
+                        <mat-option value="Clinic">
+                                Clinic
+                        </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+            </div>
+
+          </div>
+          <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="mat-input-group">
+                  <label>City</label>
+                  <mat-form-field class="example-full-width">
+                      <input type="text" matInput placeholder="" value="">
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1 col-lg-1">
+                <div class="mat-input-group">
+                  <label>State</label>
+                  <mat-form-field>
+                    <mat-select placeholder="" value="NJ">
+                        <mat-option value="NJ">
+                                NJ
+                        </mat-option>
+                        <mat-option value="CA">
+                                CA
+                        </mat-option>
+                        <mat-option value="MN">
+                                MN
+                        </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="card-footer text-center">
+            <button mat-button class="btn mat-button-primary">Search</button>
+        </div>
+      </mat-card>
+      <mat-card class="mat-card-ak list-venue">
+        <div class="card-title bordered">
+          <h3>Venue List</h3>
+          <span class="fill-space"></span>
+        </div>
+        <div class="card-content">
+          
+          <div class="list-item">
+            
+            <div class="row">
+              
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Name: <span>Stonehouse Center</span></li>
+                    <li>Type: <span>Convention Center</span></li>
+                    <li>Email: <span>shcenter@emial.com</span></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <ul>
+                  <li>Address: <span>11 Shrewburry Street</span></li>
+                  <li>City & State: <span>Worecester, MA</span></li>
+                  <li>Phone: <span>201-555-7348</span></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <ul>
+                  <li>PX Phone: <span>908-243-4356</span></li>
+                  <li>PX Contact: <span>Michael Tonda</span></li>
+                </ul>
+              </div>
+              <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="search-btn-wrap">
+                  <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="list-item">
+            
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Name: <span>Stonehouse Center</span></li>
+                      <li>Type: <span>Convention Center</span></li>
+                      <li>Email: <span>shcenter@emial.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Address: <span>11 Shrewburry Street</span></li>
+                    <li>City & State: <span>Worecester, MA</span></li>
+                    <li>Phone: <span>201-555-7348</span></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>PX Phone: <span>908-243-4356</span></li>
+                    <li>PX Contact: <span>Michael Tonda</span></li>
+                  </ul>
+                </div>
+                <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="search-btn-wrap">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="list-item">
+            
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Name: <span>Stonehouse Center</span></li>
+                      <li>Type: <span>Convention Center</span></li>
+                      <li>Email: <span>shcenter@emial.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Address: <span>11 Shrewburry Street</span></li>
+                    <li>City & State: <span>Worecester, MA</span></li>
+                    <li>Phone: <span>201-555-7348</span></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>PX Phone: <span>908-243-4356</span></li>
+                    <li>PX Contact: <span>Michael Tonda</span></li>
+                  </ul>
+                </div>
+                <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="search-btn-wrap">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+  
+          <div class="list-item">
+            
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Name: <span>Stonehouse Center</span></li>
+                      <li>Type: <span>Convention Center</span></li>
+                      <li>Email: <span>shcenter@emial.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Address: <span>11 Shrewburry Street</span></li>
+                    <li>City & State: <span>Worecester, MA</span></li>
+                    <li>Phone: <span>201-555-7348</span></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>PX Phone: <span>908-243-4356</span></li>
+                    <li>PX Contact: <span>Michael Tonda</span></li>
+                  </ul>
+                </div>
+                <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="search-btn-wrap">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="list-item">
+            
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Name: <span>Stonehouse Center</span></li>
+                      <li>Type: <span>Convention Center</span></li>
+                      <li>Email: <span>shcenter@emial.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Address: <span>11 Shrewburry Street</span></li>
+                    <li>City & State: <span>Worecester, MA</span></li>
+                    <li>Phone: <span>201-555-7348</span></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>PX Phone: <span>908-243-4356</span></li>
+                    <li>PX Contact: <span>Michael Tonda</span></li>
+                  </ul>
+                </div>
+                <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="search-btn-wrap">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+  
+          <div class="list-item">
+            
+              <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Name: <span>Stonehouse Center</span></li>
+                      <li>Type: <span>Convention Center</span></li>
+                      <li>Email: <span>shcenter@emial.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>Address: <span>11 Shrewburry Street</span></li>
+                    <li>City & State: <span>Worecester, MA</span></li>
+                    <li>Phone: <span>201-555-7348</span></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                  <ul>
+                    <li>PX Phone: <span>908-243-4356</span></li>
+                    <li>PX Contact: <span>Michael Tonda</span></li>
+                  </ul>
+                </div>
+                <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="search-btn-wrap">
+                    <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+  
+          <div class="list-item">
+              
+                <div class="row">
+                  
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                      <ul>
+                        <li>Name: <span>Stonehouse Center</span></li>
+                        <li>Type: <span>Convention Center</span></li>
+                        <li>Email: <span>shcenter@emial.com</span></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Address: <span>11 Shrewburry Street</span></li>
+                      <li>City & State: <span>Worecester, MA</span></li>
+                      <li>Phone: <span>201-555-7348</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>PX Phone: <span>908-243-4356</span></li>
+                      <li>PX Contact: <span>Michael Tonda</span></li>
+                    </ul>
+                  </div>
+                  <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="search-btn-wrap">
+                      <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                
+          </div>
+    
+          <div class="list-item">
+              
+                <div class="row">
+                  
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                      <ul>
+                        <li>Name: <span>Stonehouse Center</span></li>
+                        <li>Type: <span>Convention Center</span></li>
+                        <li>Email: <span>shcenter@emial.com</span></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>Address: <span>11 Shrewburry Street</span></li>
+                      <li>City & State: <span>Worecester, MA</span></li>
+                      <li>Phone: <span>201-555-7348</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <ul>
+                      <li>PX Phone: <span>908-243-4356</span></li>
+                      <li>PX Contact: <span>Michael Tonda</span></li>
+                    </ul>
+                  </div>
+                  <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="search-btn-wrap">
+                      <button mat-button class="btn mat-button-primary-transparent" (click)="viewVenueDetails()">View Details</button>
+                    </div>
+                  </div>
+                </div>
+                
+          </div>
+          
+        </div>
+        <div class="card-footer text-center">
+            <div class="pagination-btn-row">
+                <!-- <button mat-button class="fnt-weigth">Reset</button> -->
+              <button mat-button class="btn mat-button-primary">Prev
+              </button>
+              <button class="btn page-number active"> 1 </button>
+              <button class="btn page-number"> 2 </button>
+              <button class="btn page-number"> 3 </button>
+              <button class="btn page-number"> 4 </button>
+              <button mat-button class="btn mat-button-primary">Next
+              </button>
+            </div>
+        </div>
+      </mat-card>
+  </div>
+</section>
+
