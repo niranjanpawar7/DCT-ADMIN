@@ -48,13 +48,31 @@
   .header-wrapper{
     background-color: green;
   }
-  .navbar-default .navbar-nav>li>a {
-    color: #FFFFFF;
-    background: #2B62CA;
-    border-bottom: 1px solid #cecece;
-    padding: 10px 0px;
-    text-align: center
+  .navbar-default .navbar-nav>li>a { 
+    color: #fff;
+    background: #2b62ca;
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 10px 0;
+    text-align: center;
+    height: 135px;
+    outline: none;
   }
+  .parent-wrapper{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.child-wrapper{
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  text-align: center;
+  opacity: .5;
+}
+.router-link-active .child-wrapper{
+  opacity: 1!important;
+}
   .navbar-default .navbar-nav > li >:hover {
     background: #9ebbfa; 
     opacity: 1;
@@ -67,10 +85,10 @@
     background-color: none !important;
   }
   .nav.navbar-nav li img{
-    margin: auto;
+    margin: auto auto 10px;
   } 
   .nav-pad{
-    opacity: 0.5;	color: #FFFFFF;	font-family: Lato;	font-size: 11px;	letter-spacing: 1px;	line-height: 13px;	text-align: center;
+    opacity: 0.5;	color: #FFFFFF;	font-size: 11px;	letter-spacing: 1px;	line-height: 13px;	text-align: center;
   } 
   
   .custom-logo{
@@ -85,7 +103,7 @@
        padding-right: 60px;
   }
   .router-link-active {
-     border-right: 4px solid skyblue;
+     border-right: 4px solid skyblue !important;
      opacity: 1;
   }
 

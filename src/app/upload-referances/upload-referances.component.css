@@ -13,24 +13,24 @@
 }
 .btn-blue{
     height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
-    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #FFFFFF;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .btn-white{
     height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #2B62CA;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .training-venue-wrapper .form-control{
 	height: 38px; border: 1px solid #CECECE;	border-radius: 4px; margin-bottom: 30px;
 }
 .form-group label{
     margin-bottom: 6px;
-    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+    	font-size: 14px;	line-height: 16px; color: #757575;
 }
 .speaker-popup{
     position: relative;
 }
 .speaker-popup .master-heading{
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 36px;
+    color: #2B62CA;		font-size: 28px;	font-weight: bold;	line-height: 36px;
     margin-bottom: 13px;
 } 
 .speaker-popup p{  
@@ -43,7 +43,7 @@
     font-weight: bold;
 }
 .mat-check-wrap label{
-    color: #757575;	font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px;
+    color: #757575;		font-size: 14px;	line-height: 16px;
     margin-bottom: 10px;
 }
 .white-btn-wrap .btn-white{

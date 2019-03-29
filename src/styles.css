@@ -17,7 +17,7 @@ mat-card .form-group{
   height: 20px;
 }
 .assign-content-wrapper .mat-checkbox-label{
- color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 18px; 
+ color: #4F4F4F;		font-size: 16px;	line-height: 18px; 
 } 
 .assign-content-wrapper .mat-checkbox-layout{
   margin-bottom: 10px;
@@ -26,6 +26,7 @@ mat-card .form-group{
   height: 38px;
   margin-top: -5px;
 }
+
 .mat-select-value {
   display: table-cell;
   max-width: 0;
@@ -381,6 +382,11 @@ tr.mat-header-row {
 .second-wrap.venue-wrapper .rw-pt-mar .mat-radio-label{
   margin-bottom: 10px;
 } 
+.btn-close.pull-right{ 
+  position: absolute;
+  right: -35px;
+  top: -35px;
+}
 
 
 /* .mat-step-icon .mat-icon, .mat-step-icon-content{

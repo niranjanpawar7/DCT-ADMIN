@@ -4,6 +4,9 @@
     margin-bottom: 0px;
     box-shadow: 0 6px 24px 0 #E2E9F7;
 }
+.dashboard-heading-wrapper:first-child h4{
+    margin-top: 14px;
+}
 .dashboard-admin-wrapper mat-card{
     margin-top: 50px;
     margin-bottom: 0px;
@@ -28,14 +31,17 @@ table {
 tr.mat-footer-row, tr.mat-row {
     height: 60px;
 }
+.dashboard-admin-wrapper td.mat-cell, td.mat-footer-cell, th.mat-header-cell { 
+    border-bottom-width: 0px; 
+}
  
 .mat-row:nth-child(odd){ 
     background-color: #F0F0F0;
 }
 .dashboard-heading-wrapper .clr-blue{
     float: right;
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	line-height: 22px;	 
-    margin-top: 20px;
+    color: #2B62CA;		font-size: 18px;	line-height: 22px;	 
+    margin-top: 15px;
 }
 .mat-header-cell {
     color: #757575;	 font-size: 16px;	line-height: 22px;
@@ -47,7 +53,7 @@ tr.mat-footer-row, tr.mat-row {
     font-weight: bold;
 }
 .para-heading{   
-    color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
+    color: #2B62CA; margin-bottom: 25px;		font-size: 20px;	line-height: 22px;
 } 
 @media only screen and (max-width: 800px) {
     .dashboard-admin-wrapper mat-card{

@@ -21,8 +21,12 @@
             <li>
               <a [routerLink]="['/dashboard']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/dashboard.svg" class="img-responsive" />
-                  DASHBOARD
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/dashboard.svg" class="img-responsive" />
+                      DASHBOARD
+                    </div>
+                  </div>>
                 </span>
               </a>
             </li>
@@ -30,9 +34,13 @@
             <li>
               <a [routerLink]="['/create']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <div class="clearfix"></div>
-                  CREATE EVENT
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <span class="glyphicon glyphicon-plus"></span>
+                      <div class="clearfix"></div>
+                      CREATE EVENT
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
@@ -78,12 +86,16 @@
                 </ul>
               </a>
             </li> -->
-          
+
             <li class="has-submenu" #hasMenu>
               <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/calendar.svg" class="img-responsive" />
-                  MY EVENTS
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/calendar.svg" class="img-responsive" />
+                      MY EVENTS
+                    </div>
+                  </div>
                 </span>
                 <ul class="submenu">
                   <li [routerLink]="['/event-details']">List View</li>
@@ -95,8 +107,12 @@
             <li class="has-submenu" #hasMenu>
               <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/slides.svg" class="img-responsive" />
-                  SPEAKER
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/slides.svg" class="img-responsive" />
+                      SPEAKER
+                    </div>
+                  </div>
                 </span>
                 <ul class="submenu">
                   <li [routerLink]="['/search-speaker']">Search Speaker</li>
@@ -108,8 +124,12 @@
             <li class="has-submenu" #hasMenu>
               <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/training.svg" class="img-responsive" />
-                  TRAINING
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/training.svg" class="img-responsive" />
+                      TRAINING
+                    </div>
+                  </div>
                 </span>
                 <ul class="submenu training-submenu">
                   <li [routerLink]="['/training']">Upload Training Deck</li>
@@ -121,8 +141,13 @@
             <li>
               <a [routerLink]="['/upload-reference']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/training.svg" class="img-responsive" />
-                  REFERENCE MATERIALS
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/training.svg" class="img-responsive" />
+                      REFERENCE MATERIALS
+                    </div>
+                  </div>
+
                 </span>
               </a>
             </li>
@@ -130,8 +155,12 @@
             <li>
               <a [routerLink]="['/speaker-content']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/training.svg" class="img-responsive" />
-                  MANAGE SPEAKER CONTENT
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/training.svg" class="img-responsive" />
+                      MANAGE SPEAKER CONTENT
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
@@ -139,13 +168,21 @@
             <li class="has-submenu" #hasMenu>
               <a [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <span class="glyphicon glyphicon-map-marker"></span>
-                  <div class="clearfix"></div>
-                  VENUE
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <span class="glyphicon glyphicon-map-marker"></span>
+                      <div class="clearfix"></div>
+                      VENUE
+                    </div>
+                  </div>
                 </span>
                 <ul class="submenu">
+                    <div class="parent-wrapper">
+                        <div class="child-wrapper">
                   <li [routerLink]="['/venue-listing']">Venue Listing</li>
-                  <li [routerLink]="['/add-venue']" >Add Venue</li>
+                  <li [routerLink]="['/add-venue']">Add Venue</li>
+                  </div>
+                  </div>
                 </ul>
               </a>
             </li>
@@ -153,9 +190,13 @@
             <li>
               <a [routerLink]="['/attendee-list']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <span class="glyphicon glyphicon-list"></span>
-                  <div class="clearfix"></div>
-                  ATTENDEE LIST
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <span class="glyphicon glyphicon-list"></span>
+                      <div class="clearfix"></div>
+                      ATTENDEE LIST
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
@@ -163,9 +204,13 @@
             <li>
               <a [routerLink]="['/reports']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <span class="glyphicon glyphicon-stats"></span>
-                  <div class="clearfix"></div>
-                  REPORTS
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <span class="glyphicon glyphicon-stats"></span>
+                      <div class="clearfix"></div>
+                      REPORTS
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
@@ -173,9 +218,13 @@
             <li>
               <a [routerLink]="['/reconcile-speaker-program']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <span class="glyphicon glyphicon-stats"></span>
-                  <div class="clearfix"></div>
-                  RECONCILE EXPENSE
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <span class="glyphicon glyphicon-stats"></span>
+                      <div class="clearfix"></div>
+                      RECONCILE EXPENSE
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
@@ -183,12 +232,16 @@
             <li>
               <a [routerLink]="['/myprofile']" [routerLinkActive]="['router-link-active']">
                 <span class="nav-pad">
-                  <img src="assets/icons/profile.svg" class="img-responsive" />
-                  MY PROFILE
+                  <div class="parent-wrapper">
+                    <div class="child-wrapper">
+                      <img src="assets/icons/profile.svg" class="img-responsive" />
+                      MY PROFILE
+                    </div>
+                  </div>
                 </span>
               </a>
             </li>
-          
+
           </ul>
         </div>
       </div><!-- navbar -->

@@ -27,18 +27,18 @@
  
 .btn-blue{
     height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
-    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #FFFFFF;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .btn-white{
     height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #2B62CA;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .training-venue-wrapper .form-control{
 	height: 38px; border: 1px solid #CECECE;	border-radius: 4px; margin-bottom: 30px;
 }
 .form-group label{
     margin-bottom: 6px;
-    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+    	font-size: 14px;	line-height: 16px; color: #757575;
 }
 .master-heading{
     font-size: 28px;
@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 .para-heading{   
-    color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
+    color: #2B62CA; margin-bottom: 25px;		font-size: 20px;	line-height: 22px;
 }
 .form-group.btn-wrap{
     text-align: center;
@@ -54,7 +54,7 @@
     margin-bottom: 30px;
 }
 .bottom-text-para{  
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	line-height: 22px;	text-align: center;
+    color: #2B62CA;		font-size: 18px;	line-height: 22px;	text-align: center;
 } 
 
 
