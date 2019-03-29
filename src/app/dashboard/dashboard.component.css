@@ -34,8 +34,8 @@ tr.mat-footer-row, tr.mat-row {
 }
 .dashboard-heading-wrapper .clr-blue{
     float: right;
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	line-height: 22px;	 
-    margin-top: 20px;
+    color: #2B62CA;		font-size: 18px;	line-height: 22px;	 
+    margin-top: 15px;
 }
 .mat-header-cell {
     color: #757575;	 font-size: 16px;	line-height: 22px;
@@ -47,7 +47,7 @@ tr.mat-footer-row, tr.mat-row {
     font-weight: bold;
 }
 .para-heading{   
-    color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
+    color: #2B62CA; margin-bottom: 25px;		font-size: 20px;	line-height: 22px;
 } 
 @media only screen and (max-width: 800px) {
     .dashboard-admin-wrapper mat-card{

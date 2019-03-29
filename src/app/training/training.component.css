@@ -33,18 +33,18 @@
 }
 .btn-blue{
     height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
-    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #FFFFFF;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .btn-white{
     height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #2B62CA;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .training-admin-wrapper .form-control{
 	height: 38px; border: 1px solid #CECECE;	border-radius: 4px; margin-bottom: 30px;
 }
 .form-group label{
     margin-bottom: 6px;
-    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+    	font-size: 14px;	line-height: 16px; color: #757575;
 }
 .master-heading{
     font-size: 28px;
@@ -52,15 +52,15 @@
     font-weight: bold;
 }
 .para-heading{   
-    color: #2B62CA; margin-bottom: 25px;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 22px;
+    color: #2B62CA; margin-bottom: 25px;		font-size: 20px;	line-height: 22px;
 }
 .upload-popup-parent .daliog-master-heading{ 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    color: #2B62CA;		font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
     margin-bottom: 35px;
 }
 .file-info{
     height: 38px; border: 1px solid #CECECE;	border-radius: 4px;
-    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    color: #4F4F4F;		font-size: 16px;	line-height: 22px;
     padding: 8px;
     margin-bottom: 10px;
 } 
@@ -85,7 +85,7 @@
     margin-bottom: 20px;
 }
 .upLodedContent i{
-    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 14px;	font-style: italic;	line-height: 30px;	text-align: right;
+    color: #4F4F4F;		font-size: 14px;	font-style: italic;	line-height: 30px;	text-align: right;
 }
 .upLodedContent img{
     margin-left: 16px

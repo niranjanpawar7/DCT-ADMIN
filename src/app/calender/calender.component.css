@@ -36,7 +36,7 @@
     text-transform:uppercase;
 }
 .my-events .admin-calender .calender-list-view mat-card .left-content{
-    color: #1D232F;		font-size: 40px; font-family: Lato;	line-height: 25px; border-right: 1px solid #DBE6F8; padding: 0px;
+    color: #1D232F;		font-size: 40px; line-height: 25px; border-right: 1px solid #DBE6F8; padding: 0px;
 }
 .my-events .admin-calender .calender-list-view mat-card .middle-panel{
     color: #1D232F;
@@ -79,8 +79,7 @@
     height: 26px;
 }
 .ft-18{
-    font-size: 18px;
-    font-family: Lato;
+    font-size: 18px; 
     color: #1D232F;
 }
 .ft-sz{

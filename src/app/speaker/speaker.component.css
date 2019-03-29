@@ -21,19 +21,19 @@
 }
 .btn-blue{
     height: 55px;	width: 180px;	border-radius: 4px;	background-color: #2B62CA;
-    color: #FFFFFF;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #FFFFFF;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .btn-white{
     height: 55px;	width: 180px;	border: 1px solid #2B62CA;	border-radius: 4px;	background-color: #FFFFFF; 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #2B62CA;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .btn-sky-white{
     height: 55px;	width: 180px;	border: 1px solid #CECECE;	border-radius: 4px;	background-color: #FFFFFF; 
-    color: #CECECE;	font-family: "Helvetica Neue";	font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
+    color: #CECECE;		font-size: 18px;	font-weight: 500;	line-height: 23px;	text-align: center;
 }
 .form-group label{
     /* margin-bottom: 6px; */
-    font-family: "Helvetica Neue";	font-size: 14px;	line-height: 16px; color: #757575;
+    	font-size: 14px;	line-height: 16px; color: #757575;
 }
 .clr-lbl-btn{
     color: #CECECE !important;
@@ -45,12 +45,12 @@ mat-card .form-group {
     margin-bottom: 18px;
 }
 .speaker-popup-parent .daliog-master-heading{ 
-    color: #2B62CA;	font-family: "Helvetica Neue";	font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
+    color: #2B62CA;		font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
     margin-bottom: 28px;
 }
 .file-info{
     height: 38px; border: 1px solid #CECECE;	border-radius: 4px;
-    color: #4F4F4F;	font-family: "Helvetica Neue";	font-size: 16px;	line-height: 22px;
+    color: #4F4F4F;		font-size: 16px;	line-height: 22px;
     padding: 8px;
     margin-bottom: 10px;
 } 
