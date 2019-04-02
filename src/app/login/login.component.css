@@ -2,13 +2,18 @@
     color: #2B62CA;		font-size: 28px;	font-weight: bold;	line-height: 34px;	text-align: center;
     margin-bottom: 0px;
 }
-.close-position{
+.custom-top-class .login-forgot-popup-parent{
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* .close-position{
     position: absolute;
     right: -36px;
     top: -34px;
     z-index: 99;
     cursor: pointer;
-}
+} */
 .nopadding{
     padding: 0px;
 }
@@ -34,12 +39,12 @@
 }
 .logo-header{
     background: linear-gradient(317.31deg, #1C447F 0%, #32BDE7 100%);
-    margin-top: -53px;
+    margin-top: 70px;
     padding: 35px;
-    margin-bottom: 25px;
 }
 .custom-row{
-    margin-right: -53px;
-    margin-left: -53px;
     text-align: center;
+}
+.custom-top-class{
+    margin-bottom: 100px;
 }
